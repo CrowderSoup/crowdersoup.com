@@ -9,7 +9,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Author] # Used in authorbox
   name = "Aaron Crowder"
   bio = "Aaron Crowder (aka CrowderSoup) is a husband, father, and lover of tech"
-  avatar = "img/avatar.png"
+  avatar = "dude_square.png"
 
 [Params]
   description = "Ramblings about nothing" # Site Description. Used in meta description
