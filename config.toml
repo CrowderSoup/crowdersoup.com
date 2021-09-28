@@ -1,44 +1,44 @@
 baseurl = "/"
 title = "CrowderSoup"
 languageCode = "en-us"
-paginate = "10" # Number of elements per page in pagination
-theme = "binario"
-disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+paginate = "10" # Number of items per page
+theme = "binario" # https://github.com/vimux/binario#configuration
 
 [Author] # Used in authorbox
   name = "Aaron Crowder"
-  bio = "Aaron Crowder (aka CrowderSoup) is a husband, father, and lover of tech"
+  bio = """<p>Self-taught full-stack dev | Lover of technology | Husband of one and father of two | I like food | Black Lives Matter</p>
+
+<p><strong>Pronouns:</strong> He/Him, They/Them.</p>"""
   avatar = "dude_square.png"
 
 [Params]
-  description = "Ramblings about nothing" # Site Description. Used in meta description
-  copyright = "Aaron Crowder" # Copyright holder, otherwise will use .Site.Title
-  opengraph = true # Enable OpenGraph if true
-  schema = true # Enable Schema
-  twitter_cards = true # Enable Twitter Cards if true
-  columns = 2 # Set the number of cards columns. Possible values: 1, 2, 3
-  mainSections = ["posts"] # Set main page sections
-  dateFormat = "January 02, 2006" # Change the format of dates
+  description = "Ramblings about nothing" # Used in meta description
+  copyright = "Aaron Crowder" # Copyright holder, also used in .Site.Title
+  opengraph = true
+  schema = true # Enable internal schema template
+  twitter_cards = true
+  columns = 2 # Possible values: 1, 2, 3
+  mainSections = ["posts"]
+  dateFormat = "January 02, 2006"
   colorTheme = "dark-green" # dark-green, dark-blue, dark-red, dark-violet
   #customCSS = ["css/custom.css"] # Include custom CSS files
   #customJS = ["js/custom.js"] # Include custom JS files
-  mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
-  authorbox = true # Show authorbox at bottom of single pages if true
-  comments = true # Enable comments for all site pages
-  related = true # Enable Related content for single pages
-  relatedMax = 5 # Set the maximum number of elements that can be displayed in related block. Optional
-  hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
+  mainMenuAlignment = "right"
+  authorbox = true # Show authorbox if true
+  comments = false
+  related = true # show links to related content on single pages
+  relatedMax = 5 # Max number of related elements
+  hideNoPostsWarning = false
 
 [Params.Entry]
   meta = ["date", "categories"]
   toc = false # Table of Contents
 
 [Params.Featured]
-  previewOnly = false # Show only preview featured image
+  previewOnly = false
 
 [Params.Breadcrumb]
-  enable = true # Enable breadcrumb block globally
+  enable = true # Enable breadcrumb block
   homeText = "Home" # Home node text
 
 [Params.Social]
@@ -49,13 +49,13 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   github = "CrowderSoup"
 
 [Params.Share] # Entry Share block
-  facebook = true
+  facebook = false
   twitter = true
   reddit = true
-  telegram = true
-  linkedin = true
+  telegram = false
+  linkedin = false
   pocket = true
-  pinterest = true
+  pinterest = false
 
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/
