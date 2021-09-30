@@ -1,0 +1,24 @@
+{{- if .Param "authorbox" }}
+<div class="authorbox block h-card">
+	<div class="author">
+		{{- with .Site.Author.avatar }}
+		<figure class="author__avatar">
+			<img class="author__img u-photo" alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" height="90" width="90">
+		</figure>
+		{{- end }}
+		<div class="author__body">
+			<div class="author__name">
+				<a class="p-name u-url" href="{{ "" | relLangURL }}">
+					{{ .Site.Author.name }}
+				</a>
+			</div>
+			{{- with .Site.Author.bio }}
+			<div class="author__bio p-note">
+				{{- .  | safeHTML -}}
+			</div>
+			{{- end }}
+		</div>
+	</div>
+	{{- partial "footer_social.html" . }}
+</div>
+{{- end }}

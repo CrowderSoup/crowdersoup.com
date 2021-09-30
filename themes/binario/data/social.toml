@@ -2,6 +2,7 @@
   id = "email"
   url = "mailto:%s"
   icon = "svg/email.svg"
+  class = "u-email"
   weight = 10
 
 [[icons]]
