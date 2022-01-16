@@ -16,9 +16,25 @@ with you some of the lessons I've learned early on in this role.
 
 ## Communication is Key
 
+It's a common trope, but I've found it more true than ever. Check-in's. 1:1's. Pairing. Answering
+questions. The caveat though is that for any of that you be effective you need to be two things:
+
+1. Clear
+2. Direct
+
+<!-- TODO: flesh this section out more -->
+
 ## Weaknesses are opportunities to grow
 
+If anything has been made clear to me over the last few weeks it's that I am not a perfect leader.
+However, if there's anything I've learned from my team is that a weakness is nothing if not an
+opportunitie to grow.
+
+<!-- TODO: flesh this section out more -->
+
 ## Idealism Kills good software
+
+<!-- TODO: flesh this section out more -->
 
 <!--Links-->
 
