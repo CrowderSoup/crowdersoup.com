@@ -11,16 +11,19 @@ perfectly between Salt Lake City and Park City.
  
 ### Working
  
-I'm currently working at [Teem](https://www.teem.com/) as a senior dev.
+I'm currently working at [Govalo](https://govalo.com/) as the lead engineer.
  
-### Reading
- 
-I'm bad at finishing books. The one's I've started and have yet to finish are:
- 
- * Salt, Fat, Acid, Heat
+### Reading (this year, 2022)
+
+#### In Progress
+
+* [The Rising Storm](https://en.wikipedia.org/wiki/Star_Wars:_The_Rising_Storm)
+
+#### Finished
+
+* [Light of the Jedi](https://en.wikipedia.org/wiki/Star_Wars:_Light_of_the_Jedi)
  
 ### Personal Development
  
- * Complete 100 Days of code
- * Lose 40 lbs
- * Delete Facebook & Instagram
+* Make my personal website the hub of my social/online presense using [IndieWeb](https://indieweb.org/) principles.
+* Go on 12 hikes this year (2022)
