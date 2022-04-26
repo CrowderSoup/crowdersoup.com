@@ -1,8 +1,14 @@
 ---
 title: "Go for Govalo: Early Lessons as a Lead Engineer"
-date: 2022-01-16T00:35:21
-categories: ["life", "updates"]
+date: 2022-01-16T00:35:21.000Z
+categories:
+  - life
+  - updates
 tags:
+  - govalo
+  - work
+  - reflections
+draft: true
 ---
 
 This blog post has been a long time coming. I started working a new gig back in Nov. of 2021.
