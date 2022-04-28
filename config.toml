@@ -44,7 +44,7 @@ homeText = "Home" # Home node text
 [Params.Social]
 email = "aaron.crowder@gmail.com"
 twitter = "CrowderSoup"
-mastodon = "https://fosstodon.org/@CrowderSoup"
+mastodon = "https://hachyderm.io/@CrowderSoup"
 telegram = "CrowderSoup"
 instagram = "CrowderSoup"
 github = "CrowderSoup"
