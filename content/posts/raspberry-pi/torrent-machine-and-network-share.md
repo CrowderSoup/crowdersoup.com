@@ -1,13 +1,13 @@
-+++
-title = "Build a Torrent Machine and Network Share"
-date = "2016-01-21 13:00:00"
-categories = ["Raspberry Pi"]
-tags = [
-    "raspberry pi",
-    "torrent",
-    "projects"
-]
-+++
+---
+title: "Build a Torrent Machine and Network Share"
+date: 2016-01-21 13:00:00
+categories:
+  - Raspberry Pi
+tags:
+  - raspberry pi
+  - torrent
+  - projects
+---
 
 When I first got a Raspberry Pi the first thing I wanted to build was a home
 server. I wanted to have a central place at home to store files. I also thought
@@ -21,7 +21,7 @@ software to install. This was perfect for me because I could install Samba for
 my file server and transmission for torrents. It made setting up what I wanted
 **really** easy.
 
-The process *actually* was **really** simple. So this blog post won't need to
+The process _actually_ was **really** simple. So this blog post won't need to
 go into heavy technical detail. Instead, I just want to walk through the simple
 process of steps, with a couple of images, to document it for myself. Hopefully
 others benefit from this as well!
@@ -47,7 +47,6 @@ you write the image to the SD card (I use [Win32DiskImager](3)):
 - Install DietPi
 - Install relevant software thought dietpi installer
 - Configure softwares
-
 
 [1]: http://dietpi.com/
 [2]: http://goo.gl/EsIvUp

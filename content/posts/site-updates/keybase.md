@@ -1,13 +1,13 @@
-+++
-title = "Keybase Proof"
-description = ""
-date = "2018-05-01 11:45:00"
-categories = ["Site Updates"]
-tags = [
-    "crypto",
-    "security"
-]
-+++
+---
+title: "Keybase Proof"
+description: ""
+date: 2018-05-01 11:45:00
+categories:
+  - Site Updates
+tags:
+  - crypto
+  - security
+---
 
 I've added my [Keybase Proof][1] as a text file at the root of this site.
 I used to have my site proven via DNS but for whatever reason CloudFlare
@@ -20,5 +20,6 @@ If you aren't on [Keybase][2] check it out. I like to think of it as
 or one-on-one) that are encrypted end-to-end.
 
 <!--Links-->
+
 [1]: http://crowdersoup.com/keybase.txt
 [2]: https://keybase.io/

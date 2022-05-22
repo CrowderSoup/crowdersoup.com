@@ -1,14 +1,14 @@
-+++
-title = "Raspberry Pi Zero Giveaway: Review"
-date = "2016-01-13 09:00:00"
-categories = ["Raspberry Pi"]
-tags = [
-    "raspberry pi",
-    "zero",
-    "giveaway",
-    "maker"
-]
-+++
+---
+title: "Raspberry Pi Zero Giveaway: Review"
+date: 2016-01-13 09:00:00
+categories:
+  - Raspberry Pi
+tags:
+  - raspberry pi
+  - zero
+  - giveaway
+  - maker
+---
 
 I've been watching my local [Barnes & Nobel's](1) like a hawk the past few
 weeks. In case you've been living under a rock, the official Raspberry Pi
@@ -38,7 +38,7 @@ able to get my hands on the coveted Issue #40 of the MagPi. Not only was I able
 to get **one**, but due to the uneven distribution that I talked about, my local
 Barnes & Nobel had plenty of stock, and I was able to get a **second**. I
 wanted to be able to give a Zero to someone who hasn't been able to find one
-yet. Someone who would build something truly *awesome* with it.
+yet. Someone who would build something truly _awesome_ with it.
 
 Before I talk about the results of the giveaway, I want to talk about the
 technology behind it. I decided to use a simple python script to automate
@@ -46,6 +46,7 @@ gathering contest entries from the Reddit Post. I could then, again with python,
 select a random winner.
 
 ### [The Code](5)
+
 I put all the code up on Github so that no issues would arise with claims of
 unfairness. I also wanted to write the code in such a way that I could
 easily repurpose it for another giveaway in the future (by either myself or

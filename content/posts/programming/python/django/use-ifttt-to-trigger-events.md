@@ -1,14 +1,14 @@
-+++
-title = "Use IFTTT Maker Channel to Trigger Events in a Django App"
-date = "2016-04-08 7:15:00"
-categories = ["Programming"]
-tags = [
-    "django",
-    "python",
-    "ifttt",
-    "maker",
-]
-+++
+---
+title: "Use IFTTT Maker Channel to Trigger Events in a Django App"
+date: 2016-04-08T7:15:00
+categories:
+  - Programming
+tags:
+  - django
+  - python
+  - ifttt
+  - maker
+---
 
 A couple months ago I decided I needed to be better about telling my wonderful wife how much I loved her on a daily basis. Being the nerd that I am I decided to tackle this using [IFTTT][1] and a custom web app. For this project I went with [Django][2] to build my app out. I'd never used it before so I wanted a chance to play with it.
 
@@ -142,6 +142,7 @@ Sending the actual love note is really simple. You just hook the Maker Channel u
 Now, I'm sure that this guide is missing steps, and is probably wrong in some places. But I hope that it's valuable as a jumping off point for anyone who wants to do something similar. Let me know in the comments what you think, or what you used this guide to make!
 
 <!-- Links -->
+
 [1]: https://ifttt.com "If This Then That"
 [2]: https://djangoproject.org "Django Project"
 [3]: https://ifttt.com/maker "IFTTT: Maker Channel"

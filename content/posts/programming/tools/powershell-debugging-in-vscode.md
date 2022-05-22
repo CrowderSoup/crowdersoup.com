@@ -1,14 +1,15 @@
-+++
-title = "Debugging PowerShell in VSCode"
-date = "2016-04-26 09:54:00"
-categories = ["Programming", "Tools"]
-tags = [
-    "debugging",
-    "powershell",
-    "scripting",
-    "vscode"
-]
-+++
+---
+title: "Debugging PowerShell in VSCode"
+date: 2016-04-26 09:54:00
+categories:
+  - Programming
+  - Tools
+tags:
+  - debugging
+  - powershell
+  - scripting
+  - vscode
+---
 
 Yesterday I learned a neat trick with [Visual Studio Code](1) when working on
 some PowerShell scripts to help orchestrate build and deployment of our projects
@@ -28,9 +29,11 @@ just have to open a PowerShell script, hit `F5` and away you go!
 Here's the steps:
 
 ### 1. Open the Debug Tab
+
 ![Debug Tab](/assets/uploads/2016/04/vscode_debug_tab.png)
 
 ### 2. Click the gear and select "PowerShell" from the dropdown
+
 ![Select PowerShell](/assets/uploads/2016/04/vscode_debug_select_powershell.png)
 
 VSCode has been awesome to work with (I'm using it to write this post!). Having
@@ -45,5 +48,6 @@ profile):
 What other cool things do you love about VSCode?
 
 <!-- Links -->
+
 [0]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
 [1]: https://code.visualstudio.com/

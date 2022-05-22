@@ -1,16 +1,17 @@
-+++
-title = "Using Husky to Build Hugo Site"
-description = "Using Husky to ensure that hugo is run to generate site on commit"
-date = "2018-05-05 16:30:00"
-categories = ["Site Updates"]
-tags = [
-    "huskyjs",
-    "node",
-    "npm",
-    "git",
-    "hugo"
-]
-+++
+---
+title: "Using Husky to Build Hugo Site"
+description: "Using Husky to ensure that hugo is run to generate site on commit"
+date: 2018-05-05 16:30:00
+categories:
+  - Site Updates
+tags:
+  - huskyjs
+  - node
+  - npm
+  - git
+  - hugo
+---
+
 I've been making some efforts to streamline the publishing process for this
 site. I've read about tools like [Netlify][1] and [Lektor][2], but I wanted to
 keep things as close to a basic [Hugo][3] site as possible.
@@ -52,12 +53,12 @@ config:
 }
 ```
 
-Now I can use npm to run the hugo server (not that that's easier than `hugo
-server`) and build the site. The real value though is that any time I commit
+Now I can use npm to run the hugo server (not that that's easier than `hugo server`) and build the site. The real value though is that any time I commit
 the build will automatically run and the resulting build will be added before
 the commit.
 
 <!--Links-->
+
 [1]: https://www.netlifycms.org/
 [2]: https://www.getlektor.com/
 [3]: http://gohugo.io/

@@ -1,14 +1,15 @@
-+++
-title = "Hosting Mastodon on DitialOcean"
-description = "A how-to on hosting Mastodon on a DigitalOcean VPS and using Spaces"
-date = "2018-12-07"
-categories = ["SocialMast.xyz"]
-tags = [
-  "projects",
-  "servers",
-  "dev ops"
-]
-+++
+---
+title: "Hosting Mastodon on DitialOcean"
+description: "A how-to on hosting Mastodon on a DigitalOcean VPS and using Spaces"
+date: 2018-12-07
+categories:
+  - SocialMast.xyz
+tags:
+  - projects
+  - servers
+  - dev ops
+---
+
 I've been toying with the idea of setting up [Mastodon][1] on my own server for
 a while now. Today I finally got around to actually doing it (after a failed
 attempt a couple months ago). I found a [guide][2] that I loosely referred to
@@ -28,6 +29,7 @@ etc.). It also makes updates easy, as you'll see later on.
 Okay, let's get started!
 
 ## Mailgun
+
 First things first, let's set up Mailgun. Most guides I read didn't mention
 this until later in the guide, but it's important to get this out of the way
 now. It could take some time to get it configured correctly and working, and
@@ -44,6 +46,7 @@ Once you're done make sure you take note of the SMTP username and password.
 You'll need those later when you're configuring Mastodon.
 
 ## Create a Droplet
+
 ![Create a Droplet](/assets/uploads/2018/12/create_droplet.png)
 
 From you Digital Ocean dashboard click on "Create" and then "Droplet" to get
@@ -51,6 +54,7 @@ started creating your Droplet. We're going to use Ubuntu 18.04. Under "Size"
 and "Standard" pick the $15 a month option that has 1 CPU and 3GB of RAM.
 
 ## Create your Space
+
 ![Create your Space](/assets/uploads/2018/12/create_space.png)
 
 Digital Ocean has an Amazon S3 compatible storage solution. Mastodon can use
@@ -64,6 +68,7 @@ you'll want to make note of is the space endpoint:
 ![Space Endpoints](/assets/uploads/2018/12/space_endpoints.png)
 
 ## Generate Space Access Keys
+
 You're going to also need some access keys so that Mastodon will be able to
 access your space. This is pretty easy to do. Just click on "API" in the
 sidebar to the left. Then "Generate New Key", give it a name, and take note of
@@ -73,54 +78,66 @@ view it in the Digital Ocean UI).
 ![Space Keys](/assets/uploads/2018/12/space_keys.png)
 
 ## VPC setup
+
 Okay, now that we've got all that taken care of we're going to actually start
 setting up our VPC. I'm going to assume that you know how to SSH into your
 server, so go ahead and do that.
 
 ### Create a Mastodon User
+
 First, let's create a mastodon user:
+
 ```
 adduser mastodon
 ```
 
 Then, we'll add the user to the sudoers group:
+
 ```
 usermod -aG sudo mastodon
 ```
 
 Finally, switch to this user:
+
 ```
 su - mastodon
 ```
 
 ### Install Docker
+
 First, we need to add the GPG key for the official Docker repo:
+
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
 Then, well add the Docker repo to our `apt` sources:
+
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable edge"
 ```
 
 Then we'll make sure that the system uses the Docker sources instead of the
 Ubuntu default:
+
 ```
 sudo apt-cache policy docker-ce
 ```
 
 Finally, let's install Docker:
+
 ```
 sudo apt-get install -y docker-ce
 ```
 
 To check that the install was successful let's check if it's running:
+
 ```
 sudo systemctl status docker
 ```
 
 ### Install `docker-compose`
+
 The best way to get the most up to date version of `docker-compose` is to
 install it from Docker's GitHub repository. Ubuntu's official version is more
 than likely to be several (or more) minor versions behind. Before running this
@@ -133,22 +150,27 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-c
 ```
 
 Next, we need to make this freshly downloaded binary executable:
+
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 And now, check that all this worked:
+
 ```
 docker-compose --version
 ```
 
 ## Get / Build / Configure Mastodon
+
 Now it's time to get, build, and configure Mastodon. There's going to be a need
 here to refer back to the noted information from before so make sure to have
 those notes ready.
 
 ### Get Mastodon
+
 Let's make sure we're in the right place first, then clone the Mastodon repo:
+
 ```
 cd /home/mastodon
 git clone https://github.com/tootsuite/mastodon.git
@@ -156,21 +178,26 @@ cd mastodon
 ```
 
 ### Build
+
 Now, before we actually configure Mastodon we need some secret keys to use. To
 do that we will build an unconfigured image and use it. Fair warning, this will
 take some time, so go get a cup of coffee while you wait.
+
 ```
 docker-compose build
 ```
 
 After that finishes you're going to run this command 3 times, and save the
 secret key it generates each time.
+
 ```
 docker-compose run --rm web rake secret
 ```
 
 ### Configure
+
 Let's copy the sample config file to use as our production config file:
+
 ```
 cp .env.production.sample .env.production
 ```
@@ -179,6 +206,7 @@ Go ahead and open up `.env.production` in your favorite editor. Populate
 `PAPERCLIP_SECRET`, `SECRET_KEY_BASE`, and `OTP_SECRET` with your new keys.
 
 Then, we need to update the following values:
+
 ```
 # Shouldn't contain the protocol part of the domain
 LOCAL_DOMAIN=<YOUR_DOMAIN>
@@ -201,34 +229,42 @@ S3_ENDPOINT=<ENDPOINT_WITHOUT_BUCKET_NAME> # (https://sfo2.digitaloceanspaces.co
 Save those changes and close the file.
 
 ### Build, Again
+
 Now that our config has been updated we need to rebuild the docker image.
+
 ```
 docker-compose build
 ```
 
 Next we'll run the migrations:
+
 ```
 docker-compose run --rm web rails db:migrate
 ```
 
 Then pre-compile the static assets:
+
 ```
 docker-compose run --rm web rails assets:precompile
 ```
 
 Now, let's fire it all up:
+
 ```
 docker-compose up -d
 ```
 
 ## Install / Configure Nginx
+
 We're going to use Nginx to proxy requests to Mastodon for us. First, let's
 install it:
+
 ```
 sudo apt-get install nginx
 ```
 
 Then, remove the default site config/symlink and create a new one for Mastodon:
+
 ```
 sudo rm /etc/nginx/sites-available/default
 sudo rm /etc/nginx/sites-enabled/default
@@ -240,6 +276,7 @@ Now, let's open up our Nginx config for Mastodon (located at
 `/etc/nginx/sites-available/mastodon`) and replace it with the following
 (making sure to replace `<LOCAL_DOMAIN>` with the same value you put in your
 Mastodon config):
+
 ```
 map $http_upgrade $connection_upgrade {
   default upgrade;
@@ -335,37 +372,45 @@ server {
   error_page 500 501 502 503 504 /500.html;
 }
 ```
+
 Save and close this config.
 
 ## HTTPS Thanks to [Let's Encrypt][6]
+
 Setting up an SSL cert so we can use HTTPS is essential. Thankfully this is
 easily accomplished using `certbot` to get an SSL cert from Let's Encrypt. You
 first must add the PPA for `certbot`:
+
 ```
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 ```
 
 Then install it:
+
 ```
 sudo apt-get install python-certbot-nginx
 ```
 
 Next, let's stop Nginx:
+
 ```
 sudo systemctl stop nginx.service
 ```
 
 Then use certbot to obtain and configure our cert for use with Nginx:
+
 ```
 sudo certbot --nginx -d <LOCAL_DOMAIN>
 ```
 
 ## Run Mastodon (for real this time)
+
 Okay, we're getting close to the end! Now, we're going to shut down Mastodon
 running in docker, rebuild the image, recompile the assets, and rerun
 migrations making sure that nothing fails before bringing everything back
 online:
+
 ```
 docker-compose down
 docker-compose build
@@ -375,6 +420,7 @@ docker-compose up -d
 ```
 
 Now, if all that worked go ahead and start Nginx back up:
+
 ```
 sudo systemctl restart nginx.service
 ```
@@ -385,13 +431,16 @@ make sure you can do some basic things like edit your profile, upload
 a picture, etc.
 
 ## Make your user an Admin
+
 Once you've played around with Mastodon a bit let's get back in the command
 line and make your user an Admin so you can administer your instance.
+
 ```
 docker-compose run --rm web ./bin/tootctl accounts modify <YOUR_USERNAME> --role admin
 ```
 
 You should see something like the following:
+
 ```
 Starting mastodon_redis_1 ...
 Starting mastodon_db_1 ... done
@@ -404,6 +453,7 @@ do is close registrations until you're sure you want other people to register
 on your instance freely.
 
 ## Conclusion
+
 Whew! You made is this far! If if all worked you now have a VPS in DigitalOcean
 running Mastodon on docker. All your media is being stored in S3 compatible
 Spaces. And you're part of the fediverse!
@@ -412,6 +462,7 @@ If it all worked for you give me a shout, I'm [@CrowderSoup@socialmast.xyz][7].
 If not, leave a comment with where things went wrong!
 
 <!--Links-->
+
 [1]: https://joinmastodon.org
 [2]: https://github.com/ummjackson/mastodon-guide/blob/master/up-and-running.md
 [3]: https://sidekiq.org/

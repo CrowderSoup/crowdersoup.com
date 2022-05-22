@@ -1,21 +1,21 @@
-+++
-title = "JavaScript: Array's with named Properties"
-date = "2015-11-11 12:46:49"
-categories = ["JavaScript"]
-tags = [
-    "programming",
-    "javascript",
-    "front-end",
-    "tips"
-]
-+++
+---
+title: "JavaScript: Array's with named Properties"
+date: 2015-11-11 12:46:49
+categories:
+  - JavaScript
+tags:
+  - programming
+  - javascript
+  - front-end
+  - tips
+---
 
 Adding named properties to arrays in JavaScript can be handy in a few different
 cases. For instance:
 
 - You need a nice formatted title / description for a data set. Rather than
-having multiple objects you can use named properties and get away with only
-using one.
+  having multiple objects you can use named properties and get away with only
+  using one.
 - You want to add some functions to an array for whatever reason
 - Lots of other reasons that I can't think of right now!
 

@@ -1,13 +1,13 @@
-+++
-title = "Hour of Code"
-date = "2015-12-10 11:35:26"
-categories = ["Life"]
-tags = [
-    "volunteer",
-    "hour of code",
-    "teaching"
-]
-+++
+---
+title: "Hour of Code"
+date: 2015-12-10 11:35:26
+categories:
+  - Life
+tags:
+  - volunteer
+  - hour of code
+  - teaching
+---
 
 <img alt="Hour of Code: Star Wars" src="http://i.imgur.com/erC9xoJ.jpg" style="width: 100%" />
 
@@ -19,7 +19,7 @@ deeper understanding of code.
 I was especially impressed with the number of young women in the class that
 seemed to really enjoy it. It's a really common misunderstanding that people hold
 that girls aren't interested in tech. I think in too many cases they are steered
-in other directions, towards things they *should* be interested in. I'm glad to
+in other directions, towards things they _should_ be interested in. I'm glad to
 have been able to give **all** the kids an opportunity to see if programming is
 a career they'd be interested in.
 

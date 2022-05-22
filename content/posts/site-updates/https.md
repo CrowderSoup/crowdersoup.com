@@ -1,13 +1,14 @@
-+++
-title = "GitHub Pages Over HTTPS"
-description = "Using HTTPS for sites with custom domains on GitHub Pages"
-date = "2018-05-05 11:45:00"
-categories = ["Site Updates"]
-tags = [
-    "security",
-    "https"
-]
-+++
+---
+title: "GitHub Pages Over HTTPS"
+description: "Using HTTPS for sites with custom domains on GitHub Pages"
+date: 2018-05-05 11:45:00
+categories:
+  - Site Updates
+tags:
+  - security
+  - https
+---
+
 Using HTTPS for your site has lots of benefits. Chief among them being
 security. Using HTTPS ensures that no one can intercept and read traffic
 between you and the site you're visiting.
@@ -32,5 +33,6 @@ to follow these simple steps to enable HTTPS:
 Now you really don't have an excuse to NOT be using HTTPS!
 
 <!--Links-->
+
 [1]: https://letsencrypt.org/
 [2]: https://help.github.com/articles/setting-up-an-apex-domain/

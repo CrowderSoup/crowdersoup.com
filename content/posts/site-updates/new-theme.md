@@ -1,13 +1,13 @@
-+++
-title = "New Theme!"
-date = "2016-01-06 16:30:00"
-categories = ["Site Updates"]
-tags = [
-    "update",
-    "front-end",
-    "pelican"
-]
-+++
+---
+title: "New Theme!"
+date: 2016-01-06 16:30:00
+categories:
+  - Site Updates
+tags:
+  - update
+  - front-end
+  - pelican
+---
 
 I recently started using [Pelican](1) static site generator for this blog. I was
 drawn to it for a few reasons:
@@ -31,6 +31,7 @@ my data and content are as safe as possible (from things like accidental deletio
 services shutting down and the like).
 
 ### Custom Theme
+
 I wanted to build my own theme for Pelican rather than using one from their
 [Theme Repository](7). I felt like I could build something in a fairly short
 amount of time that would best match my tastes and how I wanted my site and
@@ -40,9 +41,10 @@ It took me a few days working here and there, but what you're looking at now is
 my new custom theme!
 
 #### Process
+
 Building a Pelican theme was actually a fairly straightforward process.
 Especially compared to some of the CMSs I've built themes for in the past
-(*cough* WordPress *cough*). [Their guide](8) gives you a list of files you'll
+(_cough_ WordPress _cough_). [Their guide](8) gives you a list of files you'll
 need, along with all the different variables and configuration options available
 to you.
 
@@ -53,6 +55,7 @@ where doing from the [Theme Repo](7). Those two resources combined gave me the
 tools I needed to get building.
 
 #### PersonalSite-theme
+
 This theme, lovingly called "PersonalSite-theme" (or coldly, can never remember
 which it is), uses a couple of fun technologies to improve the development
 process.
@@ -64,10 +67,11 @@ Libraries (like jQuery, Bootstrap, etc). I decided to **just** use NPM, as they'
 fixed a lot of the issues that made using Bower a requirement.
 
 I use NPM to install:
+
 - [Gulp](10), a task runner.
 - [Gulp-Sass](14), a tool that let's me compile [Sass](15) using Gulp.
 - [Bootstrap](11), a client-side UI framework. Provides CSS styles and JavaScript
-UI components that make building a clean / beautiful UI somewhat trivial.
+  UI components that make building a clean / beautiful UI somewhat trivial.
 - [jQuery](12), we all know it. Some of us love it, some hate it. I needed it.
 - [Font Awesome](13), a font icon library.
 
@@ -79,10 +83,11 @@ folder of the theme. Gulp was also responsible for watching my `*.sass` file for
 changes and running the compiler.
 
 These tools combined really streamlined my workflow and made development a
-breeze. Before this project I had used NPM, but not Gulp. I *had* used another
+breeze. Before this project I had used NPM, but not Gulp. I _had_ used another
 task runner, but Gulp was by far the best one I've used.
 
 #### Usage
+
 So, you want to use this theme for your own Pelican site? Well, it's REALLY easy.
 You must first have [NodeJS](https://nodejs.org/en/) installed, which
 comes with `npm`, a package management tool. Once you have that you can clone
@@ -91,6 +96,7 @@ as submodules of my Pelican sites repo, but that's a topic for another post) and
 run `npm install && gulp` at the root of the theme repo.
 
 ### Wrapping up
+
 I hope you enjoyed this post and learning more about Pelican and my sites theme
 in general. If you have any specific questions about this theme or it's usage
 let me know in the comments or [on Twitter](16).
@@ -110,4 +116,4 @@ let me know in the comments or [on Twitter](16).
 [13]: http://fontawesome.io/ "Font Awesome"
 [14]: https://www.npmjs.com/package/gulp-sass "Gulp-Sass"
 [15]: http://sass-lang.com/ "Sass"
-[16]: http://twitter.com/crowdersoup "&amp;CrowderSoup"
+[16]: http://twitter.com/crowdersoup "&CrowderSoup"

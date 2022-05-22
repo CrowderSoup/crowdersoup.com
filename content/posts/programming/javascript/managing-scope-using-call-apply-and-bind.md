@@ -1,14 +1,14 @@
-+++
-title = "Managing Scope Using Call, Apply, and Bind"
-date = "2015-11-16 13:20:08"
-categories = ["JavaScript"]
-tags = [
-    "programming",
-    "javascript",
-    "front-end",
-    "tips"
-]
-+++
+---
+title: "Managing Scope Using Call, Apply, and Bind"
+date: 2015-11-16 13:20:08
+categories:
+  - JavaScript
+tags:
+  - programming
+  - javascript
+  - front-end
+  - tips
+---
 
 ## [Call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 
@@ -24,16 +24,15 @@ Here we're using prototypical inheritance to allow us to inheirit properties fro
 `Animal` in `Dog` and `Cat`. Using `call` allows us to invoke `Animal` to initialize
 it's properties while maintaining the correct scope.
 
-
 ## [Apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
 **Calls a function, with the specified arguments passed in as an array**
 
 Just like `call`, the first argument becomes `this`. The rest of the args are
 passed in as an array.
 
-
-
 ## [Bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
 **Creates a bound function with the same function body as the function it's called
 on**
 

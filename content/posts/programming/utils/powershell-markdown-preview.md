@@ -1,12 +1,12 @@
-+++
-title = "Powershell Markdown Preview"
-date = "2015-10-28 00:09:20"
-categories = ["Utils"]
-tags = [
-    "programming",
-    "powershell"
-]
-+++
+---
+title: "Powershell Markdown Preview"
+date: 2015-10-28 00:09:20
+categories:
+  - Utils
+tags:
+  - programming
+  - powershell
+---
 
 I'm at [Angle Brackets](http://anglebrackets.org). I've decided that I wanted to
 try taking all my notes in vim. I LOVE using vim. It's a really awesome, powerful,
@@ -49,6 +49,7 @@ Function mkdown-preview($file)
 ```
 
 Now I can do the following on the command line:
+
 ```bash
 mkdown-preview('mkdown-file.md')
 ```

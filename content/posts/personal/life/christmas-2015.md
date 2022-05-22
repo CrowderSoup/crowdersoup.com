@@ -1,14 +1,13 @@
-+++
-title = "Christmas of 2015"
-date = "2015-12-27 13:20:00"
-googleAnalytics = ""
-tags = [
-    "christmas",
-    "raspberry pi",
-    "projects"
-]
-categories = ["Life"]
-+++
+---
+title: "Christmas of 2015"
+date: 2015-12-27 13:20:00
+tags:
+  - christmas
+  - raspberry pi
+  - projects
+categories:
+  - Life
+---
 
 This year's Christmas was one for the books. As a father it was SO much fun to
 watch my two girls have the time of their little lives getting and playing with
@@ -27,6 +26,7 @@ she seemed to be starting to "get it" when it came to opening presents on her
 Birthday.
 
 **Ruby**
+
 <div class="img-container">
 ![Ruby playing with her new toys](/assets/uploads/2015/12/27/Ruby-Presents.jpg)
 <small>
@@ -35,6 +35,7 @@ Birthday.
 </div>
 
 **Evelyn**
+
 <div class="img-container">
 ![Evelyn Opening a present](/assets/uploads/2015/12/27/EvelynOpeningPresent.jpg)
 <small>
