@@ -4,7 +4,6 @@ slug: trying-out-frontmatter
 description: Trying out FrontMatter, a VSCode extension for managing a static site
 date: 2022-05-22T05:20:25.209Z
 lastmod: 2019-08-22T15:20:28.000Z
-draft: false
 tags:
   - site-updates
   - tools
