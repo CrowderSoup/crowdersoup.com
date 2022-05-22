@@ -10,7 +10,6 @@ tags:
   - vscode
 categories:
   - Site Updates
-type: article
 ---
 
 I recently found a really cool VSCode extension called FrontMatter. It allows you to manage your static site with a simple, intuitive interface, all within VSCode. This is the first post I'm writing with it.
