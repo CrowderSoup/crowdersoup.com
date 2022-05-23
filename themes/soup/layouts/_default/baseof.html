@@ -2,14 +2,21 @@
 <html lang="en">
 
 <head>
-  <title>{{block "title"}}{{ .Site.Title }}{{end}}</title>
+  <title>{{block "title" . }}{{ .Site.Title }}{{end}}</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  {{ partial "header.html" . }}
 
+  {{ block "main" . }}
+  <!-- The part of the page that begins to differ between templates -->
+  {{ end }}
+
+
+  {{ partial "footer.html" . }}
 </body>
 
 </html>

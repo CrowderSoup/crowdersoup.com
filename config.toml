@@ -2,82 +2,24 @@ baseurl = "/"
 title = "CrowderSoup"
 languageCode = "en-us"
 paginate = "10"        # Number of items per page
-theme = "binario"      # https://github.com/vimux/binario#configuration
+theme = "soup"      # https://github.com/vimux/binario#configuration
 
 [Author] # Used in authorbox
 name = "Aaron Crowder"
-bio = """<p>Self-taught full-stack dev | Lover of technology | Husband of one and father of two | I like food | Black Lives Matter</p>
-
-<p><strong>Pronouns:</strong> He/Him, They/Them.</p>"""
+nickname = "CrowderSoup"
 avatar = "dude_square.png"
 
 [Params]
-description = "Ramblings about nothing" # Used in meta description
 copyright = "Aaron Crowder"             # Copyright holder, also used in .Site.Title
-opengraph = true
-schema = true                           # Enable internal schema template
-twitter_cards = true
-columns = 3                             # Possible values: 1, 2, 3
 mainSections = ["posts"]
 dateFormat = "January 02, 2006"
-colorTheme = "dark-green"               # dark-green, dark-blue, dark-red, dark-violet
-#customCSS = ["css/custom.css"] # Include custom CSS files
-#customJS = ["js/custom.js"] # Include custom JS files
-mainMenuAlignment = "right"
-authorbox = true            # Show authorbox if true
-comments = false
-related = true              # show links to related content on single pages
-relatedMax = 5              # Max number of related elements
-hideNoPostsWarning = false
 
-[Params.Entry]
-meta = ["date", "categories"]
-toc = false                   # Table of Contents
-
-[Params.Featured]
-previewOnly = false
-
-[Params.Breadcrumb]
-enable = true     # Enable breadcrumb block
-homeText = "Home" # Home node text
-
-[Params.Social]
+[Params.elsewhere]
 email = "aaron.crowder@gmail.com"
 twitter = "CrowderSoup"
 mastodon = "https://hachyderm.io/@CrowderSoup"
 telegram = "CrowderSoup"
-instagram = "CrowderSoup"
 github = "CrowderSoup"
 
-[Params.Share] # Entry Share block
-facebook = false
-twitter = true
-reddit = true
-telegram = false
-linkedin = false
-pocket = true
-pinterest = false
-
-# Web App Manifest settings
-# https://www.w3.org/TR/appmanifest/
-# https://developers.google.com/web/fundamentals/web-app-manifest/
-[Params.Manifest]
-name = "CrowderSoup"
-shortName = "CrowderSoup"
-display = "browser"
-startUrl = "/"
-backgroundColor = "#2a2a2a"
-themeColor = "#1b1b1b"
-description = "Ramblings about nothing"
-orientation = "portrait"
-scope = "/"
-
-[outputFormats]
-[outputFormats.MANIFEST]
-mediaType = "application/json"
-baseName = "manifest"
-isPlainText = true
-notAlternative = true
-
 [outputs]
-home = ["HTML", "RSS", "MANIFEST"]
+home = ["HTML", "RSS"]
