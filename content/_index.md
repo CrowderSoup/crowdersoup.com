@@ -1,6 +1,8 @@
 ---
-title: "A bit about me..."
+title: "Home"
 date: 2017-11-29
+menu: main
+weight: 1
 ---
 
 I'm a Husband, Father, Software developer, and lover of the open web.
