@@ -6,6 +6,7 @@ theme = "soup"      # https://github.com/vimux/binario#configuration
 
 [Author] # Used in authorbox
 name = "Aaron Crowder"
+url = "https://crowdersoup.com"
 nickname = "CrowderSoup"
 avatar = "dude_square.png"
 
@@ -13,6 +14,7 @@ avatar = "dude_square.png"
 copyright = "Aaron Crowder"             # Copyright holder, also used in .Site.Title
 mainSections = ["posts"]
 dateFormat = "January 02, 2006"
+description = "A website about programming, technology, and life."
 
 [Params.elsewhere]
 email = "aaron.crowder@gmail.com"
