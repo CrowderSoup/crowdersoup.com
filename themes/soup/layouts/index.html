@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="block h-card">
+  <div class="author">
+    {{- with .Site.Author.avatar }}
+    <figure class="author-image-container">
+      <img class="u-photo" alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" height="90"
+        width="90">
+    </figure>
+    {{- end }}
+    <div class="author-box">
+      <div class="author-intro">
+        Hi, I'm&nbsp;
+        <a class="p-name u-url" href="{{ "" | relLangURL }}">
+          {{ .Site.Author.name }}
+        </a>.&nbsp;
+        Or&mdash;if you know me online&mdash;<span class="p-nickname">{{ .Site.Author.nickname }}</span>.
+      </div>
+      <div class="author-bio p-note">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  {{- if .Site.Params.elsewhere }}
+  <div class="elsewhere">
+    {{- range sort .Site.Data.social.icons "weight" }}
+    {{- if isset $.Site.Params.elsewhere .id }}
+    <a class="elsewhere-link" target="_blank" rel="me" href="{{ printf .url (index $.Site.Params.elsewhere .id) }}">
+      {{ partial .icon (dict "class" "elsewhere-icon") }}
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
+{{ end }}

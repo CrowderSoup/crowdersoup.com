@@ -1,0 +1,15 @@
+{{ $currentPage := . }}
+
+<header>
+  <h1>$&nbsp;❯&nbsp;{{ .Site.Title }}</h1>
+  <div class="site-description">{{ .Site.Params.description }}</div>
+  <nav class="main-nav">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+        <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
