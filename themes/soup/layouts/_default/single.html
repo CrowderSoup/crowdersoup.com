@@ -2,12 +2,12 @@
 <article class="h-entry">
     <header>
         <a class="u-url" href="{{ .Permalink }}">
-            <h3 class="p-name">{{ .Title }}</h3>
+            <h1 class="p-name">{{ .Title }}</h1>
         </a>
-        <p>by 
+        <p>by
             <a class="p-author h-card" href="{{ .Site.Author.url }}">
                 {{ .Site.Author.name }}
-            </a> on 
+            </a> on
             <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04" }}">
                 {{ .Date.Format "Monday, January 2, 2006" }}
             </time>

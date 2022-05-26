@@ -1,5 +1,6 @@
 ---
 title: "New Theme!"
+slug: "new-theme-for-pelican"
 date: 2016-01-06 16:30:00
 categories:
   - Site Updates
