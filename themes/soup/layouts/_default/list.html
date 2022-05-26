@@ -6,17 +6,17 @@
     <div class="list-page-header p-summary">
         {{ .Content }}
     </div>
-    
+
     {{ range .Paginator.Pages }}
         <article class="h-entry">
             <header>
                 <a class="u-url" href="{{ .Permalink }}">
                     <h3 class="p-name">{{ .Title }}</h3>
                 </a>
-                <p>by 
+                <p>by
                     <a class="p-author h-card" href="{{ $currentPage.Site.Author.url }}">
                         {{ $currentPage.Site.Author.name }}
-                    </a> on 
+                    </a> on
                     <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04" }}">
                         {{ .Date.Format "Monday, January 2, 2006" }}
                     </time>
@@ -33,7 +33,7 @@
 <nav class="paginator">
     {{if .Paginator.HasPrev}}
         <span class="pagination-item">
-            <a alt="Newer articles" href="{{ .Paginator.Prev.URL }}">&larr; Newer</a>
+            <a href="{{ .Paginator.Prev.URL }}">&larr; Newer</a>
         </span>
     {{end}}
     <span class="pagination-item-spacer">
@@ -41,7 +41,7 @@
     </span>
     {{if .Paginator.HasNext}}
         <span class="pagination-item">
-            <a alt="Older articles" href="{{ .Paginator.Next.URL }}">Older &rarr;</a>
+            <a href="{{ .Paginator.Next.URL }}">Older &rarr;</a>
         </span>
     {{end}}
 </nav>
