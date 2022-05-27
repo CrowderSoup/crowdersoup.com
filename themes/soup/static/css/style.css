@@ -13,4 +13,5 @@ a.elsewhere-link {
 
 .h-entry {
 	margin: 10px auto;
+	grid-colum: 2;
 }
