@@ -13,3 +13,7 @@ a {
 .elsewhere-icon {
 	fill: var(--accent);
 }
+
+nav.paginator {
+	text-align: center;
+}
