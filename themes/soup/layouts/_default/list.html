@@ -19,13 +19,25 @@
                     </a> on
                     <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04" }}">
                         {{ .Date.Format "Monday, January 2, 2006" }}
-                    </time>
+                    </time> in
+										{{ range first 1 .Params.categories }}
+												<a href="{{ "/categories/" | relLangURL }}{{ . | urlize | lower }}" rel="tag" title="{{ . }}">
+														{{ . }}
+												</a>
+										{{ end  }}
                 </p>
             </header>
             <p class="p-summary">
                 {{ .Summary }}
             </p>
             <a href="{{ .Permalink }}" class="u-url">Read more...</a>
+						<nav>
+								{{ range .Params.tags }}
+										<a href="{{ "/tags/" | relLangURL }}{{ . | urlize | lower }}" rel="tag" title="{{ . }}">
+												#{{ . }}
+										</a>
+								{{ end  }}
+						</nav>
         </article>
     {{ end }}
 </div>
