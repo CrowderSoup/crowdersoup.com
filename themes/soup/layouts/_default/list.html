@@ -20,7 +20,7 @@
                     <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04" }}">
                         {{ .Date.Format "Monday, January 2, 2006" }}
                     </time> in
-										{{ range first 1 .Params.categories }}
+										{{ range .Params.categories }}
 												<a href="{{ "/categories/" | relLangURL }}{{ . | urlize | lower }}" rel="tag" title="{{ . }}">
 														{{ . }}
 												</a>
