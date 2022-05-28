@@ -7,7 +7,7 @@ a {
 }
 
 .h-entry {
-	margin: 10px auto;
+	margin: 1rem auto;
 }
 
 .elsewhere-icon {
@@ -16,4 +16,8 @@ a {
 
 nav.paginator {
 	text-align: center;
+}
+
+nav.tags {
+	margin: 0.5rem 0 0 0;
 }
