@@ -11,10 +11,13 @@ nickname = "CrowderSoup"
 avatar = "dude_square.png"
 
 [Params]
-copyright = "Aaron Crowder"             # Copyright holder, also used in .Site.Title
+copyright = "Aaron Crowder"
 mainSections = ["posts"]
 dateFormat = "January 02, 2006"
 description = "A website about programming, technology, and life."
+authorization_endpoint = "https://indieauth.com/auth"
+token_endpoint = "https://tokens.indieauth.com/token"
+microsub = "https://aperture.p3k.io/microsub/205"
 
 [Params.elsewhere]
 email = "aaron.crowder@gmail.com"

@@ -8,9 +8,7 @@ generate.
 
 ### Theme
 
-The theme for this site is [Binario](https://github.com/vimux/binario).
-Updating it is as simple as downloading the latest release and replacing the
-files in `./themes/binario`.
+The theme for this site is [Soup](https://github.com/crowdersoup/soup).
 
 ### Makefile
 
