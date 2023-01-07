@@ -5,7 +5,7 @@ menu: main
 weight: 2
 ---
 
-Hi! I'm Aaron! Or, if you know me online, "CrowderSoup". I'm a husband, father,
+Hi! I'm Aaron! Or, if you know me online, "CrowderSoup". I'm a father of two,
 software developer and lover of the open web. I've been interested in the
 internet ever since I was a kid in the 90's and my family got a DSL line. My
 dad worked in the IT industry back then in Southern California so we far more

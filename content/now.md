@@ -12,19 +12,15 @@ perfectly between Salt Lake City and Park City.
 
 ### Working
 
-I'm currently working at [Govalo](https://govalo.com/) as the lead engineer.
+I'm currently working at [Govalo](https://govalo.com/) as the chief engineer.
 
-### Reading (this year, 2022)
+### Reading (this year, 2023)
 
 #### In Progress
 
 - [The Rising Storm](https://en.wikipedia.org/wiki/Star_Wars:_The_Rising_Storm)
 
-#### Finished
-
-- [Light of the Jedi](https://en.wikipedia.org/wiki/Star_Wars:_Light_of_the_Jedi)
-
 ### Personal Development
 
 - Make my personal website the hub of my social/online presense using [IndieWeb](https://indieweb.org/) principles.
-- Go on 12 hikes this year (2022)
+- Go on 12 hikes this year (2023)
