@@ -14,4 +14,5 @@ entry: ## Create new entry with TITLE= & CATEGORY=(the/category)
 	@printf '%b\n' "---\ntitle: $(TITLE) \ndate: $(DATEOF) \ncategories: [\"$(subst /,\"$(COMMA)\",$(CATEGORY))\"] \ntags: \n---\n\n" > $(POST_PATH)/index.md
 
 dev: ## Run the local development server
+	env HUGO_BASEURL="http://localhost:1313" && \
 	hugo server -D --disableFastRender --environment development
