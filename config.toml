@@ -8,7 +8,7 @@ theme = "soup"      # https://github.com/vimux/binario#configuration
 name = "Aaron Crowder"
 url = "https://crowdersoup.com"
 nickname = "CrowderSoup"
-avatar = "dude_square.png"
+avatar = "space.jpeg"
 
 [Params]
 copyright = "Aaron Crowder"
