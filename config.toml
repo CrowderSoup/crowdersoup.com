@@ -23,8 +23,10 @@ microsub = "https://aperture.p3k.io/microsub/205"
 email = "aaron.crowder@gmail.com"
 twitter = "CrowderSoup"
 mastodon = "https://hachyderm.io/@CrowderSoup"
-telegram = "CrowderSoup"
 github = "CrowderSoup"
+instagram = "CrowderSoup"
+youtube = "CrowderSoup"
+tiktok = "crowdersoup"
 
 menu = ['main']
 

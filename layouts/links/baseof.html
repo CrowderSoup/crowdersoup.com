@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{block "title" . }}{{ .Site.Title }}{{end}}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/links.css" />
+
+
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    <!-- IndieWeb Stuff -->
+    {{ with .Site.Params.authorization_endpoint }}
+    <link rel="authorization_endpoint" href="{{ . }}">
+    {{ end }}
+    {{ with .Site.Params.token_endpoint }}
+    <link rel="token_endpoint" href="{{ . }}">
+    {{ end }}
+    {{ with .Site.Params.microsub }}
+    <link rel="microsub" href="{{ . }}">
+    {{ end }}
+  </head>
+
+  <body>
+    <header>
+      <h1>$&nbsp;❯&nbsp;{{ .Site.Title }}</h1>
+		  <div class="elsewhere">
+		    {{- range sort .Site.Data.social.icons "weight" }}
+			    {{- if isset $.Site.Params.elsewhere .id }}
+			      <a
+				      class="elsewhere-link"
+				      target="_blank"
+				      rel="me"
+				      href="{{ printf .url (index $.Site.Params.elsewhere .id) }}">
+				      {{ partial .icon (dict "class" "elsewhere-icon") }}
+			      </a>
+			    {{- end }}
+		    {{- end }}
+		  </div>
+    </header>
+
+    <div>
+      {{ block "main" . }} {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
