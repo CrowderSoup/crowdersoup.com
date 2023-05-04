@@ -20,6 +20,7 @@ token_endpoint = "https://tokens.indieauth.com/token"
 microsub = "https://aperture.p3k.io/microsub/205"
 
 [Params.elsewhere]
+bluesky = "crowdersoup.com"
 email = "aaron.crowder@gmail.com"
 twitter = "CrowderSoup"
 mastodon = "https://hachyderm.io/@CrowderSoup"
