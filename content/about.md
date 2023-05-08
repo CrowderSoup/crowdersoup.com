@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2017-11-29
+type: page
 menu: main
 weight: 2
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Now"
 date: 2021-09-23T12:42:00
+type: page
 menu: main
 weight: 3
 ---
