@@ -15,9 +15,13 @@ perfectly between Salt Lake City and Park City.
 
 I'm currently working at [Govalo](https://govalo.com/) as the chief engineer.
 
-### Reading (this year, 2023)
+### Reading (this year, 2024)
 
 #### In Progress
+
+- [The Fallen Star](https://en.wikipedia.org/wiki/Star_Wars:_The_Fallen_Star)
+
+#### Finished
 
 - [The Rising Storm](https://en.wikipedia.org/wiki/Star_Wars:_The_Rising_Storm)
 
