@@ -15,13 +15,12 @@ perfectly between Salt Lake City and Park City.
 
 I'm currently working at [Govalo](https://govalo.com/) as the chief engineer.
 
-### Reading (this year, 2023)
+### Reading (this year, 2024)
 
-#### In Progress
-
-- [The Rising Storm](https://en.wikipedia.org/wiki/Star_Wars:_The_Rising_Storm)
+- [ ] [The Fallen Star](https://en.wikipedia.org/wiki/Star_Wars%3A_The_Fallen_Star)
+- [x] [We Are Legion(We Are Bob)](https://www.amazon.com/We-Are-Legion-Bob-Bobiverse/dp/1680680587/)
 
 ### Personal Development
 
-- Make my personal website the hub of my social/online presense using [IndieWeb](https://indieweb.org/) principles.
-- Go on 12 hikes this year (2023)
+- [ ] Start sharing more software dev related content on Twitter and this blog
+
