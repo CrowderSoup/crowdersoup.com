@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/">
+            <h3 class="p-name">Day 6: npm prune</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2023-01-11 21:32">
+                Wednesday, January 11, 2023
+            </time> in
+            
+                <a
+                    href="/categories/projects"
+                    rel="category"
+                    class="p-category"
+                    title="Projects">
+                    Projects
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>I am TIRED. I don&rsquo;t have the energy to write any more code, but I didn&rsquo;t
+want to miss writing in my blog. That seemed to be the more important part of
+doing &ldquo;100 Days of Indieweb&rdquo; anyway.</p>
+<p>Today I got to work on making a docker container for a NodeJS (TypeScript) app.
+I&rsquo;m using multi-layer builds, so that the final image only has the bare minimum
+of what it needs to run. This is important not just because you don&rsquo;t want to
+store more data than you need (storage = money after all), but because the more
+your production container has the larger the potential attack surface is. It
+also increases the number of things that could just have bugs and need to be
+patched, leading to more maintenance overhead.</p>
+<h3 id="npm-prune"><code>npm prune</code></h3>
+<p>Enter <code>npm prune</code>. In my build step I need to have <strong>all</strong> the dependencies
+installed, including the <code>dev</code> dependencies. However, the <code>dev</code> deps aren&rsquo;t
+required to actually <strong>run</strong> the app once it&rsquo;s built. I was looking for ways to
+both reduce the size of my container while still keeping build times
+reasonable.</p>
+<p>I <em>could</em> simply re-run <code>npm i --production</code> in a subsequent build step. But
+that would take longer than just removing the packages I don&rsquo;t need from
+<code>node_modules</code>. Thankfully <code>npm prune</code> also has the <code>--production</code> flag!</p>
+<p>When run it will prune your <code>node_modules</code> directory, leaving behind only the
+packages required for production. That one command actually reduced my
+container size by almost half. I&rsquo;d say that&rsquo;s a win.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/indieweb"
+                rel="tag"
+                class="p-category"
+                title="indieweb">
+                #indieweb
+            </a>
+        
+            <a
+                href="/tags/projects"
+                rel="tag"
+                class="p-category"
+                title="projects">
+                #projects
+            </a>
+        
+            <a
+                href="/tags/100days"
+                rel="tag"
+                class="p-category"
+                title="100days">
+                #100days
+            </a>
+        
+            <a
+                href="/tags/npm"
+                rel="tag"
+                class="p-category"
+                title="npm">
+                #npm
+            </a>
+        
+            <a
+                href="/tags/nodejs"
+                rel="tag"
+                class="p-category"
+                title="nodejs">
+                #nodejs
+            </a>
+        
+            <a
+                href="/tags/docker"
+                rel="tag"
+                class="p-category"
+                title="docker">
+                #docker
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

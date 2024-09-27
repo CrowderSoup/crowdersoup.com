@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPG on CrowderSoup</title>
+    <link>//localhost:1313/tags/gpg/</link>
+    <description>Recent content in GPG on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Aug 2023 11:13:03 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Signing Git Commits</title>
+      <link>//localhost:1313/posts/tutorials/signing-git-commits/</link>
+      <pubDate>Tue, 29 Aug 2023 11:13:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/tutorials/signing-git-commits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./verified-commit-badge.png&#34; alt=&#34;Verified Commit Badge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever noticed the &amp;ldquo;verified&amp;rdquo; badge next to a commit on GitHub?&#xA;A few years ago I did an wondered how I could get that on my own commits.&#xA;After a little googling I realized it was because those commits were&#xA;signed.&lt;/p&gt;&#xA;&lt;p&gt;Signing a commit with a GPG key is something natively supported by Git as&#xA;it turns out. Now this is one of the first things I set up on a new dev&#xA;machine. Setting it up is fairly straight forward.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/">
+            <h3 class="p-name">Day 10: Dependency Injection</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2023-05-11 07:05">
+                Thursday, May 11, 2023
+            </time> in
+            
+                <a
+                    href="/categories/programming"
+                    rel="category"
+                    class="p-category"
+                    title="Programming">
+                    Programming
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <h3 id="what-is-it">What is it?</h3>
+<p>Dependency Injection is a design pattern whereby an object/module&rsquo;s dependencies
+are provided to it. It is one of several techniques for implementing <a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion
+of Control</a>.</p>
+<p>So rather than:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">NewService</span>(),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You would have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">service</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">Service</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="why-tho">Why tho??</h3>
+<p>If you wanted to write a test for the <code>Client</code> first example above, you
+wouldn&rsquo;t be able to mock it&rsquo;s <code>Service</code>. In the second example it would be
+trivial to inject a mock <code>Service</code> and write tests for your <code>Client</code>.</p>
+<p>From <a href="https://en.wikipedia.org/wiki/Dependency_injection#Advantages">Wikipedia</a>:</p>
+<ul>
+<li>Dependency injection allows a client the flexibility of being configurable.
+Only the client&rsquo;s behavior is fixed. The client may act on anything that
+supports the intrinsic interface the client expects.</li>
+<li>Dependency injection can be used to externalize a system&rsquo;s configuration
+details into configuration files, allowing the system to be reconfigured
+without recompilation. Separate configurations can be written for different
+situations that require different implementations of components. This
+includes, but is not limited to, testing.</li>
+<li>Because dependency injection does not require any change in code behavior it
+can be applied to legacy code as a refactoring. The result is clients that are
+more independent and that are easier to unit test in isolation using stubs or
+mock objects that simulate other objects not under test. This ease of testing
+is often the first benefit noticed when using dependency injection.</li>
+<li>Dependency injection allows a client to remove all knowledge of a concrete
+implementation that it needs to use. This helps isolate the client from the
+impact of design changes and defects. It promotes reusability, testability and
+maintainability.</li>
+<li>Reduction of boilerplate code in the application objects, since all work to
+initialize or set up dependencies is handled by a provider component.</li>
+<li>Dependency injection allows concurrent or independent development. Two
+developers can independently develop classes that use each other, while only
+needing to know the interface the classes will communicate through. Plugins
+are often developed by third party shops that never even talk to the developers
+who created the product that uses the plugins.</li>
+<li>Dependency Injection decreases coupling between a class and its dependency.</li>
+</ul>
+<p>There are also some <a href="https://en.wikipedia.org/wiki/Dependency_injection#Disadvantages">disadvantages</a>
+(makes code harder to read, breaks &ldquo;jump to definition&rdquo;, etc.) but I feel that
+the advantages far outweigh the disadvantages. But that&rsquo;s just like, my opinion
+man.</p>
+<p><img src="./opinion.jpeg" alt="Opinion"></p>
+<h3 id="why-use-a-framework">Why use a framework?</h3>
+<p>You can do dependency injection manually in a small app. But as your app grows
+manually wiring up dependencies becomes tedious and cumbersome. A dependency
+injection framework handles the wiring for you. This saves you from
+having overly complex functions that handle all the wiring.</p>
+<p>You might also have lots of infrastructure components (metrics,
+logging, tracing, etc.). Without DI that boilerplate must be copied from repo to
+repo, or put in common components. But even with common components you still
+have to handle initialization and wiring of these things yourself.</p>
+<p>With a DI framework you can simply import the common utilities and tell your
+framework how / where to new them up. Then they are provided to whatever parts
+of your application need them.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/design-patterns"
+                rel="tag"
+                class="p-category"
+                title="design patterns">
+                #design patterns
+            </a>
+        
+            <a
+                href="/tags/go"
+                rel="tag"
+                class="p-category"
+                title="go">
+                #go
+            </a>
+        
+            <a
+                href="/tags/programming"
+                rel="tag"
+                class="p-category"
+                title="programming">
+                #programming
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

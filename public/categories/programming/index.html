@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        <link rel="alternate" type="application/rss+xml" href="//localhost:1313/categories/programming/index.xml" title="CrowderSoup" />
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class=""
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+
+
+<div class="h-feed">
+    <h2 class="p-name"><a class="u-url" href="//localhost:1313/categories/programming/">Programming</a></h2>
+    <div class="list-page-header p-summary">
+        
+    </div>
+
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/">
+                    <h3 class="p-name">Day 10: Dependency Injection</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-11 07:05">
+                        Thursday, May 11, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h3 id="what-is-it">What is it?</h3>
+<p>Dependency Injection is a design pattern whereby an object/module&rsquo;s dependencies
+are provided to it. It is one of several techniques for implementing <a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion
+of Control</a>.</p>
+<p>So rather than:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">NewService</span>(),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You would have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">service</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">Service</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="why-tho">Why tho??</h3>
+<p>If you wanted to write a test for the <code>Client</code> first example above, you
+wouldn&rsquo;t be able to mock it&rsquo;s <code>Service</code>. In the second example it would be
+trivial to inject a mock <code>Service</code> and write tests for your <code>Client</code>.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/design-patterns"
+                        rel="tag"
+                        class="p-category"
+                        title="design patterns">
+                        #design patterns
+                    </a>
+                
+                    <a
+                        href="/tags/go"
+                        rel="tag"
+                        class="p-category"
+                        title="go">
+                        #go
+                    </a>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/">
+                    <h3 class="p-name">Debugging PowerShell in VSCode</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2016-04-26 09:54">
+                        Tuesday, April 26, 2016
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                        <a
+                            href="/categories/tools"
+                            rel="category"
+                            class="p-category"
+                            title="Tools">
+                            Tools
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Yesterday I learned a neat trick with <a href="1">Visual Studio Code</a> when working on
+some PowerShell scripts to help orchestrate build and deployment of our projects
+(more on that in a different post). I knew that VSCode had a debugger, but I
+didn&rsquo;t realize that a debugger for PowerShell had been added <a href="0">via an extension</a>.</p>
+<p>I had installed this extension some time ago to help with writing PowerShell
+scripts in VSCode, but I was running my PowerShell prompt in another window to
+actually test them. I realized that I could debug my PowerShell scripts in
+VSCode so I set it up and tried it immediately. AND IT&rsquo;S AWESOME.</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/debugging"
+                        rel="tag"
+                        class="p-category"
+                        title="debugging">
+                        #debugging
+                    </a>
+                
+                    <a
+                        href="/tags/powershell"
+                        rel="tag"
+                        class="p-category"
+                        title="powershell">
+                        #powershell
+                    </a>
+                
+                    <a
+                        href="/tags/scripting"
+                        rel="tag"
+                        class="p-category"
+                        title="scripting">
+                        #scripting
+                    </a>
+                
+                    <a
+                        href="/tags/vscode"
+                        rel="tag"
+                        class="p-category"
+                        title="vscode">
+                        #vscode
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/python/django/use-ifttt-to-trigger-events/">
+                    <h3 class="p-name">Use IFTTT Maker Channel to Trigger Events in a Django App</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2016-04-08 07:15">
+                        Friday, April 8, 2016
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>A couple months ago I decided I needed to be better about telling my wonderful wife how much I loved her on a daily basis. Being the nerd that I am I decided to tackle this using <a href="https://ifttt.com" title="If This Then That">IFTTT</a> and a custom web app. For this project I went with <a href="https://djangoproject.org" title="Django Project">Django</a> to build my app out. I&rsquo;d never used it before so I wanted a chance to play with it.</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/python/django/use-ifttt-to-trigger-events/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/django"
+                        rel="tag"
+                        class="p-category"
+                        title="django">
+                        #django
+                    </a>
+                
+                    <a
+                        href="/tags/python"
+                        rel="tag"
+                        class="p-category"
+                        title="python">
+                        #python
+                    </a>
+                
+                    <a
+                        href="/tags/ifttt"
+                        rel="tag"
+                        class="p-category"
+                        title="ifttt">
+                        #ifttt
+                    </a>
+                
+                    <a
+                        href="/tags/maker"
+                        rel="tag"
+                        class="p-category"
+                        title="maker">
+                        #maker
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/anatomy-of-a-commit-message/">
+                    <h3 class="p-name">Anatomy of a Commit Message</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-11-13 07:15">
+                        Friday, November 13, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h2 id="1-subject-line">1. Subject Line</h2>
+<p>The Subject Line is the first line of your commit message. Often the subject
+alone is enough, but if it&rsquo;s not and you need a body be sure to separate the
+subject and body with a blank line.</p>
+<ul>
+<li>First line of a commit message</li>
+<li>Often the only part you&rsquo;ll need</li>
+<li>Separated from the body by a blank line</li>
+<li>Soft limit of 50 characters, hard limit of 69
+<ul>
+<li>Github&rsquo;s interface truncates the subject line at 69 characters</li>
+</ul>
+</li>
+<li>Capitalize!</li>
+<li>Don&rsquo;t end with a period</li>
+<li>Use the imperative mood
+<ul>
+<li>Git itself uses the imperative mood when it creates a commit on your behalf</li>
+<li>We usually write in the indicative mood, which is more about reporting facts</li>
+<li>To help, the subject line should always complete the sentence:
+<ul>
+<li>&ldquo;If applied, this commit will&hellip;&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-body">2. Body</h2>
+<ul>
+<li>Wrap the body at 72 characters
+<ul>
+<li>This give git plenty of room to indent text while still keeping things
+under 80 characters.</li>
+</ul>
+</li>
+<li>Use the body to explain what and why vs. how
+<ul>
+<li>The code tells us the <em>how</em>, the body of your commit message should tell us
+<em>what</em> and <em>why</em>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="sample-commit-messages">Sample Commit Messages</h2>
+<p><strong>Bad</strong></p>
+            </p>
+            <a href="//localhost:1313/posts/programming/anatomy-of-a-commit-message/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/git"
+                        rel="tag"
+                        class="p-category"
+                        title="git">
+                        #git
+                    </a>
+                
+            </nav>
+        </article>
+    
+</div>
+
+<nav class="paginator">
+    
+    <span class="pagination-item-spacer">
+        Page 1 of 1
+    </span>
+    
+</nav>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

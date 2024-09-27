@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Https on CrowderSoup</title>
+    <link>//localhost:1313/tags/https/</link>
+    <description>Recent content in Https on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 May 2018 11:45:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/https/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Pages Over HTTPS</title>
+      <link>//localhost:1313/posts/site-updates/https/</link>
+      <pubDate>Sat, 05 May 2018 11:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/https/</guid>
+      <description>&lt;p&gt;Using HTTPS for your site has lots of benefits. Chief among them being&#xA;security. Using HTTPS ensures that no one can intercept and read traffic&#xA;between you and the site you&amp;rsquo;re visiting.&lt;/p&gt;&#xA;&lt;p&gt;However, it&amp;rsquo;s traditionally been somewhat difficult and expensive to provide&#xA;HTTPS for your sites visitors. Now though, with &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; an SSL&#xA;certificate is free! And if you&amp;rsquo;re using GitHub pages with a custom domain for&#xA;hosting using it couldn&amp;rsquo;t be easier.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

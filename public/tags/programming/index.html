@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        <link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/programming/index.xml" title="CrowderSoup" />
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class=""
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+
+
+<div class="h-feed">
+    <h2 class="p-name"><a class="u-url" href="//localhost:1313/tags/programming/">Programming</a></h2>
+    <div class="list-page-header p-summary">
+        
+    </div>
+
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/">
+                    <h3 class="p-name">Day 10: Dependency Injection</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-11 07:05">
+                        Thursday, May 11, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h3 id="what-is-it">What is it?</h3>
+<p>Dependency Injection is a design pattern whereby an object/module&rsquo;s dependencies
+are provided to it. It is one of several techniques for implementing <a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion
+of Control</a>.</p>
+<p>So rather than:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">NewService</span>(),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You would have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">service</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">Service</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="why-tho">Why tho??</h3>
+<p>If you wanted to write a test for the <code>Client</code> first example above, you
+wouldn&rsquo;t be able to mock it&rsquo;s <code>Service</code>. In the second example it would be
+trivial to inject a mock <code>Service</code> and write tests for your <code>Client</code>.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/design-patterns"
+                        rel="tag"
+                        class="p-category"
+                        title="design patterns">
+                        #design patterns
+                    </a>
+                
+                    <a
+                        href="/tags/go"
+                        rel="tag"
+                        class="p-category"
+                        title="go">
+                        #go
+                    </a>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/">
+                    <h3 class="p-name">Using vh with calc In CSS</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-11-17 09:45">
+                        Tuesday, November 17, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/css"
+                            rel="category"
+                            class="p-category"
+                            title="CSS">
+                            CSS
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I often have need to build layout&rsquo;s that vary depending on the content put in
+them. I can&rsquo;t always count on that content being the same (<em>cough</em> CMSs <em>cough</em>).
+It&rsquo;s just one of those things you have to do.</p>
+<p>One thing I&rsquo;m having to do a lot though, is making the body of a page take up a
+certain amount of space so that the footer doesn&rsquo;t look weird. In the past I&rsquo;ve
+used JavaScript to make the footer take up the remaining space on the page if the
+content didn&rsquo;t take up enough. I never really liked that solution though, because
+it breaks if the user turns off JavaScript.</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/css"
+                        rel="tag"
+                        class="p-category"
+                        title="css">
+                        #css
+                    </a>
+                
+                    <a
+                        href="/tags/front-end"
+                        rel="tag"
+                        class="p-category"
+                        title="front-end">
+                        #front-end
+                    </a>
+                
+                    <a
+                        href="/tags/design"
+                        rel="tag"
+                        class="p-category"
+                        title="design">
+                        #design
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/">
+                    <h3 class="p-name">Managing Scope Using Call, Apply, and Bind</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-11-16 13:20">
+                        Monday, November 16, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/javascript"
+                            rel="category"
+                            class="p-category"
+                            title="JavaScript">
+                            JavaScript
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h2 id="callhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctioncall"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call">Call</a></h2>
+<p><strong>Calls a function, with the specified arguments passed in</strong></p>
+<p>The first argument becomes <code>this</code>, the rest are passed in as regular arguments.
+Using call allows you to maintain the scope of <code>this</code> accross methods. It works
+like this:</p>
+<!-- raw HTML omitted -->
+<p>Here we&rsquo;re using prototypical inheritance to allow us to inheirit properties from
+<code>Animal</code> in <code>Dog</code> and <code>Cat</code>. Using <code>call</code> allows us to invoke <code>Animal</code> to initialize
+it&rsquo;s properties while maintaining the correct scope.</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/javascript"
+                        rel="tag"
+                        class="p-category"
+                        title="javascript">
+                        #javascript
+                    </a>
+                
+                    <a
+                        href="/tags/front-end"
+                        rel="tag"
+                        class="p-category"
+                        title="front-end">
+                        #front-end
+                    </a>
+                
+                    <a
+                        href="/tags/tips"
+                        rel="tag"
+                        class="p-category"
+                        title="tips">
+                        #tips
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/anatomy-of-a-commit-message/">
+                    <h3 class="p-name">Anatomy of a Commit Message</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-11-13 07:15">
+                        Friday, November 13, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h2 id="1-subject-line">1. Subject Line</h2>
+<p>The Subject Line is the first line of your commit message. Often the subject
+alone is enough, but if it&rsquo;s not and you need a body be sure to separate the
+subject and body with a blank line.</p>
+<ul>
+<li>First line of a commit message</li>
+<li>Often the only part you&rsquo;ll need</li>
+<li>Separated from the body by a blank line</li>
+<li>Soft limit of 50 characters, hard limit of 69
+<ul>
+<li>Github&rsquo;s interface truncates the subject line at 69 characters</li>
+</ul>
+</li>
+<li>Capitalize!</li>
+<li>Don&rsquo;t end with a period</li>
+<li>Use the imperative mood
+<ul>
+<li>Git itself uses the imperative mood when it creates a commit on your behalf</li>
+<li>We usually write in the indicative mood, which is more about reporting facts</li>
+<li>To help, the subject line should always complete the sentence:
+<ul>
+<li>&ldquo;If applied, this commit will&hellip;&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-body">2. Body</h2>
+<ul>
+<li>Wrap the body at 72 characters
+<ul>
+<li>This give git plenty of room to indent text while still keeping things
+under 80 characters.</li>
+</ul>
+</li>
+<li>Use the body to explain what and why vs. how
+<ul>
+<li>The code tells us the <em>how</em>, the body of your commit message should tell us
+<em>what</em> and <em>why</em>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="sample-commit-messages">Sample Commit Messages</h2>
+<p><strong>Bad</strong></p>
+            </p>
+            <a href="//localhost:1313/posts/programming/anatomy-of-a-commit-message/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/git"
+                        rel="tag"
+                        class="p-category"
+                        title="git">
+                        #git
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/">
+                    <h3 class="p-name">JavaScript: Array&#39;s with named Properties</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-11-11 12:46">
+                        Wednesday, November 11, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/javascript"
+                            rel="category"
+                            class="p-category"
+                            title="JavaScript">
+                            JavaScript
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Adding named properties to arrays in JavaScript can be handy in a few different
+cases. For instance:</p>
+<ul>
+<li>You need a nice formatted title / description for a data set. Rather than
+having multiple objects you can use named properties and get away with only
+using one.</li>
+<li>You want to add some functions to an array for whatever reason</li>
+<li>Lots of other reasons that I can&rsquo;t think of right now!</li>
+</ul>
+<p>Basically, this just buys you a nice way to encapsulate all the data you might
+need, without having to use an object with a nested array, or multiple objects.
+Maybe your way is more clean or better for this reason or that&hellip; I just
+thought this was neat. :)</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/javascript"
+                        rel="tag"
+                        class="p-category"
+                        title="javascript">
+                        #javascript
+                    </a>
+                
+                    <a
+                        href="/tags/front-end"
+                        rel="tag"
+                        class="p-category"
+                        title="front-end">
+                        #front-end
+                    </a>
+                
+                    <a
+                        href="/tags/tips"
+                        rel="tag"
+                        class="p-category"
+                        title="tips">
+                        #tips
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/programming/utils/powershell-markdown-preview/">
+                    <h3 class="p-name">Powershell Markdown Preview</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2015-10-28 00:09">
+                        Wednesday, October 28, 2015
+                    </time> in
+                    
+                        <a
+                            href="/categories/utils"
+                            rel="category"
+                            class="p-category"
+                            title="Utils">
+                            Utils
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;m at <a href="http://anglebrackets.org">Angle Brackets</a>. I&rsquo;ve decided that I wanted to
+try taking all my notes in vim. I LOVE using vim. It&rsquo;s a really awesome, powerful,
+and extendable command-line editor. I enjoy that it&rsquo;s really distraction free.
+Being distracted is something that I struggle with so I really look for ways to
+stay focused.</p>
+<p>I write in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> as well. It&rsquo;s
+a great way to get a simple, clean, well formatted plain text document that can
+be processed and produce HTML. One of the biggest things I look for in a Markdown
+editor is being able to preview the HTML that my markdown produces. Obviously
+vim isn&rsquo;t going to give that to me out of the box. I wouldn&rsquo;t expect it to either.</p>
+            </p>
+            <a href="//localhost:1313/posts/programming/utils/powershell-markdown-preview/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+                    <a
+                        href="/tags/powershell"
+                        rel="tag"
+                        class="p-category"
+                        title="powershell">
+                        #powershell
+                    </a>
+                
+            </nav>
+        </article>
+    
+</div>
+
+<nav class="paginator">
+    
+    <span class="pagination-item-spacer">
+        Page 1 of 1
+    </span>
+    
+</nav>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

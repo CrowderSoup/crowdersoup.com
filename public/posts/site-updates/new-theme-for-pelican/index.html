@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/site-updates/new-theme-for-pelican/">
+            <h3 class="p-name">New Theme!</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2016-01-06 16:30">
+                Wednesday, January 6, 2016
+            </time> in
+            
+                <a
+                    href="/categories/site-updates"
+                    rel="category"
+                    class="p-category"
+                    title="Site Updates">
+                    Site Updates
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>I recently started using <a href="1">Pelican</a> static site generator for this blog. I was
+drawn to it for a few reasons:</p>
+<ol>
+<li>It uses <a href="2">Jinja2</a> for templates, which I love.</li>
+<li>It written in python</li>
+<li>It reminds me a lot of <a href="3">Flask</a> (this might be because of using Jinja2&hellip;)</li>
+</ol>
+<p>I&rsquo;ve done a few interesting things with this site though. I&rsquo;m hosting the repo
+that contains the source content, configuration, etc. on <a href="4">Gitlab</a>. I
+initially thought I&rsquo;d host this site using Gitlab&rsquo;s new &ldquo;Pages&rdquo; feature, but it
+wasn&rsquo;t quite up to snuff yet. For one, the &ldquo;build&rdquo; process was REALLY slow. For
+two, you couldn&rsquo;t use a custom domain.</p>
+<p>Instead, I decided to host the site out of a <a href="5">Github</a> repository. Github
+Pages deploy in seconds and they allow me to use a custom domain for my site. I
+actually use <a href="6">Make</a> to build the site locally during testing as well as
+&ldquo;publishing&rdquo; it to my Github repository. This means that the site and it&rsquo;s
+content are replicated to two different locations on two different services so
+my data and content are as safe as possible (from things like accidental deletions,
+services shutting down and the like).</p>
+<h3 id="custom-theme">Custom Theme</h3>
+<p>I wanted to build my own theme for Pelican rather than using one from their
+<a href="7">Theme Repository</a>. I felt like I could build something in a fairly short
+amount of time that would best match my tastes and how I wanted my site and
+content to come across.</p>
+<p>It took me a few days working here and there, but what you&rsquo;re looking at now is
+my new custom theme!</p>
+<h4 id="process">Process</h4>
+<p>Building a Pelican theme was actually a fairly straightforward process.
+Especially compared to some of the CMSs I&rsquo;ve built themes for in the past
+(<em>cough</em> WordPress <em>cough</em>). <a href="8">Their guide</a> gives you a list of files you&rsquo;ll
+need, along with all the different variables and configuration options available
+to you.</p>
+<p>As I mentioned before, Pelican uses Jinja2. All the template files are written
+using it. The theme documentation gives you an idea of what each theme file
+should contain or look like. In a few cases I looked at what some other themes
+where doing from the <a href="7">Theme Repo</a>. Those two resources combined gave me the
+tools I needed to get building.</p>
+<h4 id="personalsite-theme">PersonalSite-theme</h4>
+<p>This theme, lovingly called &ldquo;PersonalSite-theme&rdquo; (or coldly, can never remember
+which it is), uses a couple of fun technologies to improve the development
+process.</p>
+<p><strong>NPM</strong>
+I&rsquo;m using NPM to install various JavaScript packages. A lot of folks combine
+NPM and <a href="9">Bower</a>, using NPM for cli tools, and Bower for client-side JavaScript
+Libraries (like jQuery, Bootstrap, etc). I decided to <strong>just</strong> use NPM, as they&rsquo;ve
+fixed a lot of the issues that made using Bower a requirement.</p>
+<p>I use NPM to install:</p>
+<ul>
+<li><a href="10">Gulp</a>, a task runner.</li>
+<li><a href="14">Gulp-Sass</a>, a tool that let&rsquo;s me compile <a href="15">Sass</a> using Gulp.</li>
+<li><a href="11">Bootstrap</a>, a client-side UI framework. Provides CSS styles and JavaScript
+UI components that make building a clean / beautiful UI somewhat trivial.</li>
+<li><a href="12">jQuery</a>, we all know it. Some of us love it, some hate it. I needed it.</li>
+<li><a href="13">Font Awesome</a>, a font icon library.</li>
+</ul>
+<p><strong>Gulp</strong>
+Gulp is a really important tool that I used in my workflow for developing this
+theme. After using NPM to install packages I then used Gulp to to move things
+from the <code>node_modules</code> directory that they&rsquo;re downloaded to into the <code>static</code>
+folder of the theme. Gulp was also responsible for watching my <code>*.sass</code> file for
+changes and running the compiler.</p>
+<p>These tools combined really streamlined my workflow and made development a
+breeze. Before this project I had used NPM, but not Gulp. I <em>had</em> used another
+task runner, but Gulp was by far the best one I&rsquo;ve used.</p>
+<h4 id="usage">Usage</h4>
+<p>So, you want to use this theme for your own Pelican site? Well, it&rsquo;s REALLY easy.
+You must first have <a href="https://nodejs.org/en/">NodeJS</a> installed, which
+comes with <code>npm</code>, a package management tool. Once you have that you can clone
+the repository to where ever you keep your Pelican themes (I personally put them
+as submodules of my Pelican sites repo, but that&rsquo;s a topic for another post) and
+run <code>npm install &amp;&amp; gulp</code> at the root of the theme repo.</p>
+<h3 id="wrapping-up">Wrapping up</h3>
+<p>I hope you enjoyed this post and learning more about Pelican and my sites theme
+in general. If you have any specific questions about this theme or it&rsquo;s usage
+let me know in the comments or <a href="16">on Twitter</a>.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/update"
+                rel="tag"
+                class="p-category"
+                title="update">
+                #update
+            </a>
+        
+            <a
+                href="/tags/front-end"
+                rel="tag"
+                class="p-category"
+                title="front-end">
+                #front-end
+            </a>
+        
+            <a
+                href="/tags/pelican"
+                rel="tag"
+                class="p-category"
+                title="pelican">
+                #pelican
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

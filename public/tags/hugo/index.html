@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        <link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/hugo/index.xml" title="CrowderSoup" />
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class=""
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+
+
+<div class="h-feed">
+    <h2 class="p-name"><a class="u-url" href="//localhost:1313/tags/hugo/">Hugo</a></h2>
+    <div class="list-page-header p-summary">
+        
+    </div>
+
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/tina-cms/">
+                    <h3 class="p-name">Tina CMS</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2024-09-27 11:00">
+                        Friday, September 27, 2024
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                        <a
+                            href="/categories/hugo"
+                            rel="category"
+                            class="p-category"
+                            title="hugo">
+                            hugo
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;m trying out <a href="https://tina.io">TinaCMS</a>. I heard about it on Twitter, looked it up, and realized that it could add a configurable UI backend for my Hugo blog. This post is mainly for me to tinker with it and see if it&rsquo;s something I&rsquo;d enjoy using.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li>Rich text editor (with the ability to toggle back to markdown)</li>
+<li>Media manager (for adding images or other files)</li>
+<li>Collections (posts or pages)</li>
+</ul>
+<p>Collections are at the core of everything. They&rsquo;re the blog posts, pages, etc. An item in a collection has fields which are configurable in your tina config.ts file.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/tina-cms/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+                    <a
+                        href="/tags/blog"
+                        rel="tag"
+                        class="p-category"
+                        title="blog">
+                        #blog
+                    </a>
+                
+                    <a
+                        href="/tags/theme"
+                        rel="tag"
+                        class="p-category"
+                        title="theme">
+                        #theme
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/">
+                    <h3 class="p-name">Day 2: Fixing my Hugo BaseURL</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-07 21:30">
+                        Saturday, January 7, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Yesterday I embarked on 100 Days of IndieWeb. Blog first, distribution second.
+Write first, edit later. I also wrote that I hoped to find/fix issues and
+streamline my posting process.</p>
+<p><a href="https://fosstodon.org/@BryceWrayTX">Bryce Wray</a> was kind enough to <a href="https://fosstodon.org/@BryceWrayTX/109648324717497593">point out</a> that I had an issue with
+relative links in my RSS feed. I was able to fix the issue by setting the
+BaseURL config value in my <code>config.toml</code>. The issue I had to tackle wasn&rsquo;t just
+setting the value, I had to set it based on environment.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/back-to-hugo/">
+                    <h3 class="p-name">(The Long Road) Back to Hugo</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2021-09-24 21:00">
+                        Friday, September 24, 2021
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                        <a
+                            href="/categories/hugo"
+                            rel="category"
+                            class="p-category"
+                            title="hugo">
+                            hugo
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Once upon a time there was a full-stack software developer who could NOT stop
+redoing his personal Website. I think this might be the 50th or 60th time I&rsquo;ve
+done it in the last 10ish years that I&rsquo;ve owned this domain. I have used all
+sorts of content management systems (even wrote a couple of my own) and static
+site generators. WordPress, OctoberCMS, Pelican, Hugo, etc.</p>
+<p>But I keep coming back to Hugo. Hugo is so powerful, fast, and flexible! The
+reason I kept moving away from it was because I kept wanting to add API
+endpoints to my blog for one reason or another.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/back-to-hugo/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+                    <a
+                        href="/tags/blog"
+                        rel="tag"
+                        class="p-category"
+                        title="blog">
+                        #blog
+                    </a>
+                
+                    <a
+                        href="/tags/theme"
+                        rel="tag"
+                        class="p-category"
+                        title="theme">
+                        #theme
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/basics-plus/">
+                    <h3 class="p-name">Basics Plus: A new Hugo Theme</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2018-11-30 14:30">
+                        Friday, November 30, 2018
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>This site has had a couple new themes lately, but I&rsquo;ve finally settled on one:
+<a href="https://github.com/crowdersoup/basics-plus">Basics Plus</a>. This is actually a theme that I&rsquo;ve forked from <a href="https://github.com/arjunkrishnababu96/basics">Basics</a>.
+It&rsquo;s a fairly simple and paired down theme. I forked it so that I could change
+a couple things:</p>
+<ol>
+<li>The top menu (more dynamic, able to add more items)</li>
+<li>Add Disqus comments</li>
+<li>The byline</li>
+</ol>
+<p>These are some fairly small feature changes. I plan to make more changes
+/ refinements going forward while keeping the clean / simple look and feel.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/basics-plus/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/update"
+                        rel="tag"
+                        class="p-category"
+                        title="update">
+                        #update
+                    </a>
+                
+                    <a
+                        href="/tags/front-end"
+                        rel="tag"
+                        class="p-category"
+                        title="front-end">
+                        #front-end
+                    </a>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/husky/">
+                    <h3 class="p-name">Using Husky to Build Hugo Site</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2018-05-05 16:30">
+                        Saturday, May 5, 2018
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;ve been making some efforts to streamline the publishing process for this
+site. I&rsquo;ve read about tools like <a href="https://www.netlifycms.org/">Netlify</a> and <a href="https://www.getlektor.com/">Lektor</a>, but I wanted to
+keep things as close to a basic <a href="http://gohugo.io/">Hugo</a> site as possible.</p>
+<p>To that end, I wanted to use git hooks to run hugo whenever I ran <code>git commit</code>.
+That way to publish a new post I simply had to write it in markdown, save,
+commit and push. No remembering to run hugo. No remembering to add changes to
+the site. A plain and simple git workflow for publishing.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/husky/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/huskyjs"
+                        rel="tag"
+                        class="p-category"
+                        title="huskyjs">
+                        #huskyjs
+                    </a>
+                
+                    <a
+                        href="/tags/node"
+                        rel="tag"
+                        class="p-category"
+                        title="node">
+                        #node
+                    </a>
+                
+                    <a
+                        href="/tags/npm"
+                        rel="tag"
+                        class="p-category"
+                        title="npm">
+                        #npm
+                    </a>
+                
+                    <a
+                        href="/tags/git"
+                        rel="tag"
+                        class="p-category"
+                        title="git">
+                        #git
+                    </a>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/hugo/">
+                    <h3 class="p-name">Moving to Hugo</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2017-11-29 23:41">
+                        Wednesday, November 29, 2017
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Last night I got the wild hare to migrate my personal site from <a href="https://github.com/getpelican/pelican">Pelican</a> to
+<a href="https://gohugo.io">Hugo</a>. I&rsquo;ve been meaning to do it for a while now, so to give myself the
+push I needed to get it done I <em>deleted</em> my old personal site from <a href="https://github.com">Github</a>.</p>
+<h3 id="differences">Differences</h3>
+<h4 id="front-matter">Front Matter</h4>
+<p>Honestly the biggest different for content is &ldquo;front matter&rdquo;. Both Hugo and
+Pelican, as static site generators, use front matter to describe pieces of
+content.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/hugo/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/go"
+                        rel="tag"
+                        class="p-category"
+                        title="go">
+                        #go
+                    </a>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+                    <a
+                        href="/tags/pelican"
+                        rel="tag"
+                        class="p-category"
+                        title="pelican">
+                        #pelican
+                    </a>
+                
+                    <a
+                        href="/tags/python"
+                        rel="tag"
+                        class="p-category"
+                        title="python">
+                        #python
+                    </a>
+                
+            </nav>
+        </article>
+    
+</div>
+
+<nav class="paginator">
+    
+    <span class="pagination-item-spacer">
+        Page 1 of 1
+    </span>
+    
+</nav>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

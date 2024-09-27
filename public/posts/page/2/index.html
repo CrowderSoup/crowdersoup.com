@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        <link rel="alternate" type="application/rss+xml" href="//localhost:1313/posts/index.xml" title="CrowderSoup" />
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class=""
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+
+
+<div class="h-feed">
+    <h2 class="p-name"><a class="u-url" href="//localhost:1313/posts/">Blog</a></h2>
+    <div class="list-page-header p-summary">
+        <p>This is a collection of my longer form posts / articles. It&rsquo;s a &ldquo;blog&rdquo; in the most traditional sense.
+You won&rsquo;t find things here that are short-form, those will live under <code>/micro</code> when I eventually
+get around to building it out 😅</p>
+
+    </div>
+
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/">
+                    <h3 class="p-name">Day 4: Classifying Tweets</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-09 21:26">
+                        Monday, January 9, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Let&rsquo;s start today with the personal shit&hellip; I was up half the night with
+a vomiting child last night. I was up early to get the other kid ready for
+school. I worked all day. I am TIRED. But I am showing up for my blog. I am
+showing up for 100 days!</p>
+<h3 id="twitter-import">Twitter Import</h3>
+<p>I continued to work this evening on importing my tweets as Hugo posts. I need
+to classify my tweets, so therefore I need to define a data structure to do so.
+I came up with the following in Go:</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/twitter"
+                        rel="tag"
+                        class="p-category"
+                        title="twitter">
+                        #twitter
+                    </a>
+                
+                    <a
+                        href="/tags/golang"
+                        rel="tag"
+                        class="p-category"
+                        title="golang">
+                        #golang
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/">
+                    <h3 class="p-name">Day 3: Twitter Archive part 1</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-08 19:41">
+                        Sunday, January 8, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>A big part of owning my content is preserving it. I have over a decades worth
+of content hosted exclusively on Twitter. I&rsquo;d like to change that! After all,
+that&rsquo;s what the IndieWeb is all about.</p>
+<p>The first step was requesting and downloading all my content from the bird
+site. Once that was done I used the <a href="https://github.com/timhutton/twitter-archive-parser">Twitter Archive Parser</a> from <a href="https://mathstodon.xyz/@timhutton">Tim Hutton</a>.
+From there is where MY story begins.</p>
+<p>Tim&rsquo;s parser takes your twitter archive and turns it into Markdown. However,
+I wanted to have each tweet be its own page, and I wanted each of them to be
+Hugo posts. To accomplish this I&rsquo;m writing my own script (in Go) to take the
+output from Tim&rsquo;s parser and make Hugo posts for each tweet.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/twitter"
+                        rel="tag"
+                        class="p-category"
+                        title="twitter">
+                        #twitter
+                    </a>
+                
+                    <a
+                        href="/tags/archive"
+                        rel="tag"
+                        class="p-category"
+                        title="archive">
+                        #archive
+                    </a>
+                
+                    <a
+                        href="/tags/golang"
+                        rel="tag"
+                        class="p-category"
+                        title="golang">
+                        #golang
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/">
+                    <h3 class="p-name">Day 2: Fixing my Hugo BaseURL</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-07 21:30">
+                        Saturday, January 7, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Yesterday I embarked on 100 Days of IndieWeb. Blog first, distribution second.
+Write first, edit later. I also wrote that I hoped to find/fix issues and
+streamline my posting process.</p>
+<p><a href="https://fosstodon.org/@BryceWrayTX">Bryce Wray</a> was kind enough to <a href="https://fosstodon.org/@BryceWrayTX/109648324717497593">point out</a> that I had an issue with
+relative links in my RSS feed. I was able to fix the issue by setting the
+BaseURL config value in my <code>config.toml</code>. The issue I had to tackle wasn&rsquo;t just
+setting the value, I had to set it based on environment.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-1/">
+                    <h3 class="p-name">100 Days of IndieWeb: Day 1</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-06 11:30">
+                        Friday, January 6, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I know, I know&hellip; I&rsquo;m late. But <a href="https://tantek.com">Tantek</a>&rsquo;s
+<a href="https://tantek.com/2023/005/t3/indieweb-simpler-approach">post</a> about
+a simpler approach to IndieWeb in his own 100 days series has inspired me to
+embark on my own journey. Consistently writing in my blog for 100 days straight
+won&rsquo;t be easy but I think it will be worth it. I think it will spark a creative
+drive in me that has been lacking of late.</p>
+<p>As with any &ldquo;100 days&rdquo; project there will be some days where the effort is
+epic, and some days where it&rsquo;s lackluster at best. The point isn&rsquo;t to
+proliferate some great work. The point is to just do the damn thing.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-1/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/personal/life/on-having-covid/">
+                    <h3 class="p-name">On Having Covid</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-06-12 12:00">
+                        Sunday, June 12, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/life"
+                            rel="category"
+                            class="p-category"
+                            title="Life">
+                            Life
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;ve been sick the past week or so. At first I was really hopeful that it
+wasn&rsquo;t Covid. Even though my wife and kids had already tested positive.
+I really really hoped that now, at the tail end of this thing, I could feel
+like I had escaped. That I&rsquo;d made it to the other side unscathed. But that was
+not meant to be.</p>
+<p>I tested positive one week ago today. At first I didn&rsquo;t want to believe it. But
+there it was, a positive test result. It was such a strange sense of relief, mixed
+with fear and frustration. Fear that I would get a lot more sick. Frustration at
+still having to worry about this stupid fucking pandemic.</p>
+            </p>
+            <a href="//localhost:1313/posts/personal/life/on-having-covid/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/covid"
+                        rel="tag"
+                        class="p-category"
+                        title="Covid">
+                        #Covid
+                    </a>
+                
+                    <a
+                        href="/tags/sick"
+                        rel="tag"
+                        class="p-category"
+                        title="sick">
+                        #sick
+                    </a>
+                
+                    <a
+                        href="/tags/life"
+                        rel="tag"
+                        class="p-category"
+                        title="life">
+                        #life
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/">
+                    <h3 class="p-name">IndieWeb Proof-of-Concept</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-06-03 08:10">
+                        Friday, June 3, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>The past few days I&rsquo;ve been working on a proof-of-concept for this blog. It&rsquo;s
+part of the roadmap I included in <a href="https://crowdersoup.com/posts/site-updates/new-theme-back-to-basics/">the post</a> about this sites new theme.
+I already took care of <a href="https://crowdersoup.com/posts/site-updates/simple-css-classless-framework/">basic styling</a> (and code block styles) by using
+Simple.css. I also marked up all the posts on this site as an <code>article</code>
+(<code>h-entry</code>).</p>
+<p>That means sending / receiving webmentions and adding micropub support is up
+next. But in order to do those things I needed to figure out <em>how</em>. This site
+is a static one. It&rsquo;s content lives in <a href="https://github.com/CrowderSoup/crowdersoup.com">a GitHub repo</a>. It is built and
+deployed any time I commit to the <code>main</code> branch. So how will I post to my site
+(or allow webmentions)?</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/serverless"
+                        rel="tag"
+                        class="p-category"
+                        title="serverless">
+                        #serverless
+                    </a>
+                
+                    <a
+                        href="/tags/micropub"
+                        rel="tag"
+                        class="p-category"
+                        title="micropub">
+                        #micropub
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/simple-css-classless-framework/">
+                    <h3 class="p-name">Simple.css: Classless Styles</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-05-28 07:44">
+                        Saturday, May 28, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>In my last post I mentioned that I wanted to keep this site simple. That
+I wanted to build on a solid foundation. I didn&rsquo;t want to muck with that
+foundation to make my site look &ldquo;pretty&rdquo;.</p>
+<p>I shared the un-styled version of this site on my socials when <a href="https://twitter.com/duffy0">@Duffy</a>
+<a href="https://twitter.com/duffy0/status/1529810591405047808">mentioned</a> <a href="https://simplecss.org/">Simple.css</a>. I fell in love with the idea of it right away.
+A classless css framework that applies styling to semantic markup? What&rsquo;s not
+to love??</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/simple-css-classless-framework/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/site-updates"
+                        rel="tag"
+                        class="p-category"
+                        title="site-updates">
+                        #site-updates
+                    </a>
+                
+                    <a
+                        href="/tags/simple-css"
+                        rel="tag"
+                        class="p-category"
+                        title="simple-css">
+                        #simple-css
+                    </a>
+                
+                    <a
+                        href="/tags/css-framework"
+                        rel="tag"
+                        class="p-category"
+                        title="css-framework">
+                        #css-framework
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/new-theme-back-to-basics/">
+                    <h3 class="p-name">New Theme: Back to Basics</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-05-25 13:31">
+                        Wednesday, May 25, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Things look a little — ahem — <em>different</em> around here, don&rsquo;t they?
+I think if you look carefully you&rsquo;ll notice a few things have changed 😅</p>
+<p>I recently decided that I wanted to change up my personal site and build from
+a solid foundation. There wasn&rsquo;t anything wrong with my old theme. Far from it!
+It worked really well. I just wanted to have something that was purpose built
+for what I wanted. Not something I was having to tweak and mod to make my own.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/new-theme-back-to-basics/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/site-updates"
+                        rel="tag"
+                        class="p-category"
+                        title="site-updates">
+                        #site-updates
+                    </a>
+                
+                    <a
+                        href="/tags/theme"
+                        rel="tag"
+                        class="p-category"
+                        title="theme">
+                        #theme
+                    </a>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/trying-out-frontmatter/">
+                    <h3 class="p-name">Trying out FrontMatter</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-05-22 05:20">
+                        Sunday, May 22, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I recently found a really cool VSCode extension called FrontMatter. It allows you to manage your static site with a simple, intuitive interface, all within VSCode. This is the first post I&rsquo;m writing with it.</p>
+<p>It sort of feels like a halfway point between managing plain text / markdown files and having a full-blown CMS. For my use, I don&rsquo;t need something like WordPress&hellip; Markdown files and Hugo is plenty. But having a nice interface to see a list of posts, media, etc. is nice.</p>
+            </p>
+            <a href="//localhost:1313/posts/trying-out-frontmatter/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/site-updates"
+                        rel="tag"
+                        class="p-category"
+                        title="site-updates">
+                        #site-updates
+                    </a>
+                
+                    <a
+                        href="/tags/tools"
+                        rel="tag"
+                        class="p-category"
+                        title="tools">
+                        #tools
+                    </a>
+                
+                    <a
+                        href="/tags/vscode"
+                        rel="tag"
+                        class="p-category"
+                        title="vscode">
+                        #vscode
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/personal/projects/hugo-makefile/">
+                    <h3 class="p-name">Hugo Makefile</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2022-01-15 23:50">
+                        Saturday, January 15, 2022
+                    </time> in
+                    
+                        <a
+                            href="/categories/personal"
+                            rel="category"
+                            class="p-category"
+                            title="personal">
+                            personal
+                        </a>
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="projects">
+                            projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>In doing research on themes for this blog, I stumbled across one called Neofeed
+that had a <a href="https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile">really interesting
+Makefile</a>.
+I was really intrigued by the idea of being able to run a command to start
+a new post or run the hugo dev server.</p>
+<p>However, my needs where a bit different from the author of Neofeed. I modified
+their Makefile to suit, and I&rsquo;m excited to write this post about the result!</p>
+            </p>
+            <a href="//localhost:1313/posts/personal/projects/hugo-makefile/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/make"
+                        rel="tag"
+                        class="p-category"
+                        title="make">
+                        #make
+                    </a>
+                
+                    <a
+                        href="/tags/site"
+                        rel="tag"
+                        class="p-category"
+                        title="site">
+                        #site
+                    </a>
+                
+            </nav>
+        </article>
+    
+</div>
+
+<nav class="paginator">
+    
+        <span class="pagination-item">
+            <a href="/posts/">&larr; Newer</a>
+        </span>
+    
+    <span class="pagination-item-spacer">
+        Page 2 of 5
+    </span>
+    
+        <span class="pagination-item">
+            <a href="/posts/page/3/">Older &rarr;</a>
+        </span>
+    
+</nav>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

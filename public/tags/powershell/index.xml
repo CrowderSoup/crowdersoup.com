@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on CrowderSoup</title>
+    <link>//localhost:1313/tags/powershell/</link>
+    <description>Recent content in Powershell on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2016 09:54:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging PowerShell in VSCode</title>
+      <link>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</link>
+      <pubDate>Tue, 26 Apr 2016 09:54:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</guid>
+      <description>&lt;p&gt;Yesterday I learned a neat trick with &lt;a href=&#34;1&#34;&gt;Visual Studio Code&lt;/a&gt; when working on&#xA;some PowerShell scripts to help orchestrate build and deployment of our projects&#xA;(more on that in a different post). I knew that VSCode had a debugger, but I&#xA;didn&amp;rsquo;t realize that a debugger for PowerShell had been added &lt;a href=&#34;0&#34;&gt;via an extension&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I had installed this extension some time ago to help with writing PowerShell&#xA;scripts in VSCode, but I was running my PowerShell prompt in another window to&#xA;actually test them. I realized that I could debug my PowerShell scripts in&#xA;VSCode so I set it up and tried it immediately. AND IT&amp;rsquo;S AWESOME.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Powershell Markdown Preview</title>
+      <link>//localhost:1313/posts/programming/utils/powershell-markdown-preview/</link>
+      <pubDate>Wed, 28 Oct 2015 00:09:20 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/utils/powershell-markdown-preview/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m at &lt;a href=&#34;http://anglebrackets.org&#34;&gt;Angle Brackets&lt;/a&gt;. I&amp;rsquo;ve decided that I wanted to&#xA;try taking all my notes in vim. I LOVE using vim. It&amp;rsquo;s a really awesome, powerful,&#xA;and extendable command-line editor. I enjoy that it&amp;rsquo;s really distraction free.&#xA;Being distracted is something that I struggle with so I really look for ways to&#xA;stay focused.&lt;/p&gt;&#xA;&lt;p&gt;I write in &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; as well. It&amp;rsquo;s&#xA;a great way to get a simple, clean, well formatted plain text document that can&#xA;be processed and produce HTML. One of the biggest things I look for in a Markdown&#xA;editor is being able to preview the HTML that my markdown produces. Obviously&#xA;vim isn&amp;rsquo;t going to give that to me out of the box. I wouldn&amp;rsquo;t expect it to either.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on CrowderSoup</title>
+    <link>//localhost:1313/tags/projects/</link>
+    <description>Recent content in Projects on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 May 2023 08:10:04 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 8: Don&#39;t call it a failure</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/</link>
+      <pubDate>Thu, 04 May 2023 08:10:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;There are no such thing as failures, only lessons.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve seen several variations on this quote. Regardless of the permutation&#xA;though, they all distil to the same thought. Failure is an opportunity&#xA;to learn.&lt;/p&gt;&#xA;&lt;p&gt;I set out at the beginning of the year to blog every day for 100 days. I&#xA;failed in that endeavor. However, I also learned something. I learned that&#xA;blogging every single day, for myself, is untenable. I just can&amp;rsquo;t do it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 7: Posting from my phone</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/</link>
+      <pubDate>Thu, 12 Jan 2023 21:32:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/</guid>
+      <description>&lt;p&gt;Today I decided that I should try posting to my blog from my phone. This post is currently being written from a mobile git client called &lt;a href=&#34;https://apps.apple.com/us/app/working-copy-git-client/id896694807&#34;&gt;Working Copy&lt;/a&gt;. It’s definitely not as intuitive as it could be, but I’m really happy that I can post on the go if I want to!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./screenshot.PNG&#34; alt=&#34;A screenshot of me editing this post&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’m even able to upload images! Okay, I might actually use this more than I realized 😅&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 6: npm prune</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/</link>
+      <pubDate>Wed, 11 Jan 2023 21:32:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/</guid>
+      <description>&lt;p&gt;I am TIRED. I don&amp;rsquo;t have the energy to write any more code, but I didn&amp;rsquo;t&#xA;want to miss writing in my blog. That seemed to be the more important part of&#xA;doing &amp;ldquo;100 Days of Indieweb&amp;rdquo; anyway.&lt;/p&gt;&#xA;&lt;p&gt;Today I got to work on making a docker container for a NodeJS (TypeScript) app.&#xA;I&amp;rsquo;m using multi-layer builds, so that the final image only has the bare minimum&#xA;of what it needs to run. This is important not just because you don&amp;rsquo;t want to&#xA;store more data than you need (storage = money after all), but because the more&#xA;your production container has the larger the potential attack surface is. It&#xA;also increases the number of things that could just have bugs and need to be&#xA;patched, leading to more maintenance overhead.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 5: Classifying Tweets (continued)</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/</link>
+      <pubDate>Tue, 10 Jan 2023 20:59:46 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/</guid>
+      <description>&lt;p&gt;Today finds me working on actually parsing the body of each tweet in an attempt&#xA;to classify them. I need to spend a bit more time making sure that I&amp;rsquo;m&#xA;correctly identifying each type of tweet. Quote Tweets especially, since right&#xA;now (as you&amp;rsquo;ll see in my results) that&amp;rsquo;s the one I&amp;rsquo;m least sure about.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s some numbers based on ALL of my tweets (posts, replies, retweets, and&#xA;quote tweets) from 2020 onward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 4: Classifying Tweets</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/</link>
+      <pubDate>Mon, 09 Jan 2023 21:26:25 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s start today with the personal shit&amp;hellip; I was up half the night with&#xA;a vomiting child last night. I was up early to get the other kid ready for&#xA;school. I worked all day. I am TIRED. But I am showing up for my blog. I am&#xA;showing up for 100 days!&lt;/p&gt;&#xA;&lt;h3 id=&#34;twitter-import&#34;&gt;Twitter Import&lt;/h3&gt;&#xA;&lt;p&gt;I continued to work this evening on importing my tweets as Hugo posts. I need&#xA;to classify my tweets, so therefore I need to define a data structure to do so.&#xA;I came up with the following in Go:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 3: Twitter Archive part 1</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/</link>
+      <pubDate>Sun, 08 Jan 2023 19:41:18 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/</guid>
+      <description>&lt;p&gt;A big part of owning my content is preserving it. I have over a decades worth&#xA;of content hosted exclusively on Twitter. I&amp;rsquo;d like to change that! After all,&#xA;that&amp;rsquo;s what the IndieWeb is all about.&lt;/p&gt;&#xA;&lt;p&gt;The first step was requesting and downloading all my content from the bird&#xA;site. Once that was done I used the &lt;a href=&#34;https://github.com/timhutton/twitter-archive-parser&#34;&gt;Twitter Archive Parser&lt;/a&gt; from &lt;a href=&#34;https://mathstodon.xyz/@timhutton&#34;&gt;Tim Hutton&lt;/a&gt;.&#xA;From there is where MY story begins.&lt;/p&gt;&#xA;&lt;p&gt;Tim&amp;rsquo;s parser takes your twitter archive and turns it into Markdown. However,&#xA;I wanted to have each tweet be its own page, and I wanted each of them to be&#xA;Hugo posts. To accomplish this I&amp;rsquo;m writing my own script (in Go) to take the&#xA;output from Tim&amp;rsquo;s parser and make Hugo posts for each tweet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 2: Fixing my Hugo BaseURL</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/</link>
+      <pubDate>Sat, 07 Jan 2023 21:30:07 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/</guid>
+      <description>&lt;p&gt;Yesterday I embarked on 100 Days of IndieWeb. Blog first, distribution second.&#xA;Write first, edit later. I also wrote that I hoped to find/fix issues and&#xA;streamline my posting process.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fosstodon.org/@BryceWrayTX&#34;&gt;Bryce Wray&lt;/a&gt; was kind enough to &lt;a href=&#34;https://fosstodon.org/@BryceWrayTX/109648324717497593&#34;&gt;point out&lt;/a&gt; that I had an issue with&#xA;relative links in my RSS feed. I was able to fix the issue by setting the&#xA;BaseURL config value in my &lt;code&gt;config.toml&lt;/code&gt;. The issue I had to tackle wasn&amp;rsquo;t just&#xA;setting the value, I had to set it based on environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>100 Days of IndieWeb: Day 1</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-1/</link>
+      <pubDate>Fri, 06 Jan 2023 11:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-1/</guid>
+      <description>&lt;p&gt;I know, I know&amp;hellip; I&amp;rsquo;m late. But &lt;a href=&#34;https://tantek.com&#34;&gt;Tantek&lt;/a&gt;&amp;rsquo;s&#xA;&lt;a href=&#34;https://tantek.com/2023/005/t3/indieweb-simpler-approach&#34;&gt;post&lt;/a&gt; about&#xA;a simpler approach to IndieWeb in his own 100 days series has inspired me to&#xA;embark on my own journey. Consistently writing in my blog for 100 days straight&#xA;won&amp;rsquo;t be easy but I think it will be worth it. I think it will spark a creative&#xA;drive in me that has been lacking of late.&lt;/p&gt;&#xA;&lt;p&gt;As with any &amp;ldquo;100 days&amp;rdquo; project there will be some days where the effort is&#xA;epic, and some days where it&amp;rsquo;s lackluster at best. The point isn&amp;rsquo;t to&#xA;proliferate some great work. The point is to just do the damn thing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IndieWeb Proof-of-Concept</title>
+      <link>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</link>
+      <pubDate>Fri, 03 Jun 2022 08:10:31 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</guid>
+      <description>&lt;p&gt;The past few days I&amp;rsquo;ve been working on a proof-of-concept for this blog. It&amp;rsquo;s&#xA;part of the roadmap I included in &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/new-theme-back-to-basics/&#34;&gt;the post&lt;/a&gt; about this sites new theme.&#xA;I already took care of &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/simple-css-classless-framework/&#34;&gt;basic styling&lt;/a&gt; (and code block styles) by using&#xA;Simple.css. I also marked up all the posts on this site as an &lt;code&gt;article&lt;/code&gt;&#xA;(&lt;code&gt;h-entry&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;That means sending / receiving webmentions and adding micropub support is up&#xA;next. But in order to do those things I needed to figure out &lt;em&gt;how&lt;/em&gt;. This site&#xA;is a static one. It&amp;rsquo;s content lives in &lt;a href=&#34;https://github.com/CrowderSoup/crowdersoup.com&#34;&gt;a GitHub repo&lt;/a&gt;. It is built and&#xA;deployed any time I commit to the &lt;code&gt;main&lt;/code&gt; branch. So how will I post to my site&#xA;(or allow webmentions)?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Makefile</title>
+      <link>//localhost:1313/posts/personal/projects/hugo-makefile/</link>
+      <pubDate>Sat, 15 Jan 2022 23:50:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/hugo-makefile/</guid>
+      <description>&lt;p&gt;In doing research on themes for this blog, I stumbled across one called Neofeed&#xA;that had a &lt;a href=&#34;https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile&#34;&gt;really interesting&#xA;Makefile&lt;/a&gt;.&#xA;I was really intrigued by the idea of being able to run a command to start&#xA;a new post or run the hugo dev server.&lt;/p&gt;&#xA;&lt;p&gt;However, my needs where a bit different from the author of Neofeed. I modified&#xA;their Makefile to suit, and I&amp;rsquo;m excited to write this post about the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hosting Mastodon on DitialOcean</title>
+      <link>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been toying with the idea of setting up &lt;a href=&#34;https://joinmastodon.org&#34;&gt;Mastodon&lt;/a&gt; on my own server for&#xA;a while now. Today I finally got around to actually doing it (after a failed&#xA;attempt a couple months ago). I found a &lt;a href=&#34;https://github.com/ummjackson/mastodon-guide/blob/master/up-and-running.md&#34;&gt;guide&lt;/a&gt; that I loosely referred to&#xA;and was immensely helpful at a couple points.&lt;/p&gt;&#xA;&lt;p&gt;At first I tried running on a super small $5 instance, which seemed fine during&#xA;setup, but died every few requests when I started using it. I ended up bumping&#xA;the server up to the $15 a month plan (3GB RAM, single CPU core) and things&#xA;seem to be working fine now. I&amp;rsquo;ll re-evaluate my plan if things start slowing&#xA;down again.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build a Torrent Machine and Network Share</title>
+      <link>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</link>
+      <pubDate>Thu, 21 Jan 2016 13:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</guid>
+      <description>&lt;p&gt;When I first got a Raspberry Pi the first thing I wanted to build was a home&#xA;server. I wanted to have a central place at home to store files. I also thought&#xA;it would be nice to have a torrent machine to handle downloading whatever I&#xA;wanted. This past weekend I was finally able to get around to building it with&#xA;a Raspberry Pi 2.&lt;/p&gt;&#xA;&lt;p&gt;I chose to use &lt;a href=&#34;1&#34;&gt;Diet Pi&lt;/a&gt; as my OS. Diet Pi is an OS that comes with only the&#xA;bare essentials installed. On first boot it gives you a list of preconfigured&#xA;software to install. This was perfect for me because I could install Samba for&#xA;my file server and transmission for torrents. It made setting up what I wanted&#xA;&lt;strong&gt;really&lt;/strong&gt; easy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Christmas of 2015</title>
+      <link>//localhost:1313/posts/personal/life/christmas-2015/</link>
+      <pubDate>Sun, 27 Dec 2015 13:20:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/christmas-2015/</guid>
+      <description>&lt;p&gt;This year&amp;rsquo;s Christmas was one for the books. As a father it was SO much fun to&#xA;watch my two girls have the time of their little lives getting and playing with&#xA;all their new toys. Their excitement and wonderment meant the world to me, even&#xA;if I know they don&amp;rsquo;t fully understand everything.&lt;/p&gt;&#xA;&lt;p&gt;Before we went down, we had the girls get their Christmas Jamies on!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/uploads/2015/12/27/EvelynAndRuby-ChristmasJamies.jpg&#34; alt=&#34;Evelyn and Ruby in Christmas Jamies&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

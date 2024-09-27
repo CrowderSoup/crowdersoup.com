@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css-Framework on CrowderSoup</title>
+    <link>//localhost:1313/tags/css-framework/</link>
+    <description>Recent content in Css-Framework on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 May 2022 07:44:38 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/css-framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple.css: Classless Styles</title>
+      <link>//localhost:1313/posts/site-updates/simple-css-classless-framework/</link>
+      <pubDate>Sat, 28 May 2022 07:44:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/simple-css-classless-framework/</guid>
+      <description>&lt;p&gt;In my last post I mentioned that I wanted to keep this site simple. That&#xA;I wanted to build on a solid foundation. I didn&amp;rsquo;t want to muck with that&#xA;foundation to make my site look &amp;ldquo;pretty&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I shared the un-styled version of this site on my socials when &lt;a href=&#34;https://twitter.com/duffy0&#34;&gt;@Duffy&lt;/a&gt;&#xA;&lt;a href=&#34;https://twitter.com/duffy0/status/1529810591405047808&#34;&gt;mentioned&lt;/a&gt; &lt;a href=&#34;https://simplecss.org/&#34;&gt;Simple.css&lt;/a&gt;. I fell in love with the idea of it right away.&#xA;A classless css framework that applies styling to semantic markup? What&amp;rsquo;s not&#xA;to love??&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

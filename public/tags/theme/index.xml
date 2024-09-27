@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on CrowderSoup</title>
+    <link>//localhost:1313/tags/theme/</link>
+    <description>Recent content in Theme on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2024 11:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tina CMS</title>
+      <link>//localhost:1313/posts/site-updates/tina-cms/</link>
+      <pubDate>Fri, 27 Sep 2024 11:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/tina-cms/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying out &lt;a href=&#34;https://tina.io&#34;&gt;TinaCMS&lt;/a&gt;. I heard about it on Twitter, looked it up, and realized that it could add a configurable UI backend for my Hugo blog. This post is mainly for me to tinker with it and see if it&amp;rsquo;s something I&amp;rsquo;d enjoy using.&lt;/p&gt;&#xA;&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rich text editor (with the ability to toggle back to markdown)&lt;/li&gt;&#xA;&lt;li&gt;Media manager (for adding images or other files)&lt;/li&gt;&#xA;&lt;li&gt;Collections (posts or pages)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Collections are at the core of everything. They&amp;rsquo;re the blog posts, pages, etc. An item in a collection has fields which are configurable in your tina config.ts file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Theme: Back to Basics</title>
+      <link>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</link>
+      <pubDate>Wed, 25 May 2022 13:31:32 -0600</pubDate>
+      <guid>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</guid>
+      <description>&lt;p&gt;Things look a little — ahem — &lt;em&gt;different&lt;/em&gt; around here, don&amp;rsquo;t they?&#xA;I think if you look carefully you&amp;rsquo;ll notice a few things have changed 😅&lt;/p&gt;&#xA;&lt;p&gt;I recently decided that I wanted to change up my personal site and build from&#xA;a solid foundation. There wasn&amp;rsquo;t anything wrong with my old theme. Far from it!&#xA;It worked really well. I just wanted to have something that was purpose built&#xA;for what I wanted. Not something I was having to tweak and mod to make my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(The Long Road) Back to Hugo</title>
+      <link>//localhost:1313/posts/site-updates/back-to-hugo/</link>
+      <pubDate>Fri, 24 Sep 2021 21:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/back-to-hugo/</guid>
+      <description>&lt;p&gt;Once upon a time there was a full-stack software developer who could NOT stop&#xA;redoing his personal Website. I think this might be the 50th or 60th time I&amp;rsquo;ve&#xA;done it in the last 10ish years that I&amp;rsquo;ve owned this domain. I have used all&#xA;sorts of content management systems (even wrote a couple of my own) and static&#xA;site generators. WordPress, OctoberCMS, Pelican, Hugo, etc.&lt;/p&gt;&#xA;&lt;p&gt;But I keep coming back to Hugo. Hugo is so powerful, fast, and flexible! The&#xA;reason I kept moving away from it was because I kept wanting to add API&#xA;endpoints to my blog for one reason or another.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

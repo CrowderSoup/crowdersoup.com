@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/">
+            <h3 class="p-name">Managing Scope Using Call, Apply, and Bind</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2015-11-16 13:20">
+                Monday, November 16, 2015
+            </time> in
+            
+                <a
+                    href="/categories/javascript"
+                    rel="category"
+                    class="p-category"
+                    title="JavaScript">
+                    JavaScript
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <h2 id="callhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctioncall"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call">Call</a></h2>
+<p><strong>Calls a function, with the specified arguments passed in</strong></p>
+<p>The first argument becomes <code>this</code>, the rest are passed in as regular arguments.
+Using call allows you to maintain the scope of <code>this</code> accross methods. It works
+like this:</p>
+<!-- raw HTML omitted -->
+<p>Here we&rsquo;re using prototypical inheritance to allow us to inheirit properties from
+<code>Animal</code> in <code>Dog</code> and <code>Cat</code>. Using <code>call</code> allows us to invoke <code>Animal</code> to initialize
+it&rsquo;s properties while maintaining the correct scope.</p>
+<h2 id="applyhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctionapply"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">Apply</a></h2>
+<p><strong>Calls a function, with the specified arguments passed in as an array</strong></p>
+<p>Just like <code>call</code>, the first argument becomes <code>this</code>. The rest of the args are
+passed in as an array.</p>
+<h2 id="bindhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctionbind"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">Bind</a></h2>
+<p><strong>Creates a bound function with the same function body as the function it&rsquo;s called
+on</strong></p>
+<p>With <code>bind</code>, we actually get a reference to a new function. The first argument
+passed to <code>bind</code> becomes <code>this</code>, and the rest are passed as regular arguments.
+This is especially handy for event handlers.</p>
+<!-- raw HTML omitted -->
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>These examples are fairly trivial, but they do serve to show that it&rsquo;s possible
+to manage scope without aliasing <code>this</code> to something like <code>self</code>. In a lot of
+cases that can actually be pretty confusing. But, as with everything, use what
+makes sense! This method may or may not work well for you, and that&rsquo;s okay.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/programming"
+                rel="tag"
+                class="p-category"
+                title="programming">
+                #programming
+            </a>
+        
+            <a
+                href="/tags/javascript"
+                rel="tag"
+                class="p-category"
+                title="javascript">
+                #javascript
+            </a>
+        
+            <a
+                href="/tags/front-end"
+                rel="tag"
+                class="p-category"
+                title="front-end">
+                #front-end
+            </a>
+        
+            <a
+                href="/tags/tips"
+                rel="tag"
+                class="p-category"
+                title="tips">
+                #tips
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

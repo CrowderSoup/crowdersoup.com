@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on CrowderSoup</title>
+    <link>//localhost:1313/tags/life/</link>
+    <description>Recent content in Life on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jul 2023 09:55:32 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Apartment, who Dis?</title>
+      <link>//localhost:1313/posts/personal/new-apartment-who-dis/</link>
+      <pubDate>Sun, 30 Jul 2023 09:55:32 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/new-apartment-who-dis/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been absent from my blog lately. The excuse is usually just that I got lazy.&#xA;Not this time though! This time the reason is&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;I SOLD MY HOUSE AND MOVED INTO AN APARTMENT!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This probably comes as a surprise to most. Why would I sell a house just to go&#xA;back to renting? Well, it&amp;rsquo;s not as simple as that. Mostly it came down to spoons.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ve probably heard the analogy before about spoons. They represent your time/energy.&#xA;You only have a finite number of them. So you have to be careful with your spoons.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On Having Covid</title>
+      <link>//localhost:1313/posts/personal/life/on-having-covid/</link>
+      <pubDate>Sun, 12 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/on-having-covid/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been sick the past week or so. At first I was really hopeful that it&#xA;wasn&amp;rsquo;t Covid. Even though my wife and kids had already tested positive.&#xA;I really really hoped that now, at the tail end of this thing, I could feel&#xA;like I had escaped. That I&amp;rsquo;d made it to the other side unscathed. But that was&#xA;not meant to be.&lt;/p&gt;&#xA;&lt;p&gt;I tested positive one week ago today. At first I didn&amp;rsquo;t want to believe it. But&#xA;there it was, a positive test result. It was such a strange sense of relief, mixed&#xA;with fear and frustration. Fear that I would get a lot more sick. Frustration at&#xA;still having to worry about this stupid fucking pandemic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

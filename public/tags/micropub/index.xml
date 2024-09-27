@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micropub on CrowderSoup</title>
+    <link>//localhost:1313/tags/micropub/</link>
+    <description>Recent content in Micropub on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jun 2022 08:10:31 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/micropub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IndieWeb Proof-of-Concept</title>
+      <link>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</link>
+      <pubDate>Fri, 03 Jun 2022 08:10:31 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</guid>
+      <description>&lt;p&gt;The past few days I&amp;rsquo;ve been working on a proof-of-concept for this blog. It&amp;rsquo;s&#xA;part of the roadmap I included in &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/new-theme-back-to-basics/&#34;&gt;the post&lt;/a&gt; about this sites new theme.&#xA;I already took care of &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/simple-css-classless-framework/&#34;&gt;basic styling&lt;/a&gt; (and code block styles) by using&#xA;Simple.css. I also marked up all the posts on this site as an &lt;code&gt;article&lt;/code&gt;&#xA;(&lt;code&gt;h-entry&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;That means sending / receiving webmentions and adding micropub support is up&#xA;next. But in order to do those things I needed to figure out &lt;em&gt;how&lt;/em&gt;. This site&#xA;is a static one. It&amp;rsquo;s content lives in &lt;a href=&#34;https://github.com/CrowderSoup/crowdersoup.com&#34;&gt;a GitHub repo&lt;/a&gt;. It is built and&#xA;deployed any time I commit to the &lt;code&gt;main&lt;/code&gt; branch. So how will I post to my site&#xA;(or allow webmentions)?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on CrowderSoup</title>
+    <link>//localhost:1313/tags/update/</link>
+    <description>Recent content in Update on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 14:30:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basics Plus: A new Hugo Theme</title>
+      <link>//localhost:1313/posts/site-updates/basics-plus/</link>
+      <pubDate>Fri, 30 Nov 2018 14:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/basics-plus/</guid>
+      <description>&lt;p&gt;This site has had a couple new themes lately, but I&amp;rsquo;ve finally settled on one:&#xA;&lt;a href=&#34;https://github.com/crowdersoup/basics-plus&#34;&gt;Basics Plus&lt;/a&gt;. This is actually a theme that I&amp;rsquo;ve forked from &lt;a href=&#34;https://github.com/arjunkrishnababu96/basics&#34;&gt;Basics&lt;/a&gt;.&#xA;It&amp;rsquo;s a fairly simple and paired down theme. I forked it so that I could change&#xA;a couple things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The top menu (more dynamic, able to add more items)&lt;/li&gt;&#xA;&lt;li&gt;Add Disqus comments&lt;/li&gt;&#xA;&lt;li&gt;The byline&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;These are some fairly small feature changes. I plan to make more changes&#xA;/ refinements going forward while keeping the clean / simple look and feel.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

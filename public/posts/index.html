@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        <link rel="alternate" type="application/rss+xml" href="//localhost:1313/posts/index.xml" title="CrowderSoup" />
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class=""
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+
+
+<div class="h-feed">
+    <h2 class="p-name"><a class="u-url" href="//localhost:1313/posts/">Blog</a></h2>
+    <div class="list-page-header p-summary">
+        <p>This is a collection of my longer form posts / articles. It&rsquo;s a &ldquo;blog&rdquo; in the most traditional sense.
+You won&rsquo;t find things here that are short-form, those will live under <code>/micro</code> when I eventually
+get around to building it out 😅</p>
+
+    </div>
+
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/site-updates/tina-cms/">
+                    <h3 class="p-name">Tina CMS</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2024-09-27 11:00">
+                        Friday, September 27, 2024
+                    </time> in
+                    
+                        <a
+                            href="/categories/site-updates"
+                            rel="category"
+                            class="p-category"
+                            title="Site Updates">
+                            Site Updates
+                        </a>
+                    
+                        <a
+                            href="/categories/hugo"
+                            rel="category"
+                            class="p-category"
+                            title="hugo">
+                            hugo
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;m trying out <a href="https://tina.io">TinaCMS</a>. I heard about it on Twitter, looked it up, and realized that it could add a configurable UI backend for my Hugo blog. This post is mainly for me to tinker with it and see if it&rsquo;s something I&rsquo;d enjoy using.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li>Rich text editor (with the ability to toggle back to markdown)</li>
+<li>Media manager (for adding images or other files)</li>
+<li>Collections (posts or pages)</li>
+</ul>
+<p>Collections are at the core of everything. They&rsquo;re the blog posts, pages, etc. An item in a collection has fields which are configurable in your tina config.ts file.</p>
+            </p>
+            <a href="//localhost:1313/posts/site-updates/tina-cms/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/hugo"
+                        rel="tag"
+                        class="p-category"
+                        title="hugo">
+                        #hugo
+                    </a>
+                
+                    <a
+                        href="/tags/blog"
+                        rel="tag"
+                        class="p-category"
+                        title="blog">
+                        #blog
+                    </a>
+                
+                    <a
+                        href="/tags/theme"
+                        rel="tag"
+                        class="p-category"
+                        title="theme">
+                        #theme
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/tutorials/signing-git-commits/">
+                    <h3 class="p-name">Signing Git Commits</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-08-29 11:13">
+                        Tuesday, August 29, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/tutorials"
+                            rel="category"
+                            class="p-category"
+                            title="tutorials">
+                            tutorials
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p><img src="./verified-commit-badge.png" alt="Verified Commit Badge"></p>
+<p>Have you ever noticed the &ldquo;verified&rdquo; badge next to a commit on GitHub?
+A few years ago I did an wondered how I could get that on my own commits.
+After a little googling I realized it was because those commits were
+signed.</p>
+<p>Signing a commit with a GPG key is something natively supported by Git as
+it turns out. Now this is one of the first things I set up on a new dev
+machine. Setting it up is fairly straight forward.</p>
+            </p>
+            <a href="//localhost:1313/posts/tutorials/signing-git-commits/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/git"
+                        rel="tag"
+                        class="p-category"
+                        title="git">
+                        #git
+                    </a>
+                
+                    <a
+                        href="/tags/github"
+                        rel="tag"
+                        class="p-category"
+                        title="GitHub">
+                        #GitHub
+                    </a>
+                
+                    <a
+                        href="/tags/gpg"
+                        rel="tag"
+                        class="p-category"
+                        title="GPG">
+                        #GPG
+                    </a>
+                
+                    <a
+                        href="/tags/tutorials"
+                        rel="tag"
+                        class="p-category"
+                        title="tutorials">
+                        #tutorials
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/personal/new-apartment-who-dis/">
+                    <h3 class="p-name">New Apartment, who Dis?</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-07-30 09:55">
+                        Sunday, July 30, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/personal"
+                            rel="category"
+                            class="p-category"
+                            title="Personal">
+                            Personal
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I&rsquo;ve been absent from my blog lately. The excuse is usually just that I got lazy.
+Not this time though! This time the reason is&hellip;</p>
+<p><strong>I SOLD MY HOUSE AND MOVED INTO AN APARTMENT!</strong></p>
+<p>This probably comes as a surprise to most. Why would I sell a house just to go
+back to renting? Well, it&rsquo;s not as simple as that. Mostly it came down to spoons.</p>
+<p>You&rsquo;ve probably heard the analogy before about spoons. They represent your time/energy.
+You only have a finite number of them. So you have to be careful with your spoons.</p>
+            </p>
+            <a href="//localhost:1313/posts/personal/new-apartment-who-dis/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/life"
+                        rel="tag"
+                        class="p-category"
+                        title="life">
+                        #life
+                    </a>
+                
+                    <a
+                        href="/tags/updates"
+                        rel="tag"
+                        class="p-category"
+                        title="updates">
+                        #updates
+                    </a>
+                
+                    <a
+                        href="/tags/home"
+                        rel="tag"
+                        class="p-category"
+                        title="home">
+                        #home
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/">
+                    <h3 class="p-name">Day 11: Watsky in Salt Lake City</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-13 13:59">
+                        Saturday, May 13, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/concerts"
+                            rel="category"
+                            class="p-category"
+                            title="Concerts">
+                            Concerts
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <figure><img src="./watsky.JPG"
+    alt="Watsky - 2023"><figcaption>
+      <p>Watsky - 2023</p>
+    </figcaption>
+</figure>
+
+<p>Last night I had the chance to go see Watsky play at The Depot here in
+Salt Lake City. It was my second time seeing him in concert, but both
+where at the same venue. Today I&rsquo;ve been reflecting on the differences
+in my experience between both shows.</p>
+<p>The last concert was back in March of 2019. It was about a year before the
+covid pandemic. It was right after &ldquo;Complaint&rdquo; (the first album in the
+trilogy he just completed) came out. My favorite track from that album is
+&ldquo;Welcome to the Family&rdquo; but it wasn&rsquo;t played. The energy at the show was
+good, but I was definitely disappointed to not hear that song.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/music"
+                        rel="tag"
+                        class="p-category"
+                        title="music">
+                        #music
+                    </a>
+                
+                    <a
+                        href="/tags/concerts"
+                        rel="tag"
+                        class="p-category"
+                        title="concerts">
+                        #concerts
+                    </a>
+                
+                    <a
+                        href="/tags/events"
+                        rel="tag"
+                        class="p-category"
+                        title="events">
+                        #events
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/">
+                    <h3 class="p-name">Day 10: Dependency Injection</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-11 07:05">
+                        Thursday, May 11, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/programming"
+                            rel="category"
+                            class="p-category"
+                            title="Programming">
+                            Programming
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <h3 id="what-is-it">What is it?</h3>
+<p>Dependency Injection is a design pattern whereby an object/module&rsquo;s dependencies
+are provided to it. It is one of several techniques for implementing <a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion
+of Control</a>.</p>
+<p>So rather than:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">NewService</span>(),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You would have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">service</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>.<span style="color:#a6e22e">Service</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Client</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Service</span>: <span style="color:#a6e22e">service</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="why-tho">Why tho??</h3>
+<p>If you wanted to write a test for the <code>Client</code> first example above, you
+wouldn&rsquo;t be able to mock it&rsquo;s <code>Service</code>. In the second example it would be
+trivial to inject a mock <code>Service</code> and write tests for your <code>Client</code>.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/design-patterns"
+                        rel="tag"
+                        class="p-category"
+                        title="design patterns">
+                        #design patterns
+                    </a>
+                
+                    <a
+                        href="/tags/go"
+                        rel="tag"
+                        class="p-category"
+                        title="go">
+                        #go
+                    </a>
+                
+                    <a
+                        href="/tags/programming"
+                        rel="tag"
+                        class="p-category"
+                        title="programming">
+                        #programming
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-9-flying-for-free/">
+                    <h3 class="p-name">Day 9: The cost of flying for free</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-07 12:35">
+                        Sunday, May 7, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/100-days"
+                            rel="category"
+                            class="p-category"
+                            title="100-days">
+                            100-days
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>If you follow me on social media you know that I&rsquo;ve been traveling a
+LOT lately. Multiple trips a month level of traveling. It&rsquo;s been so
+much fun!</p>
+<p>For context: my ex and co-parent (who I get along with famously) works
+for an airline. She started back at the beginning of February. When she
+finished training is when I first started traveling a lot because she
+was nice enough to add me to her benefits until such a time as she has
+a new partner she wants to share them with.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-9-flying-for-free/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/travel"
+                        rel="tag"
+                        class="p-category"
+                        title="travel">
+                        #travel
+                    </a>
+                
+                    <a
+                        href="/tags/flying"
+                        rel="tag"
+                        class="p-category"
+                        title="flying">
+                        #flying
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/">
+                    <h3 class="p-name">Day 8: Don&#39;t call it a failure</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-05-04 08:10">
+                        Thursday, May 4, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <blockquote>
+<p>There are no such thing as failures, only lessons.</p>
+</blockquote>
+<p>I&rsquo;ve seen several variations on this quote. Regardless of the permutation
+though, they all distil to the same thought. Failure is an opportunity
+to learn.</p>
+<p>I set out at the beginning of the year to blog every day for 100 days. I
+failed in that endeavor. However, I also learned something. I learned that
+blogging every single day, for myself, is untenable. I just can&rsquo;t do it.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/">
+                    <h3 class="p-name">Day 7: Posting from my phone</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-12 21:32">
+                        Thursday, January 12, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Today I decided that I should try posting to my blog from my phone. This post is currently being written from a mobile git client called <a href="https://apps.apple.com/us/app/working-copy-git-client/id896694807">Working Copy</a>. It’s definitely not as intuitive as it could be, but I’m really happy that I can post on the go if I want to!</p>
+<p><img src="./screenshot.PNG" alt="A screenshot of me editing this post"></p>
+<p>I’m even able to upload images! Okay, I might actually use this more than I realized 😅</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/">
+                    <h3 class="p-name">Day 6: npm prune</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-11 21:32">
+                        Wednesday, January 11, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>I am TIRED. I don&rsquo;t have the energy to write any more code, but I didn&rsquo;t
+want to miss writing in my blog. That seemed to be the more important part of
+doing &ldquo;100 Days of Indieweb&rdquo; anyway.</p>
+<p>Today I got to work on making a docker container for a NodeJS (TypeScript) app.
+I&rsquo;m using multi-layer builds, so that the final image only has the bare minimum
+of what it needs to run. This is important not just because you don&rsquo;t want to
+store more data than you need (storage = money after all), but because the more
+your production container has the larger the potential attack surface is. It
+also increases the number of things that could just have bugs and need to be
+patched, leading to more maintenance overhead.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/npm"
+                        rel="tag"
+                        class="p-category"
+                        title="npm">
+                        #npm
+                    </a>
+                
+                    <a
+                        href="/tags/nodejs"
+                        rel="tag"
+                        class="p-category"
+                        title="nodejs">
+                        #nodejs
+                    </a>
+                
+                    <a
+                        href="/tags/docker"
+                        rel="tag"
+                        class="p-category"
+                        title="docker">
+                        #docker
+                    </a>
+                
+            </nav>
+        </article>
+    
+        <article class="h-entry">
+            <header>
+                <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/">
+                    <h3 class="p-name">Day 5: Classifying Tweets (continued)</h3>
+                </a>
+                <p>by
+                    <a class="p-author h-card" href="https://crowdersoup.com">
+                        Aaron Crowder
+                    </a> on
+                    <time class="dt-published" datetime="2023-01-10 20:59">
+                        Tuesday, January 10, 2023
+                    </time> in
+                    
+                        <a
+                            href="/categories/projects"
+                            rel="category"
+                            class="p-category"
+                            title="Projects">
+                            Projects
+                        </a>
+                    
+                </p>
+            </header>
+            <p class="p-summary">
+                <p>Today finds me working on actually parsing the body of each tweet in an attempt
+to classify them. I need to spend a bit more time making sure that I&rsquo;m
+correctly identifying each type of tweet. Quote Tweets especially, since right
+now (as you&rsquo;ll see in my results) that&rsquo;s the one I&rsquo;m least sure about.</p>
+<p>Here&rsquo;s some numbers based on ALL of my tweets (posts, replies, retweets, and
+quote tweets) from 2020 onward.</p>
+            </p>
+            <a href="//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/" class="u-url">Read more...</a>
+            <nav class="tags">
+                <strong>Tags:</strong>
+                
+                    <a
+                        href="/tags/indieweb"
+                        rel="tag"
+                        class="p-category"
+                        title="indieweb">
+                        #indieweb
+                    </a>
+                
+                    <a
+                        href="/tags/projects"
+                        rel="tag"
+                        class="p-category"
+                        title="projects">
+                        #projects
+                    </a>
+                
+                    <a
+                        href="/tags/100days"
+                        rel="tag"
+                        class="p-category"
+                        title="100days">
+                        #100days
+                    </a>
+                
+                    <a
+                        href="/tags/twitter"
+                        rel="tag"
+                        class="p-category"
+                        title="twitter">
+                        #twitter
+                    </a>
+                
+                    <a
+                        href="/tags/golang"
+                        rel="tag"
+                        class="p-category"
+                        title="golang">
+                        #golang
+                    </a>
+                
+            </nav>
+        </article>
+    
+</div>
+
+<nav class="paginator">
+    
+    <span class="pagination-item-spacer">
+        Page 1 of 5
+    </span>
+    
+        <span class="pagination-item">
+            <a href="/posts/page/2/">Older &rarr;</a>
+        </span>
+    
+</nav>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

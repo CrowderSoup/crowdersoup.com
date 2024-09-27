@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front-End on CrowderSoup</title>
+    <link>//localhost:1313/tags/front-end/</link>
+    <description>Recent content in Front-End on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 14:30:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basics Plus: A new Hugo Theme</title>
+      <link>//localhost:1313/posts/site-updates/basics-plus/</link>
+      <pubDate>Fri, 30 Nov 2018 14:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/basics-plus/</guid>
+      <description>&lt;p&gt;This site has had a couple new themes lately, but I&amp;rsquo;ve finally settled on one:&#xA;&lt;a href=&#34;https://github.com/crowdersoup/basics-plus&#34;&gt;Basics Plus&lt;/a&gt;. This is actually a theme that I&amp;rsquo;ve forked from &lt;a href=&#34;https://github.com/arjunkrishnababu96/basics&#34;&gt;Basics&lt;/a&gt;.&#xA;It&amp;rsquo;s a fairly simple and paired down theme. I forked it so that I could change&#xA;a couple things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The top menu (more dynamic, able to add more items)&lt;/li&gt;&#xA;&lt;li&gt;Add Disqus comments&lt;/li&gt;&#xA;&lt;li&gt;The byline&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;These are some fairly small feature changes. I plan to make more changes&#xA;/ refinements going forward while keeping the clean / simple look and feel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using vh with calc In CSS</title>
+      <link>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</link>
+      <pubDate>Tue, 17 Nov 2015 09:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</guid>
+      <description>&lt;p&gt;I often have need to build layout&amp;rsquo;s that vary depending on the content put in&#xA;them. I can&amp;rsquo;t always count on that content being the same (&lt;em&gt;cough&lt;/em&gt; CMSs &lt;em&gt;cough&lt;/em&gt;).&#xA;It&amp;rsquo;s just one of those things you have to do.&lt;/p&gt;&#xA;&lt;p&gt;One thing I&amp;rsquo;m having to do a lot though, is making the body of a page take up a&#xA;certain amount of space so that the footer doesn&amp;rsquo;t look weird. In the past I&amp;rsquo;ve&#xA;used JavaScript to make the footer take up the remaining space on the page if the&#xA;content didn&amp;rsquo;t take up enough. I never really liked that solution though, because&#xA;it breaks if the user turns off JavaScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Managing Scope Using Call, Apply, and Bind</title>
+      <link>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</link>
+      <pubDate>Mon, 16 Nov 2015 13:20:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</guid>
+      <description>&lt;h2 id=&#34;callhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctioncall&#34;&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call&#34;&gt;Call&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Calls a function, with the specified arguments passed in&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The first argument becomes &lt;code&gt;this&lt;/code&gt;, the rest are passed in as regular arguments.&#xA;Using call allows you to maintain the scope of &lt;code&gt;this&lt;/code&gt; accross methods. It works&#xA;like this:&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here we&amp;rsquo;re using prototypical inheritance to allow us to inheirit properties from&#xA;&lt;code&gt;Animal&lt;/code&gt; in &lt;code&gt;Dog&lt;/code&gt; and &lt;code&gt;Cat&lt;/code&gt;. Using &lt;code&gt;call&lt;/code&gt; allows us to invoke &lt;code&gt;Animal&lt;/code&gt; to initialize&#xA;it&amp;rsquo;s properties while maintaining the correct scope.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript: Array&#39;s with named Properties</title>
+      <link>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</link>
+      <pubDate>Wed, 11 Nov 2015 12:46:49 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</guid>
+      <description>&lt;p&gt;Adding named properties to arrays in JavaScript can be handy in a few different&#xA;cases. For instance:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You need a nice formatted title / description for a data set. Rather than&#xA;having multiple objects you can use named properties and get away with only&#xA;using one.&lt;/li&gt;&#xA;&lt;li&gt;You want to add some functions to an array for whatever reason&lt;/li&gt;&#xA;&lt;li&gt;Lots of other reasons that I can&amp;rsquo;t think of right now!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Basically, this just buys you a nice way to encapsulate all the data you might&#xA;need, without having to use an object with a nested array, or multiple objects.&#xA;Maybe your way is more clean or better for this reason or that&amp;hellip; I just&#xA;thought this was neat. :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

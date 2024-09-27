@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on CrowderSoup</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Blog on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2024 11:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tina CMS</title>
+      <link>//localhost:1313/posts/site-updates/tina-cms/</link>
+      <pubDate>Fri, 27 Sep 2024 11:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/tina-cms/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying out &lt;a href=&#34;https://tina.io&#34;&gt;TinaCMS&lt;/a&gt;. I heard about it on Twitter, looked it up, and realized that it could add a configurable UI backend for my Hugo blog. This post is mainly for me to tinker with it and see if it&amp;rsquo;s something I&amp;rsquo;d enjoy using.&lt;/p&gt;&#xA;&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rich text editor (with the ability to toggle back to markdown)&lt;/li&gt;&#xA;&lt;li&gt;Media manager (for adding images or other files)&lt;/li&gt;&#xA;&lt;li&gt;Collections (posts or pages)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Collections are at the core of everything. They&amp;rsquo;re the blog posts, pages, etc. An item in a collection has fields which are configurable in your tina config.ts file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Signing Git Commits</title>
+      <link>//localhost:1313/posts/tutorials/signing-git-commits/</link>
+      <pubDate>Tue, 29 Aug 2023 11:13:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/tutorials/signing-git-commits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./verified-commit-badge.png&#34; alt=&#34;Verified Commit Badge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever noticed the &amp;ldquo;verified&amp;rdquo; badge next to a commit on GitHub?&#xA;A few years ago I did an wondered how I could get that on my own commits.&#xA;After a little googling I realized it was because those commits were&#xA;signed.&lt;/p&gt;&#xA;&lt;p&gt;Signing a commit with a GPG key is something natively supported by Git as&#xA;it turns out. Now this is one of the first things I set up on a new dev&#xA;machine. Setting it up is fairly straight forward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Apartment, who Dis?</title>
+      <link>//localhost:1313/posts/personal/new-apartment-who-dis/</link>
+      <pubDate>Sun, 30 Jul 2023 09:55:32 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/new-apartment-who-dis/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been absent from my blog lately. The excuse is usually just that I got lazy.&#xA;Not this time though! This time the reason is&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;I SOLD MY HOUSE AND MOVED INTO AN APARTMENT!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This probably comes as a surprise to most. Why would I sell a house just to go&#xA;back to renting? Well, it&amp;rsquo;s not as simple as that. Mostly it came down to spoons.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ve probably heard the analogy before about spoons. They represent your time/energy.&#xA;You only have a finite number of them. So you have to be careful with your spoons.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 11: Watsky in Salt Lake City</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/</link>
+      <pubDate>Sat, 13 May 2023 13:59:54 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;./watsky.JPG&#34;&#xA;    alt=&#34;Watsky - 2023&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Watsky - 2023&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Last night I had the chance to go see Watsky play at The Depot here in&#xA;Salt Lake City. It was my second time seeing him in concert, but both&#xA;where at the same venue. Today I&amp;rsquo;ve been reflecting on the differences&#xA;in my experience between both shows.&lt;/p&gt;&#xA;&lt;p&gt;The last concert was back in March of 2019. It was about a year before the&#xA;covid pandemic. It was right after &amp;ldquo;Complaint&amp;rdquo; (the first album in the&#xA;trilogy he just completed) came out. My favorite track from that album is&#xA;&amp;ldquo;Welcome to the Family&amp;rdquo; but it wasn&amp;rsquo;t played. The energy at the show was&#xA;good, but I was definitely disappointed to not hear that song.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 10: Dependency Injection</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/</link>
+      <pubDate>Thu, 11 May 2023 07:05:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-10-dependency-injection/</guid>
+      <description>&lt;h3 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h3&gt;&#xA;&lt;p&gt;Dependency Injection is a design pattern whereby an object/module&amp;rsquo;s dependencies&#xA;are provided to it. It is one of several techniques for implementing &lt;a href=&#34;https://en.wikipedia.org/wiki/Inversion_of_control&#34;&gt;Inversion&#xA;of Control&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So rather than:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NewClient&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Client&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Client&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;Service&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;NewService&lt;/span&gt;(),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You would have:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NewClient&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Service&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Client&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Client&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;Service&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;why-tho&#34;&gt;Why tho??&lt;/h3&gt;&#xA;&lt;p&gt;If you wanted to write a test for the &lt;code&gt;Client&lt;/code&gt; first example above, you&#xA;wouldn&amp;rsquo;t be able to mock it&amp;rsquo;s &lt;code&gt;Service&lt;/code&gt;. In the second example it would be&#xA;trivial to inject a mock &lt;code&gt;Service&lt;/code&gt; and write tests for your &lt;code&gt;Client&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 9: The cost of flying for free</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-9-flying-for-free/</link>
+      <pubDate>Sun, 07 May 2023 12:35:29 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-9-flying-for-free/</guid>
+      <description>&lt;p&gt;If you follow me on social media you know that I&amp;rsquo;ve been traveling a&#xA;LOT lately. Multiple trips a month level of traveling. It&amp;rsquo;s been so&#xA;much fun!&lt;/p&gt;&#xA;&lt;p&gt;For context: my ex and co-parent (who I get along with famously) works&#xA;for an airline. She started back at the beginning of February. When she&#xA;finished training is when I first started traveling a lot because she&#xA;was nice enough to add me to her benefits until such a time as she has&#xA;a new partner she wants to share them with.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 8: Don&#39;t call it a failure</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/</link>
+      <pubDate>Thu, 04 May 2023 08:10:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-8-dont-call-it-a-failure/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;There are no such thing as failures, only lessons.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve seen several variations on this quote. Regardless of the permutation&#xA;though, they all distil to the same thought. Failure is an opportunity&#xA;to learn.&lt;/p&gt;&#xA;&lt;p&gt;I set out at the beginning of the year to blog every day for 100 days. I&#xA;failed in that endeavor. However, I also learned something. I learned that&#xA;blogging every single day, for myself, is untenable. I just can&amp;rsquo;t do it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 7: Posting from my phone</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/</link>
+      <pubDate>Thu, 12 Jan 2023 21:32:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-7-posting-from-my-phone/</guid>
+      <description>&lt;p&gt;Today I decided that I should try posting to my blog from my phone. This post is currently being written from a mobile git client called &lt;a href=&#34;https://apps.apple.com/us/app/working-copy-git-client/id896694807&#34;&gt;Working Copy&lt;/a&gt;. It’s definitely not as intuitive as it could be, but I’m really happy that I can post on the go if I want to!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./screenshot.PNG&#34; alt=&#34;A screenshot of me editing this post&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’m even able to upload images! Okay, I might actually use this more than I realized 😅&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 6: npm prune</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/</link>
+      <pubDate>Wed, 11 Jan 2023 21:32:04 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-6-npm-prune/</guid>
+      <description>&lt;p&gt;I am TIRED. I don&amp;rsquo;t have the energy to write any more code, but I didn&amp;rsquo;t&#xA;want to miss writing in my blog. That seemed to be the more important part of&#xA;doing &amp;ldquo;100 Days of Indieweb&amp;rdquo; anyway.&lt;/p&gt;&#xA;&lt;p&gt;Today I got to work on making a docker container for a NodeJS (TypeScript) app.&#xA;I&amp;rsquo;m using multi-layer builds, so that the final image only has the bare minimum&#xA;of what it needs to run. This is important not just because you don&amp;rsquo;t want to&#xA;store more data than you need (storage = money after all), but because the more&#xA;your production container has the larger the potential attack surface is. It&#xA;also increases the number of things that could just have bugs and need to be&#xA;patched, leading to more maintenance overhead.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 5: Classifying Tweets (continued)</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/</link>
+      <pubDate>Tue, 10 Jan 2023 20:59:46 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/</guid>
+      <description>&lt;p&gt;Today finds me working on actually parsing the body of each tweet in an attempt&#xA;to classify them. I need to spend a bit more time making sure that I&amp;rsquo;m&#xA;correctly identifying each type of tweet. Quote Tweets especially, since right&#xA;now (as you&amp;rsquo;ll see in my results) that&amp;rsquo;s the one I&amp;rsquo;m least sure about.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s some numbers based on ALL of my tweets (posts, replies, retweets, and&#xA;quote tweets) from 2020 onward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 4: Classifying Tweets</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/</link>
+      <pubDate>Mon, 09 Jan 2023 21:26:25 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s start today with the personal shit&amp;hellip; I was up half the night with&#xA;a vomiting child last night. I was up early to get the other kid ready for&#xA;school. I worked all day. I am TIRED. But I am showing up for my blog. I am&#xA;showing up for 100 days!&lt;/p&gt;&#xA;&lt;h3 id=&#34;twitter-import&#34;&gt;Twitter Import&lt;/h3&gt;&#xA;&lt;p&gt;I continued to work this evening on importing my tweets as Hugo posts. I need&#xA;to classify my tweets, so therefore I need to define a data structure to do so.&#xA;I came up with the following in Go:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 3: Twitter Archive part 1</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/</link>
+      <pubDate>Sun, 08 Jan 2023 19:41:18 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-3-twitter-archive-part-1/</guid>
+      <description>&lt;p&gt;A big part of owning my content is preserving it. I have over a decades worth&#xA;of content hosted exclusively on Twitter. I&amp;rsquo;d like to change that! After all,&#xA;that&amp;rsquo;s what the IndieWeb is all about.&lt;/p&gt;&#xA;&lt;p&gt;The first step was requesting and downloading all my content from the bird&#xA;site. Once that was done I used the &lt;a href=&#34;https://github.com/timhutton/twitter-archive-parser&#34;&gt;Twitter Archive Parser&lt;/a&gt; from &lt;a href=&#34;https://mathstodon.xyz/@timhutton&#34;&gt;Tim Hutton&lt;/a&gt;.&#xA;From there is where MY story begins.&lt;/p&gt;&#xA;&lt;p&gt;Tim&amp;rsquo;s parser takes your twitter archive and turns it into Markdown. However,&#xA;I wanted to have each tweet be its own page, and I wanted each of them to be&#xA;Hugo posts. To accomplish this I&amp;rsquo;m writing my own script (in Go) to take the&#xA;output from Tim&amp;rsquo;s parser and make Hugo posts for each tweet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 2: Fixing my Hugo BaseURL</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/</link>
+      <pubDate>Sat, 07 Jan 2023 21:30:07 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-2-fixing-my-hugo-baseurl/</guid>
+      <description>&lt;p&gt;Yesterday I embarked on 100 Days of IndieWeb. Blog first, distribution second.&#xA;Write first, edit later. I also wrote that I hoped to find/fix issues and&#xA;streamline my posting process.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fosstodon.org/@BryceWrayTX&#34;&gt;Bryce Wray&lt;/a&gt; was kind enough to &lt;a href=&#34;https://fosstodon.org/@BryceWrayTX/109648324717497593&#34;&gt;point out&lt;/a&gt; that I had an issue with&#xA;relative links in my RSS feed. I was able to fix the issue by setting the&#xA;BaseURL config value in my &lt;code&gt;config.toml&lt;/code&gt;. The issue I had to tackle wasn&amp;rsquo;t just&#xA;setting the value, I had to set it based on environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>100 Days of IndieWeb: Day 1</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-1/</link>
+      <pubDate>Fri, 06 Jan 2023 11:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-1/</guid>
+      <description>&lt;p&gt;I know, I know&amp;hellip; I&amp;rsquo;m late. But &lt;a href=&#34;https://tantek.com&#34;&gt;Tantek&lt;/a&gt;&amp;rsquo;s&#xA;&lt;a href=&#34;https://tantek.com/2023/005/t3/indieweb-simpler-approach&#34;&gt;post&lt;/a&gt; about&#xA;a simpler approach to IndieWeb in his own 100 days series has inspired me to&#xA;embark on my own journey. Consistently writing in my blog for 100 days straight&#xA;won&amp;rsquo;t be easy but I think it will be worth it. I think it will spark a creative&#xA;drive in me that has been lacking of late.&lt;/p&gt;&#xA;&lt;p&gt;As with any &amp;ldquo;100 days&amp;rdquo; project there will be some days where the effort is&#xA;epic, and some days where it&amp;rsquo;s lackluster at best. The point isn&amp;rsquo;t to&#xA;proliferate some great work. The point is to just do the damn thing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On Having Covid</title>
+      <link>//localhost:1313/posts/personal/life/on-having-covid/</link>
+      <pubDate>Sun, 12 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/on-having-covid/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been sick the past week or so. At first I was really hopeful that it&#xA;wasn&amp;rsquo;t Covid. Even though my wife and kids had already tested positive.&#xA;I really really hoped that now, at the tail end of this thing, I could feel&#xA;like I had escaped. That I&amp;rsquo;d made it to the other side unscathed. But that was&#xA;not meant to be.&lt;/p&gt;&#xA;&lt;p&gt;I tested positive one week ago today. At first I didn&amp;rsquo;t want to believe it. But&#xA;there it was, a positive test result. It was such a strange sense of relief, mixed&#xA;with fear and frustration. Fear that I would get a lot more sick. Frustration at&#xA;still having to worry about this stupid fucking pandemic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IndieWeb Proof-of-Concept</title>
+      <link>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</link>
+      <pubDate>Fri, 03 Jun 2022 08:10:31 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/indieweb-proof-of-concept/</guid>
+      <description>&lt;p&gt;The past few days I&amp;rsquo;ve been working on a proof-of-concept for this blog. It&amp;rsquo;s&#xA;part of the roadmap I included in &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/new-theme-back-to-basics/&#34;&gt;the post&lt;/a&gt; about this sites new theme.&#xA;I already took care of &lt;a href=&#34;https://crowdersoup.com/posts/site-updates/simple-css-classless-framework/&#34;&gt;basic styling&lt;/a&gt; (and code block styles) by using&#xA;Simple.css. I also marked up all the posts on this site as an &lt;code&gt;article&lt;/code&gt;&#xA;(&lt;code&gt;h-entry&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;That means sending / receiving webmentions and adding micropub support is up&#xA;next. But in order to do those things I needed to figure out &lt;em&gt;how&lt;/em&gt;. This site&#xA;is a static one. It&amp;rsquo;s content lives in &lt;a href=&#34;https://github.com/CrowderSoup/crowdersoup.com&#34;&gt;a GitHub repo&lt;/a&gt;. It is built and&#xA;deployed any time I commit to the &lt;code&gt;main&lt;/code&gt; branch. So how will I post to my site&#xA;(or allow webmentions)?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simple.css: Classless Styles</title>
+      <link>//localhost:1313/posts/site-updates/simple-css-classless-framework/</link>
+      <pubDate>Sat, 28 May 2022 07:44:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/simple-css-classless-framework/</guid>
+      <description>&lt;p&gt;In my last post I mentioned that I wanted to keep this site simple. That&#xA;I wanted to build on a solid foundation. I didn&amp;rsquo;t want to muck with that&#xA;foundation to make my site look &amp;ldquo;pretty&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I shared the un-styled version of this site on my socials when &lt;a href=&#34;https://twitter.com/duffy0&#34;&gt;@Duffy&lt;/a&gt;&#xA;&lt;a href=&#34;https://twitter.com/duffy0/status/1529810591405047808&#34;&gt;mentioned&lt;/a&gt; &lt;a href=&#34;https://simplecss.org/&#34;&gt;Simple.css&lt;/a&gt;. I fell in love with the idea of it right away.&#xA;A classless css framework that applies styling to semantic markup? What&amp;rsquo;s not&#xA;to love??&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Theme: Back to Basics</title>
+      <link>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</link>
+      <pubDate>Wed, 25 May 2022 13:31:32 -0600</pubDate>
+      <guid>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</guid>
+      <description>&lt;p&gt;Things look a little — ahem — &lt;em&gt;different&lt;/em&gt; around here, don&amp;rsquo;t they?&#xA;I think if you look carefully you&amp;rsquo;ll notice a few things have changed 😅&lt;/p&gt;&#xA;&lt;p&gt;I recently decided that I wanted to change up my personal site and build from&#xA;a solid foundation. There wasn&amp;rsquo;t anything wrong with my old theme. Far from it!&#xA;It worked really well. I just wanted to have something that was purpose built&#xA;for what I wanted. Not something I was having to tweak and mod to make my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trying out FrontMatter</title>
+      <link>//localhost:1313/posts/trying-out-frontmatter/</link>
+      <pubDate>Sun, 22 May 2022 05:20:25 +0000</pubDate>
+      <guid>//localhost:1313/posts/trying-out-frontmatter/</guid>
+      <description>&lt;p&gt;I recently found a really cool VSCode extension called FrontMatter. It allows you to manage your static site with a simple, intuitive interface, all within VSCode. This is the first post I&amp;rsquo;m writing with it.&lt;/p&gt;&#xA;&lt;p&gt;It sort of feels like a halfway point between managing plain text / markdown files and having a full-blown CMS. For my use, I don&amp;rsquo;t need something like WordPress&amp;hellip; Markdown files and Hugo is plenty. But having a nice interface to see a list of posts, media, etc. is nice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Makefile</title>
+      <link>//localhost:1313/posts/personal/projects/hugo-makefile/</link>
+      <pubDate>Sat, 15 Jan 2022 23:50:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/hugo-makefile/</guid>
+      <description>&lt;p&gt;In doing research on themes for this blog, I stumbled across one called Neofeed&#xA;that had a &lt;a href=&#34;https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile&#34;&gt;really interesting&#xA;Makefile&lt;/a&gt;.&#xA;I was really intrigued by the idea of being able to run a command to start&#xA;a new post or run the hugo dev server.&lt;/p&gt;&#xA;&lt;p&gt;However, my needs where a bit different from the author of Neofeed. I modified&#xA;their Makefile to suit, and I&amp;rsquo;m excited to write this post about the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(The Long Road) Back to Hugo</title>
+      <link>//localhost:1313/posts/site-updates/back-to-hugo/</link>
+      <pubDate>Fri, 24 Sep 2021 21:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/back-to-hugo/</guid>
+      <description>&lt;p&gt;Once upon a time there was a full-stack software developer who could NOT stop&#xA;redoing his personal Website. I think this might be the 50th or 60th time I&amp;rsquo;ve&#xA;done it in the last 10ish years that I&amp;rsquo;ve owned this domain. I have used all&#xA;sorts of content management systems (even wrote a couple of my own) and static&#xA;site generators. WordPress, OctoberCMS, Pelican, Hugo, etc.&lt;/p&gt;&#xA;&lt;p&gt;But I keep coming back to Hugo. Hugo is so powerful, fast, and flexible! The&#xA;reason I kept moving away from it was because I kept wanting to add API&#xA;endpoints to my blog for one reason or another.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apologize Like You Mean It</title>
+      <link>//localhost:1313/posts/personal/apologize-like-you-mean-it/</link>
+      <pubDate>Sun, 20 Jun 2021 12:16:15 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/apologize-like-you-mean-it/</guid>
+      <description>&lt;p&gt;Today is Father&amp;rsquo;s day, a day where we celebrate the dad&amp;rsquo;s in our lives. Rather&#xA;than write an appreciation post though, I wanted to write about something that&#xA;men everywhere can do better. That&amp;rsquo;s why I decided to write about apologizing.&#xA;It&amp;rsquo;s something that few men do, and even fewer do well.&lt;/p&gt;&#xA;&lt;p&gt;Even worse I&amp;rsquo;ve seen so many instances lately where men are directly asked to&#xA;apologize and refuse to. But the point of this post isn&amp;rsquo;t to call anyone out.&#xA;It&amp;rsquo;s meant to educate everyone on what a good apology looks like. This is as&#xA;much for me as anyone. I have to apologize all the time!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Qutebrowser: Set PATH in config for OSX</title>
+      <link>//localhost:1313/posts/tutorials/qutebrowser/qutebrowser-set-path-config-osx/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/tutorials/qutebrowser/qutebrowser-set-path-config-osx/</guid>
+      <description>&lt;p&gt;I have recently started using &lt;a href=&#34;https://qutebrowser.org&#34;&gt;Qutebrowser&lt;/a&gt; (again,&#xA;lol). I wanted to write / use some simple user scripts to add some&#xA;functionality, but on OSX I was having some issues with things not being in my&#xA;&lt;code&gt;PATH&lt;/code&gt;. I didn&amp;rsquo;t realize why / what was happening so I asked in the issues of&#xA;Qutebrowser on github and quickly got my answer.&lt;/p&gt;&#xA;&lt;p&gt;It turns out that for GUI apps on OSX they don&amp;rsquo;t inheirit the path that you set&#xA;in your shell profile. I decided to fix that by adding the missing things to my&#xA;&lt;code&gt;PATH&lt;/code&gt; when Qutebrowser starts in by editing it in my &lt;code&gt;config.py&lt;/code&gt;. Now it looks&#xA;something like this at the start:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hosting Mastodon on DitialOcean</title>
+      <link>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been toying with the idea of setting up &lt;a href=&#34;https://joinmastodon.org&#34;&gt;Mastodon&lt;/a&gt; on my own server for&#xA;a while now. Today I finally got around to actually doing it (after a failed&#xA;attempt a couple months ago). I found a &lt;a href=&#34;https://github.com/ummjackson/mastodon-guide/blob/master/up-and-running.md&#34;&gt;guide&lt;/a&gt; that I loosely referred to&#xA;and was immensely helpful at a couple points.&lt;/p&gt;&#xA;&lt;p&gt;At first I tried running on a super small $5 instance, which seemed fine during&#xA;setup, but died every few requests when I started using it. I ended up bumping&#xA;the server up to the $15 a month plan (3GB RAM, single CPU core) and things&#xA;seem to be working fine now. I&amp;rsquo;ll re-evaluate my plan if things start slowing&#xA;down again.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics Plus: A new Hugo Theme</title>
+      <link>//localhost:1313/posts/site-updates/basics-plus/</link>
+      <pubDate>Fri, 30 Nov 2018 14:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/basics-plus/</guid>
+      <description>&lt;p&gt;This site has had a couple new themes lately, but I&amp;rsquo;ve finally settled on one:&#xA;&lt;a href=&#34;https://github.com/crowdersoup/basics-plus&#34;&gt;Basics Plus&lt;/a&gt;. This is actually a theme that I&amp;rsquo;ve forked from &lt;a href=&#34;https://github.com/arjunkrishnababu96/basics&#34;&gt;Basics&lt;/a&gt;.&#xA;It&amp;rsquo;s a fairly simple and paired down theme. I forked it so that I could change&#xA;a couple things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The top menu (more dynamic, able to add more items)&lt;/li&gt;&#xA;&lt;li&gt;Add Disqus comments&lt;/li&gt;&#xA;&lt;li&gt;The byline&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;These are some fairly small feature changes. I plan to make more changes&#xA;/ refinements going forward while keeping the clean / simple look and feel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Husky to Build Hugo Site</title>
+      <link>//localhost:1313/posts/site-updates/husky/</link>
+      <pubDate>Sat, 05 May 2018 16:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/husky/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been making some efforts to streamline the publishing process for this&#xA;site. I&amp;rsquo;ve read about tools like &lt;a href=&#34;https://www.netlifycms.org/&#34;&gt;Netlify&lt;/a&gt; and &lt;a href=&#34;https://www.getlektor.com/&#34;&gt;Lektor&lt;/a&gt;, but I wanted to&#xA;keep things as close to a basic &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site as possible.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I wanted to use git hooks to run hugo whenever I ran &lt;code&gt;git commit&lt;/code&gt;.&#xA;That way to publish a new post I simply had to write it in markdown, save,&#xA;commit and push. No remembering to run hugo. No remembering to add changes to&#xA;the site. A plain and simple git workflow for publishing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub Pages Over HTTPS</title>
+      <link>//localhost:1313/posts/site-updates/https/</link>
+      <pubDate>Sat, 05 May 2018 11:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/https/</guid>
+      <description>&lt;p&gt;Using HTTPS for your site has lots of benefits. Chief among them being&#xA;security. Using HTTPS ensures that no one can intercept and read traffic&#xA;between you and the site you&amp;rsquo;re visiting.&lt;/p&gt;&#xA;&lt;p&gt;However, it&amp;rsquo;s traditionally been somewhat difficult and expensive to provide&#xA;HTTPS for your sites visitors. Now though, with &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; an SSL&#xA;certificate is free! And if you&amp;rsquo;re using GitHub pages with a custom domain for&#xA;hosting using it couldn&amp;rsquo;t be easier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Keybase Proof</title>
+      <link>//localhost:1313/posts/site-updates/keybase/</link>
+      <pubDate>Tue, 01 May 2018 11:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/keybase/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve added my &lt;a href=&#34;http://crowdersoup.com/keybase.txt&#34;&gt;Keybase Proof&lt;/a&gt; as a text file at the root of this site.&#xA;I used to have my site proven via DNS but for whatever reason CloudFlare&#xA;removed my TXT record breaking the proof. I decided that having the .txt file&#xA;proof was more resilient because even if I change hosting (Currently on Github&#xA;Pages) my proof will remain intact.&lt;/p&gt;&#xA;&lt;p&gt;If you aren&amp;rsquo;t on &lt;a href=&#34;https://keybase.io/&#34;&gt;Keybase&lt;/a&gt; check it out. I like to think of it as&#xA;&amp;ldquo;crypto-as-a-service&amp;rdquo;. They have the ability to share files or have chats (team&#xA;or one-on-one) that are encrypted end-to-end.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moving to Hugo</title>
+      <link>//localhost:1313/posts/site-updates/hugo/</link>
+      <pubDate>Wed, 29 Nov 2017 23:41:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/hugo/</guid>
+      <description>&lt;p&gt;Last night I got the wild hare to migrate my personal site from &lt;a href=&#34;https://github.com/getpelican/pelican&#34;&gt;Pelican&lt;/a&gt; to&#xA;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. I&amp;rsquo;ve been meaning to do it for a while now, so to give myself the&#xA;push I needed to get it done I &lt;em&gt;deleted&lt;/em&gt; my old personal site from &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;differences&#34;&gt;Differences&lt;/h3&gt;&#xA;&lt;h4 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h4&gt;&#xA;&lt;p&gt;Honestly the biggest different for content is &amp;ldquo;front matter&amp;rdquo;. Both Hugo and&#xA;Pelican, as static site generators, use front matter to describe pieces of&#xA;content.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Debugging PowerShell in VSCode</title>
+      <link>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</link>
+      <pubDate>Tue, 26 Apr 2016 09:54:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</guid>
+      <description>&lt;p&gt;Yesterday I learned a neat trick with &lt;a href=&#34;1&#34;&gt;Visual Studio Code&lt;/a&gt; when working on&#xA;some PowerShell scripts to help orchestrate build and deployment of our projects&#xA;(more on that in a different post). I knew that VSCode had a debugger, but I&#xA;didn&amp;rsquo;t realize that a debugger for PowerShell had been added &lt;a href=&#34;0&#34;&gt;via an extension&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I had installed this extension some time ago to help with writing PowerShell&#xA;scripts in VSCode, but I was running my PowerShell prompt in another window to&#xA;actually test them. I realized that I could debug my PowerShell scripts in&#xA;VSCode so I set it up and tried it immediately. AND IT&amp;rsquo;S AWESOME.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use IFTTT Maker Channel to Trigger Events in a Django App</title>
+      <link>//localhost:1313/posts/programming/python/django/use-ifttt-to-trigger-events/</link>
+      <pubDate>Fri, 08 Apr 2016 07:15:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/python/django/use-ifttt-to-trigger-events/</guid>
+      <description>&lt;p&gt;A couple months ago I decided I needed to be better about telling my wonderful wife how much I loved her on a daily basis. Being the nerd that I am I decided to tackle this using &lt;a href=&#34;https://ifttt.com&#34; title=&#34;If This Then That&#34;&gt;IFTTT&lt;/a&gt; and a custom web app. For this project I went with &lt;a href=&#34;https://djangoproject.org&#34; title=&#34;Django Project&#34;&gt;Django&lt;/a&gt; to build my app out. I&amp;rsquo;d never used it before so I wanted a chance to play with it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build a Torrent Machine and Network Share</title>
+      <link>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</link>
+      <pubDate>Thu, 21 Jan 2016 13:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</guid>
+      <description>&lt;p&gt;When I first got a Raspberry Pi the first thing I wanted to build was a home&#xA;server. I wanted to have a central place at home to store files. I also thought&#xA;it would be nice to have a torrent machine to handle downloading whatever I&#xA;wanted. This past weekend I was finally able to get around to building it with&#xA;a Raspberry Pi 2.&lt;/p&gt;&#xA;&lt;p&gt;I chose to use &lt;a href=&#34;1&#34;&gt;Diet Pi&lt;/a&gt; as my OS. Diet Pi is an OS that comes with only the&#xA;bare essentials installed. On first boot it gives you a list of preconfigured&#xA;software to install. This was perfect for me because I could install Samba for&#xA;my file server and transmission for torrents. It made setting up what I wanted&#xA;&lt;strong&gt;really&lt;/strong&gt; easy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Raspberry Pi Zero Giveaway: Review</title>
+      <link>//localhost:1313/posts/raspberry-pi/raspberry-pi-zero-giveaway/</link>
+      <pubDate>Wed, 13 Jan 2016 09:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi/raspberry-pi-zero-giveaway/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been watching my local &lt;a href=&#34;1&#34;&gt;Barnes &amp;amp; Nobel&amp;rsquo;s&lt;/a&gt; like a hawk the past few&#xA;weeks. In case you&amp;rsquo;ve been living under a rock, the official Raspberry Pi&#xA;magazine, &lt;a href=&#34;2&#34;&gt;MagPi&lt;/a&gt;, shipped with the new &lt;a href=&#34;3&#34;&gt;Raspberry Pi Zero&lt;/a&gt; attached to&#xA;the cover.&lt;/p&gt;&#xA;&lt;p&gt;The Raspberry Pi Zero, announced in late November of 2015, has been flying off&#xA;shelves as fast as it&amp;rsquo;s stocked. They&amp;rsquo;re HARD to get your hands on. I should&#xA;know, I&amp;rsquo;ve been trying since they were first announced! I knew my best bet would&#xA;be to get a copy of the MagPi when it finally shipped to the States.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resolutions for 2016</title>
+      <link>//localhost:1313/posts/personal/life/resolutions-2016/</link>
+      <pubDate>Sat, 02 Jan 2016 06:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/resolutions-2016/</guid>
+      <description>&lt;p&gt;It seems like the &amp;ldquo;thing to do&amp;rdquo; at the beginning of each new year is to make&#xA;New Years Resolutions. If you&amp;rsquo;re at all into blogging then you know that you&#xA;then have to publish those resolutions for all the people who don&amp;rsquo;t read your&#xA;blog to see. That&amp;rsquo;s who/what this post is for.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to make my resolutions less about &amp;ldquo;I want to lose weight&amp;rdquo;, and more&#xA;focused on programming, open source, and this blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Christmas of 2015</title>
+      <link>//localhost:1313/posts/personal/life/christmas-2015/</link>
+      <pubDate>Sun, 27 Dec 2015 13:20:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/christmas-2015/</guid>
+      <description>&lt;p&gt;This year&amp;rsquo;s Christmas was one for the books. As a father it was SO much fun to&#xA;watch my two girls have the time of their little lives getting and playing with&#xA;all their new toys. Their excitement and wonderment meant the world to me, even&#xA;if I know they don&amp;rsquo;t fully understand everything.&lt;/p&gt;&#xA;&lt;p&gt;Before we went down, we had the girls get their Christmas Jamies on!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/uploads/2015/12/27/EvelynAndRuby-ChristmasJamies.jpg&#34; alt=&#34;Evelyn and Ruby in Christmas Jamies&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hour of Code</title>
+      <link>//localhost:1313/posts/personal/life/hour-of-code/</link>
+      <pubDate>Thu, 10 Dec 2015 11:35:26 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/hour-of-code/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Yesterday I took part in the &lt;a href=&#34;https://hourofcode.com/us&#34;&gt;Hour of Code&lt;/a&gt; at my&#xA;local high school as a volunteer.In fact, it was at the high school that &lt;strong&gt;I&lt;/strong&gt;&#xA;attended. I had a lot of fun and I was excited to see the stundents gain a&#xA;deeper understanding of code.&lt;/p&gt;&#xA;&lt;p&gt;I was especially impressed with the number of young women in the class that&#xA;seemed to really enjoy it. It&amp;rsquo;s a really common misunderstanding that people hold&#xA;that girls aren&amp;rsquo;t interested in tech. I think in too many cases they are steered&#xA;in other directions, towards things they &lt;em&gt;should&lt;/em&gt; be interested in. I&amp;rsquo;m glad to&#xA;have been able to give &lt;strong&gt;all&lt;/strong&gt; the kids an opportunity to see if programming is&#xA;a career they&amp;rsquo;d be interested in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using vh with calc In CSS</title>
+      <link>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</link>
+      <pubDate>Tue, 17 Nov 2015 09:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</guid>
+      <description>&lt;p&gt;I often have need to build layout&amp;rsquo;s that vary depending on the content put in&#xA;them. I can&amp;rsquo;t always count on that content being the same (&lt;em&gt;cough&lt;/em&gt; CMSs &lt;em&gt;cough&lt;/em&gt;).&#xA;It&amp;rsquo;s just one of those things you have to do.&lt;/p&gt;&#xA;&lt;p&gt;One thing I&amp;rsquo;m having to do a lot though, is making the body of a page take up a&#xA;certain amount of space so that the footer doesn&amp;rsquo;t look weird. In the past I&amp;rsquo;ve&#xA;used JavaScript to make the footer take up the remaining space on the page if the&#xA;content didn&amp;rsquo;t take up enough. I never really liked that solution though, because&#xA;it breaks if the user turns off JavaScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Managing Scope Using Call, Apply, and Bind</title>
+      <link>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</link>
+      <pubDate>Mon, 16 Nov 2015 13:20:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</guid>
+      <description>&lt;h2 id=&#34;callhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctioncall&#34;&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call&#34;&gt;Call&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Calls a function, with the specified arguments passed in&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The first argument becomes &lt;code&gt;this&lt;/code&gt;, the rest are passed in as regular arguments.&#xA;Using call allows you to maintain the scope of &lt;code&gt;this&lt;/code&gt; accross methods. It works&#xA;like this:&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here we&amp;rsquo;re using prototypical inheritance to allow us to inheirit properties from&#xA;&lt;code&gt;Animal&lt;/code&gt; in &lt;code&gt;Dog&lt;/code&gt; and &lt;code&gt;Cat&lt;/code&gt;. Using &lt;code&gt;call&lt;/code&gt; allows us to invoke &lt;code&gt;Animal&lt;/code&gt; to initialize&#xA;it&amp;rsquo;s properties while maintaining the correct scope.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anatomy of a Commit Message</title>
+      <link>//localhost:1313/posts/programming/anatomy-of-a-commit-message/</link>
+      <pubDate>Fri, 13 Nov 2015 07:15:33 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/anatomy-of-a-commit-message/</guid>
+      <description>&lt;h2 id=&#34;1-subject-line&#34;&gt;1. Subject Line&lt;/h2&gt;&#xA;&lt;p&gt;The Subject Line is the first line of your commit message. Often the subject&#xA;alone is enough, but if it&amp;rsquo;s not and you need a body be sure to separate the&#xA;subject and body with a blank line.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First line of a commit message&lt;/li&gt;&#xA;&lt;li&gt;Often the only part you&amp;rsquo;ll need&lt;/li&gt;&#xA;&lt;li&gt;Separated from the body by a blank line&lt;/li&gt;&#xA;&lt;li&gt;Soft limit of 50 characters, hard limit of 69&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github&amp;rsquo;s interface truncates the subject line at 69 characters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Capitalize!&lt;/li&gt;&#xA;&lt;li&gt;Don&amp;rsquo;t end with a period&lt;/li&gt;&#xA;&lt;li&gt;Use the imperative mood&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Git itself uses the imperative mood when it creates a commit on your behalf&lt;/li&gt;&#xA;&lt;li&gt;We usually write in the indicative mood, which is more about reporting facts&lt;/li&gt;&#xA;&lt;li&gt;To help, the subject line should always complete the sentence:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;If applied, this commit will&amp;hellip;&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-body&#34;&gt;2. Body&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wrap the body at 72 characters&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This give git plenty of room to indent text while still keeping things&#xA;under 80 characters.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Use the body to explain what and why vs. how&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The code tells us the &lt;em&gt;how&lt;/em&gt;, the body of your commit message should tell us&#xA;&lt;em&gt;what&lt;/em&gt; and &lt;em&gt;why&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;sample-commit-messages&#34;&gt;Sample Commit Messages&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bad&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript: Array&#39;s with named Properties</title>
+      <link>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</link>
+      <pubDate>Wed, 11 Nov 2015 12:46:49 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</guid>
+      <description>&lt;p&gt;Adding named properties to arrays in JavaScript can be handy in a few different&#xA;cases. For instance:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You need a nice formatted title / description for a data set. Rather than&#xA;having multiple objects you can use named properties and get away with only&#xA;using one.&lt;/li&gt;&#xA;&lt;li&gt;You want to add some functions to an array for whatever reason&lt;/li&gt;&#xA;&lt;li&gt;Lots of other reasons that I can&amp;rsquo;t think of right now!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Basically, this just buys you a nice way to encapsulate all the data you might&#xA;need, without having to use an object with a nested array, or multiple objects.&#xA;Maybe your way is more clean or better for this reason or that&amp;hellip; I just&#xA;thought this was neat. :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Powershell Markdown Preview</title>
+      <link>//localhost:1313/posts/programming/utils/powershell-markdown-preview/</link>
+      <pubDate>Wed, 28 Oct 2015 00:09:20 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/utils/powershell-markdown-preview/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m at &lt;a href=&#34;http://anglebrackets.org&#34;&gt;Angle Brackets&lt;/a&gt;. I&amp;rsquo;ve decided that I wanted to&#xA;try taking all my notes in vim. I LOVE using vim. It&amp;rsquo;s a really awesome, powerful,&#xA;and extendable command-line editor. I enjoy that it&amp;rsquo;s really distraction free.&#xA;Being distracted is something that I struggle with so I really look for ways to&#xA;stay focused.&lt;/p&gt;&#xA;&lt;p&gt;I write in &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; as well. It&amp;rsquo;s&#xA;a great way to get a simple, clean, well formatted plain text document that can&#xA;be processed and produce HTML. One of the biggest things I look for in a Markdown&#xA;editor is being able to preview the HTML that my markdown produces. Obviously&#xA;vim isn&amp;rsquo;t going to give that to me out of the box. I wouldn&amp;rsquo;t expect it to either.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello, World!</title>
+      <link>//localhost:1313/posts/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/hello-world/</guid>
+      <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lorem diam. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas tortor. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.&lt;/p&gt;&#xA;&lt;p&gt;Suspendisse facilisis, mi ac scelerisque interdum, ligula ex imperdiet felis, a posuere eros justo nec sem. Nullam laoreet accumsan metus, sit amet tincidunt orci egestas nec. Pellentesque ut aliquet ante, at tristique nunc. Donec non massa nibh. Ut posuere lacus non aliquam laoreet. Fusce pharetra ligula a felis porttitor, at mollis ipsum maximus. Donec quam tortor, vehicula a magna sit amet, tincidunt dictum enim. In hac habitasse platea dictumst. Mauris sit amet ornare ligula, blandit consequat risus. Duis malesuada pellentesque lectus, non feugiat turpis eleifend a. Nullam tempus ante et diam pretium, ac faucibus ligula interdum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

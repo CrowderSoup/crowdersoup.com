@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev Ops on CrowderSoup</title>
+    <link>//localhost:1313/tags/dev-ops/</link>
+    <description>Recent content in Dev Ops on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/dev-ops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting Mastodon on DitialOcean</title>
+      <link>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/socialmast.xyz/hosting-mastodon-on-digital-ocean/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been toying with the idea of setting up &lt;a href=&#34;https://joinmastodon.org&#34;&gt;Mastodon&lt;/a&gt; on my own server for&#xA;a while now. Today I finally got around to actually doing it (after a failed&#xA;attempt a couple months ago). I found a &lt;a href=&#34;https://github.com/ummjackson/mastodon-guide/blob/master/up-and-running.md&#34;&gt;guide&lt;/a&gt; that I loosely referred to&#xA;and was immensely helpful at a couple points.&lt;/p&gt;&#xA;&lt;p&gt;At first I tried running on a super small $5 instance, which seemed fine during&#xA;setup, but died every few requests when I started using it. I ended up bumping&#xA;the server up to the $15 a month plan (3GB RAM, single CPU core) and things&#xA;seem to be working fine now. I&amp;rsquo;ll re-evaluate my plan if things start slowing&#xA;down again.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/raspberry-pi/raspberry-pi-zero-giveaway/">
+            <h3 class="p-name">Raspberry Pi Zero Giveaway: Review</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2016-01-13 09:00">
+                Wednesday, January 13, 2016
+            </time> in
+            
+                <a
+                    href="/categories/raspberry-pi"
+                    rel="category"
+                    class="p-category"
+                    title="Raspberry Pi">
+                    Raspberry Pi
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>I&rsquo;ve been watching my local <a href="1">Barnes &amp; Nobel&rsquo;s</a> like a hawk the past few
+weeks. In case you&rsquo;ve been living under a rock, the official Raspberry Pi
+magazine, <a href="2">MagPi</a>, shipped with the new <a href="3">Raspberry Pi Zero</a> attached to
+the cover.</p>
+<p>The Raspberry Pi Zero, announced in late November of 2015, has been flying off
+shelves as fast as it&rsquo;s stocked. They&rsquo;re HARD to get your hands on. I should
+know, I&rsquo;ve been trying since they were first announced! I knew my best bet would
+be to get a copy of the MagPi when it finally shipped to the States.</p>
+<p>When first announced, lots of folks started buying up the stock of Zero&rsquo;s and
+selling them at jacked-up prices. The Raspberry Pi foundation urged buyers not
+to encourage price gougers, and to wait for more inventory. I decided to follow
+this request as I felt that price gougers were going against the spirit of
+the Pi itself. Computers should be evenly distributed at an affordable price to
+all people.</p>
+<p>However, I started to realize that the distribution of Zero&rsquo;s (and the MagPi)
+were pretty uneven. Places that didn&rsquo;t need as much stock, got more than needed,
+places that needed more didn&rsquo;t get enough. This led to people starting to buy
+them for other folks, as well as giveaways to try and get these tiny computers
+into as many hands as possible.</p>
+<p>That&rsquo;s why I posted in the <a href="4">Raspberry Pi Subreddit</a> on Monday. I was FINALLY
+able to get my hands on the coveted Issue #40 of the MagPi. Not only was I able
+to get <strong>one</strong>, but due to the uneven distribution that I talked about, my local
+Barnes &amp; Nobel had plenty of stock, and I was able to get a <strong>second</strong>. I
+wanted to be able to give a Zero to someone who hasn&rsquo;t been able to find one
+yet. Someone who would build something truly <em>awesome</em> with it.</p>
+<p>Before I talk about the results of the giveaway, I want to talk about the
+technology behind it. I decided to use a simple python script to automate
+gathering contest entries from the Reddit Post. I could then, again with python,
+select a random winner.</p>
+<h3 id="the-code5"><a href="5">The Code</a></h3>
+<p>I put all the code up on Github so that no issues would arise with claims of
+unfairness. I also wanted to write the code in such a way that I could
+easily repurpose it for another giveaway in the future (by either myself or
+anyone else willing to fork the repo).</p>
+<p>I used <a href="6">PRAW</a> to gather the data from the Reddit Post. It was pretty trivial
+to provide PRAW with a Submission ID and then loop over all the comments. Here&rsquo;s
+what I did:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># We connect to Reddit using a Unique user_agent</span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> praw<span style="color:#f92672">.</span>Reddit(user_agent<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Reddit Raspberry Pi Giveaway (by /u/IrishLadd)&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># We get the submission, &#34;SUBMISSION&#34; here comes from a config file</span>
+</span></span><span style="display:flex;"><span>submission <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>get_submission(submission_id<span style="color:#f92672">=</span>SUBMISSION)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s make sure we get ALL comments in the thread:</span>
+</span></span><span style="display:flex;"><span>submission<span style="color:#f92672">.</span>replace_more_comments(limit<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> comment <span style="color:#f92672">in</span> submission<span style="color:#f92672">.</span>comments:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Here I just did some checks to see if the comment matched, and that it&#39;s</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># author wasn&#39;t already on the list of entries.</span>
+</span></span></code></pre></div><p>Like I said, the code for this really is pretty trivial. It does, as I said
+before, remove any doubt that it was a fair contest. After getting all the
+entries I then count the total number, and get a random <code>int</code> from 1 to that
+number. This is the winning line!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>entry_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;entries.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> entries:
+</span></span><span style="display:flex;"><span>    entry_count <span style="color:#f92672">=</span> sum(<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> entries) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>winning_entry_number <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">1</span>, entry_count)
+</span></span><span style="display:flex;"><span>winning_entry <span style="color:#f92672">=</span> linecache<span style="color:#f92672">.</span>getline(<span style="color:#e6db74">&#39;entries.csv&#39;</span>, winning_entry_number)
+</span></span><span style="display:flex;"><span>winning_entry_parts <span style="color:#f92672">=</span> winning_entry<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>winning_user <span style="color:#f92672">=</span> winning_entry_parts[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>strip(<span style="color:#e6db74">&#39; &#34;</span><span style="color:#ae81ff">\&#39;\t\r\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>winning_permalink <span style="color:#f92672">=</span> winning_entry_parts[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>strip(<span style="color:#e6db74">&#39; &#34;</span><span style="color:#ae81ff">\&#39;\t\r\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><p>So, without further adieu&hellip;</p>
+<h3 id="the-winner">The Winner!</h3>
+<p>The winner is <a href="http://reddit.com/u/nullandkale">/u/nullandkale</a>, with
+<a href="https://www.reddit.com/r/raspberry_pi/comments/40idxl/another_raspberry_pi_0_giveaway/cyushol">their entry</a>
+of:</p>
+<blockquote>
+<p>I would build either a controller to auto turn my computer off when I left the
+house, or some sort of retropi handheld.</p>
+</blockquote>
+<p>Here&rsquo;s the script spitting out the results:</p>
+<p><img src="http://i.imgur.com/cwi9q4m.png" alt="Results"></p>
+<p>Thanks to everyone who played!</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/raspberry-pi"
+                rel="tag"
+                class="p-category"
+                title="raspberry pi">
+                #raspberry pi
+            </a>
+        
+            <a
+                href="/tags/zero"
+                rel="tag"
+                class="p-category"
+                title="zero">
+                #zero
+            </a>
+        
+            <a
+                href="/tags/giveaway"
+                rel="tag"
+                class="p-category"
+                title="giveaway">
+                #giveaway
+            </a>
+        
+            <a
+                href="/tags/maker"
+                rel="tag"
+                class="p-category"
+                title="maker">
+                #maker
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

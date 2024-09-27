@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on CrowderSoup</title>
+    <link>//localhost:1313/tags/javascript/</link>
+    <description>Recent content in Javascript on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Nov 2015 13:20:08 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Scope Using Call, Apply, and Bind</title>
+      <link>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</link>
+      <pubDate>Mon, 16 Nov 2015 13:20:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/managing-scope-using-call-apply-and-bind/</guid>
+      <description>&lt;h2 id=&#34;callhttpsdevelopermozillaorgen-usdocswebjavascriptreferenceglobal_objectsfunctioncall&#34;&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call&#34;&gt;Call&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Calls a function, with the specified arguments passed in&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The first argument becomes &lt;code&gt;this&lt;/code&gt;, the rest are passed in as regular arguments.&#xA;Using call allows you to maintain the scope of &lt;code&gt;this&lt;/code&gt; accross methods. It works&#xA;like this:&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here we&amp;rsquo;re using prototypical inheritance to allow us to inheirit properties from&#xA;&lt;code&gt;Animal&lt;/code&gt; in &lt;code&gt;Dog&lt;/code&gt; and &lt;code&gt;Cat&lt;/code&gt;. Using &lt;code&gt;call&lt;/code&gt; allows us to invoke &lt;code&gt;Animal&lt;/code&gt; to initialize&#xA;it&amp;rsquo;s properties while maintaining the correct scope.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript: Array&#39;s with named Properties</title>
+      <link>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</link>
+      <pubDate>Wed, 11 Nov 2015 12:46:49 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/javascript/javascript-arrays-with-named-properties/</guid>
+      <description>&lt;p&gt;Adding named properties to arrays in JavaScript can be handy in a few different&#xA;cases. For instance:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You need a nice formatted title / description for a data set. Rather than&#xA;having multiple objects you can use named properties and get away with only&#xA;using one.&lt;/li&gt;&#xA;&lt;li&gt;You want to add some functions to an array for whatever reason&lt;/li&gt;&#xA;&lt;li&gt;Lots of other reasons that I can&amp;rsquo;t think of right now!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Basically, this just buys you a nice way to encapsulate all the data you might&#xA;need, without having to use an object with a nested array, or multiple objects.&#xA;Maybe your way is more clean or better for this reason or that&amp;hellip; I just&#xA;thought this was neat. :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

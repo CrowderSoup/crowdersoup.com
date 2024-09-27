@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on CrowderSoup</title>
+    <link>//localhost:1313/tags/music/</link>
+    <description>Recent content in Music on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 May 2023 13:59:54 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 11: Watsky in Salt Lake City</title>
+      <link>//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/</link>
+      <pubDate>Sat, 13 May 2023 13:59:54 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/indieweb/100-days/day-11-watsky-in-salt-lake-city/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;./watsky.JPG&#34;&#xA;    alt=&#34;Watsky - 2023&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Watsky - 2023&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Last night I had the chance to go see Watsky play at The Depot here in&#xA;Salt Lake City. It was my second time seeing him in concert, but both&#xA;where at the same venue. Today I&amp;rsquo;ve been reflecting on the differences&#xA;in my experience between both shows.&lt;/p&gt;&#xA;&lt;p&gt;The last concert was back in March of 2019. It was about a year before the&#xA;covid pandemic. It was right after &amp;ldquo;Complaint&amp;rdquo; (the first album in the&#xA;trilogy he just completed) came out. My favorite track from that album is&#xA;&amp;ldquo;Welcome to the Family&amp;rdquo; but it wasn&amp;rsquo;t played. The energy at the show was&#xA;good, but I was definitely disappointed to not hear that song.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

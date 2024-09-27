@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on CrowderSoup</title>
+    <link>//localhost:1313/categories/personal/</link>
+    <description>Recent content in Personal on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jul 2023 09:55:32 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Apartment, who Dis?</title>
+      <link>//localhost:1313/posts/personal/new-apartment-who-dis/</link>
+      <pubDate>Sun, 30 Jul 2023 09:55:32 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/new-apartment-who-dis/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been absent from my blog lately. The excuse is usually just that I got lazy.&#xA;Not this time though! This time the reason is&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;I SOLD MY HOUSE AND MOVED INTO AN APARTMENT!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This probably comes as a surprise to most. Why would I sell a house just to go&#xA;back to renting? Well, it&amp;rsquo;s not as simple as that. Mostly it came down to spoons.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ve probably heard the analogy before about spoons. They represent your time/energy.&#xA;You only have a finite number of them. So you have to be careful with your spoons.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Makefile</title>
+      <link>//localhost:1313/posts/personal/projects/hugo-makefile/</link>
+      <pubDate>Sat, 15 Jan 2022 23:50:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/hugo-makefile/</guid>
+      <description>&lt;p&gt;In doing research on themes for this blog, I stumbled across one called Neofeed&#xA;that had a &lt;a href=&#34;https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile&#34;&gt;really interesting&#xA;Makefile&lt;/a&gt;.&#xA;I was really intrigued by the idea of being able to run a command to start&#xA;a new post or run the hugo dev server.&lt;/p&gt;&#xA;&lt;p&gt;However, my needs where a bit different from the author of Neofeed. I modified&#xA;their Makefile to suit, and I&amp;rsquo;m excited to write this post about the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apologize Like You Mean It</title>
+      <link>//localhost:1313/posts/personal/apologize-like-you-mean-it/</link>
+      <pubDate>Sun, 20 Jun 2021 12:16:15 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/apologize-like-you-mean-it/</guid>
+      <description>&lt;p&gt;Today is Father&amp;rsquo;s day, a day where we celebrate the dad&amp;rsquo;s in our lives. Rather&#xA;than write an appreciation post though, I wanted to write about something that&#xA;men everywhere can do better. That&amp;rsquo;s why I decided to write about apologizing.&#xA;It&amp;rsquo;s something that few men do, and even fewer do well.&lt;/p&gt;&#xA;&lt;p&gt;Even worse I&amp;rsquo;ve seen so many instances lately where men are directly asked to&#xA;apologize and refuse to. But the point of this post isn&amp;rsquo;t to call anyone out.&#xA;It&amp;rsquo;s meant to educate everyone on what a good apology looks like. This is as&#xA;much for me as anyone. I have to apologize all the time!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

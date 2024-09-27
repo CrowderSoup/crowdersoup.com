@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Covid on CrowderSoup</title>
+    <link>//localhost:1313/tags/covid/</link>
+    <description>Recent content in Covid on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jun 2022 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/covid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Having Covid</title>
+      <link>//localhost:1313/posts/personal/life/on-having-covid/</link>
+      <pubDate>Sun, 12 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/on-having-covid/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been sick the past week or so. At first I was really hopeful that it&#xA;wasn&amp;rsquo;t Covid. Even though my wife and kids had already tested positive.&#xA;I really really hoped that now, at the tail end of this thing, I could feel&#xA;like I had escaped. That I&amp;rsquo;d made it to the other side unscathed. But that was&#xA;not meant to be.&lt;/p&gt;&#xA;&lt;p&gt;I tested positive one week ago today. At first I didn&amp;rsquo;t want to believe it. But&#xA;there it was, a positive test result. It was such a strange sense of relief, mixed&#xA;with fear and frustration. Fear that I would get a lot more sick. Frustration at&#xA;still having to worry about this stupid fucking pandemic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

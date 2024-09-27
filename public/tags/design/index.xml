@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on CrowderSoup</title>
+    <link>//localhost:1313/tags/design/</link>
+    <description>Recent content in Design on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Nov 2015 09:45:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using vh with calc In CSS</title>
+      <link>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</link>
+      <pubDate>Tue, 17 Nov 2015 09:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/</guid>
+      <description>&lt;p&gt;I often have need to build layout&amp;rsquo;s that vary depending on the content put in&#xA;them. I can&amp;rsquo;t always count on that content being the same (&lt;em&gt;cough&lt;/em&gt; CMSs &lt;em&gt;cough&lt;/em&gt;).&#xA;It&amp;rsquo;s just one of those things you have to do.&lt;/p&gt;&#xA;&lt;p&gt;One thing I&amp;rsquo;m having to do a lot though, is making the body of a page take up a&#xA;certain amount of space so that the footer doesn&amp;rsquo;t look weird. In the past I&amp;rsquo;ve&#xA;used JavaScript to make the footer take up the remaining space on the page if the&#xA;content didn&amp;rsquo;t take up enough. I never really liked that solution though, because&#xA;it breaks if the user turns off JavaScript.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

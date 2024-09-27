@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-4-classifying-tweets/">
+            <h3 class="p-name">Day 4: Classifying Tweets</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2023-01-09 21:26">
+                Monday, January 9, 2023
+            </time> in
+            
+                <a
+                    href="/categories/projects"
+                    rel="category"
+                    class="p-category"
+                    title="Projects">
+                    Projects
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>Let&rsquo;s start today with the personal shit&hellip; I was up half the night with
+a vomiting child last night. I was up early to get the other kid ready for
+school. I worked all day. I am TIRED. But I am showing up for my blog. I am
+showing up for 100 days!</p>
+<h3 id="twitter-import">Twitter Import</h3>
+<p>I continued to work this evening on importing my tweets as Hugo posts. I need
+to classify my tweets, so therefore I need to define a data structure to do so.
+I came up with the following in Go:</p>
+<pre tabindex="0"><code>// TweetType classifies a type of tweet
+type TweetType string
+
+const (
+    // Post An original tweet
+    Post TweetType = &#34;post&#34;
+    // Reply A reply to a tweet
+    Reply = &#34;reply&#34;
+    // Retweet a repost of a tweeet
+    Retweet = &#34;retweet&#34;
+)
+
+// Tweet is a post on twitter
+type Tweet struct {
+    Type TweetType
+    // TODO: Add additional tweet properties (permalink, body, etc.)
+}
+</code></pre><p>This data structure will let me classify all my tweets so I can generate Hugo
+posts appropriately. It may be slightly naive, but I can iterate on it as I go.
+It might not be a LOT of progress, but given my first paragraph&hellip; I think it&rsquo;s
+still GREAT progress.</p>
+<p>From here I will build a heuristic that will parse the body of a tweet and
+classify it into one of the above types. It will pull out the important bits of
+data (permalinks, links to tweets I&rsquo;m replying to, etc.). This was an important
+and big step in this project.</p>
+<p>Here&rsquo;s to day 5 and everything I will get done tomorrow!</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/indieweb"
+                rel="tag"
+                class="p-category"
+                title="indieweb">
+                #indieweb
+            </a>
+        
+            <a
+                href="/tags/projects"
+                rel="tag"
+                class="p-category"
+                title="projects">
+                #projects
+            </a>
+        
+            <a
+                href="/tags/100days"
+                rel="tag"
+                class="p-category"
+                title="100days">
+                #100days
+            </a>
+        
+            <a
+                href="/tags/twitter"
+                rel="tag"
+                class="p-category"
+                title="twitter">
+                #twitter
+            </a>
+        
+            <a
+                href="/tags/golang"
+                rel="tag"
+                class="p-category"
+                title="golang">
+                #golang
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

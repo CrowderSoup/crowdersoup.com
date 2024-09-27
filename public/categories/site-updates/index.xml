@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site Updates on CrowderSoup</title>
+    <link>//localhost:1313/categories/site-updates/</link>
+    <description>Recent content in Site Updates on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2024 11:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/site-updates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tina CMS</title>
+      <link>//localhost:1313/posts/site-updates/tina-cms/</link>
+      <pubDate>Fri, 27 Sep 2024 11:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/tina-cms/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying out &lt;a href=&#34;https://tina.io&#34;&gt;TinaCMS&lt;/a&gt;. I heard about it on Twitter, looked it up, and realized that it could add a configurable UI backend for my Hugo blog. This post is mainly for me to tinker with it and see if it&amp;rsquo;s something I&amp;rsquo;d enjoy using.&lt;/p&gt;&#xA;&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rich text editor (with the ability to toggle back to markdown)&lt;/li&gt;&#xA;&lt;li&gt;Media manager (for adding images or other files)&lt;/li&gt;&#xA;&lt;li&gt;Collections (posts or pages)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Collections are at the core of everything. They&amp;rsquo;re the blog posts, pages, etc. An item in a collection has fields which are configurable in your tina config.ts file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simple.css: Classless Styles</title>
+      <link>//localhost:1313/posts/site-updates/simple-css-classless-framework/</link>
+      <pubDate>Sat, 28 May 2022 07:44:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/simple-css-classless-framework/</guid>
+      <description>&lt;p&gt;In my last post I mentioned that I wanted to keep this site simple. That&#xA;I wanted to build on a solid foundation. I didn&amp;rsquo;t want to muck with that&#xA;foundation to make my site look &amp;ldquo;pretty&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I shared the un-styled version of this site on my socials when &lt;a href=&#34;https://twitter.com/duffy0&#34;&gt;@Duffy&lt;/a&gt;&#xA;&lt;a href=&#34;https://twitter.com/duffy0/status/1529810591405047808&#34;&gt;mentioned&lt;/a&gt; &lt;a href=&#34;https://simplecss.org/&#34;&gt;Simple.css&lt;/a&gt;. I fell in love with the idea of it right away.&#xA;A classless css framework that applies styling to semantic markup? What&amp;rsquo;s not&#xA;to love??&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Theme: Back to Basics</title>
+      <link>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</link>
+      <pubDate>Wed, 25 May 2022 13:31:32 -0600</pubDate>
+      <guid>//localhost:1313/posts/site-updates/new-theme-back-to-basics/</guid>
+      <description>&lt;p&gt;Things look a little — ahem — &lt;em&gt;different&lt;/em&gt; around here, don&amp;rsquo;t they?&#xA;I think if you look carefully you&amp;rsquo;ll notice a few things have changed 😅&lt;/p&gt;&#xA;&lt;p&gt;I recently decided that I wanted to change up my personal site and build from&#xA;a solid foundation. There wasn&amp;rsquo;t anything wrong with my old theme. Far from it!&#xA;It worked really well. I just wanted to have something that was purpose built&#xA;for what I wanted. Not something I was having to tweak and mod to make my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trying out FrontMatter</title>
+      <link>//localhost:1313/posts/trying-out-frontmatter/</link>
+      <pubDate>Sun, 22 May 2022 05:20:25 +0000</pubDate>
+      <guid>//localhost:1313/posts/trying-out-frontmatter/</guid>
+      <description>&lt;p&gt;I recently found a really cool VSCode extension called FrontMatter. It allows you to manage your static site with a simple, intuitive interface, all within VSCode. This is the first post I&amp;rsquo;m writing with it.&lt;/p&gt;&#xA;&lt;p&gt;It sort of feels like a halfway point between managing plain text / markdown files and having a full-blown CMS. For my use, I don&amp;rsquo;t need something like WordPress&amp;hellip; Markdown files and Hugo is plenty. But having a nice interface to see a list of posts, media, etc. is nice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(The Long Road) Back to Hugo</title>
+      <link>//localhost:1313/posts/site-updates/back-to-hugo/</link>
+      <pubDate>Fri, 24 Sep 2021 21:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/back-to-hugo/</guid>
+      <description>&lt;p&gt;Once upon a time there was a full-stack software developer who could NOT stop&#xA;redoing his personal Website. I think this might be the 50th or 60th time I&amp;rsquo;ve&#xA;done it in the last 10ish years that I&amp;rsquo;ve owned this domain. I have used all&#xA;sorts of content management systems (even wrote a couple of my own) and static&#xA;site generators. WordPress, OctoberCMS, Pelican, Hugo, etc.&lt;/p&gt;&#xA;&lt;p&gt;But I keep coming back to Hugo. Hugo is so powerful, fast, and flexible! The&#xA;reason I kept moving away from it was because I kept wanting to add API&#xA;endpoints to my blog for one reason or another.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics Plus: A new Hugo Theme</title>
+      <link>//localhost:1313/posts/site-updates/basics-plus/</link>
+      <pubDate>Fri, 30 Nov 2018 14:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/basics-plus/</guid>
+      <description>&lt;p&gt;This site has had a couple new themes lately, but I&amp;rsquo;ve finally settled on one:&#xA;&lt;a href=&#34;https://github.com/crowdersoup/basics-plus&#34;&gt;Basics Plus&lt;/a&gt;. This is actually a theme that I&amp;rsquo;ve forked from &lt;a href=&#34;https://github.com/arjunkrishnababu96/basics&#34;&gt;Basics&lt;/a&gt;.&#xA;It&amp;rsquo;s a fairly simple and paired down theme. I forked it so that I could change&#xA;a couple things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The top menu (more dynamic, able to add more items)&lt;/li&gt;&#xA;&lt;li&gt;Add Disqus comments&lt;/li&gt;&#xA;&lt;li&gt;The byline&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;These are some fairly small feature changes. I plan to make more changes&#xA;/ refinements going forward while keeping the clean / simple look and feel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Husky to Build Hugo Site</title>
+      <link>//localhost:1313/posts/site-updates/husky/</link>
+      <pubDate>Sat, 05 May 2018 16:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/husky/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been making some efforts to streamline the publishing process for this&#xA;site. I&amp;rsquo;ve read about tools like &lt;a href=&#34;https://www.netlifycms.org/&#34;&gt;Netlify&lt;/a&gt; and &lt;a href=&#34;https://www.getlektor.com/&#34;&gt;Lektor&lt;/a&gt;, but I wanted to&#xA;keep things as close to a basic &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site as possible.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I wanted to use git hooks to run hugo whenever I ran &lt;code&gt;git commit&lt;/code&gt;.&#xA;That way to publish a new post I simply had to write it in markdown, save,&#xA;commit and push. No remembering to run hugo. No remembering to add changes to&#xA;the site. A plain and simple git workflow for publishing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub Pages Over HTTPS</title>
+      <link>//localhost:1313/posts/site-updates/https/</link>
+      <pubDate>Sat, 05 May 2018 11:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/https/</guid>
+      <description>&lt;p&gt;Using HTTPS for your site has lots of benefits. Chief among them being&#xA;security. Using HTTPS ensures that no one can intercept and read traffic&#xA;between you and the site you&amp;rsquo;re visiting.&lt;/p&gt;&#xA;&lt;p&gt;However, it&amp;rsquo;s traditionally been somewhat difficult and expensive to provide&#xA;HTTPS for your sites visitors. Now though, with &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; an SSL&#xA;certificate is free! And if you&amp;rsquo;re using GitHub pages with a custom domain for&#xA;hosting using it couldn&amp;rsquo;t be easier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Keybase Proof</title>
+      <link>//localhost:1313/posts/site-updates/keybase/</link>
+      <pubDate>Tue, 01 May 2018 11:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/keybase/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve added my &lt;a href=&#34;http://crowdersoup.com/keybase.txt&#34;&gt;Keybase Proof&lt;/a&gt; as a text file at the root of this site.&#xA;I used to have my site proven via DNS but for whatever reason CloudFlare&#xA;removed my TXT record breaking the proof. I decided that having the .txt file&#xA;proof was more resilient because even if I change hosting (Currently on Github&#xA;Pages) my proof will remain intact.&lt;/p&gt;&#xA;&lt;p&gt;If you aren&amp;rsquo;t on &lt;a href=&#34;https://keybase.io/&#34;&gt;Keybase&lt;/a&gt; check it out. I like to think of it as&#xA;&amp;ldquo;crypto-as-a-service&amp;rdquo;. They have the ability to share files or have chats (team&#xA;or one-on-one) that are encrypted end-to-end.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moving to Hugo</title>
+      <link>//localhost:1313/posts/site-updates/hugo/</link>
+      <pubDate>Wed, 29 Nov 2017 23:41:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/hugo/</guid>
+      <description>&lt;p&gt;Last night I got the wild hare to migrate my personal site from &lt;a href=&#34;https://github.com/getpelican/pelican&#34;&gt;Pelican&lt;/a&gt; to&#xA;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. I&amp;rsquo;ve been meaning to do it for a while now, so to give myself the&#xA;push I needed to get it done I &lt;em&gt;deleted&lt;/em&gt; my old personal site from &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;differences&#34;&gt;Differences&lt;/h3&gt;&#xA;&lt;h4 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h4&gt;&#xA;&lt;p&gt;Honestly the biggest different for content is &amp;ldquo;front matter&amp;rdquo;. Both Hugo and&#xA;Pelican, as static site generators, use front matter to describe pieces of&#xA;content.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

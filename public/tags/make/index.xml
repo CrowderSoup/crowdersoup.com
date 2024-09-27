@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on CrowderSoup</title>
+    <link>//localhost:1313/tags/make/</link>
+    <description>Recent content in Make on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 23:50:08 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Makefile</title>
+      <link>//localhost:1313/posts/personal/projects/hugo-makefile/</link>
+      <pubDate>Sat, 15 Jan 2022 23:50:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/projects/hugo-makefile/</guid>
+      <description>&lt;p&gt;In doing research on themes for this blog, I stumbled across one called Neofeed&#xA;that had a &lt;a href=&#34;https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile&#34;&gt;really interesting&#xA;Makefile&lt;/a&gt;.&#xA;I was really intrigued by the idea of being able to run a command to start&#xA;a new post or run the hugo dev server.&lt;/p&gt;&#xA;&lt;p&gt;However, my needs where a bit different from the author of Neofeed. I modified&#xA;their Makefile to suit, and I&amp;rsquo;m excited to write this post about the result!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

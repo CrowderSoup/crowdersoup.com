@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on CrowderSoup</title>
+    <link>//localhost:1313/categories/life/</link>
+    <description>Recent content in Life on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jun 2022 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Having Covid</title>
+      <link>//localhost:1313/posts/personal/life/on-having-covid/</link>
+      <pubDate>Sun, 12 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/on-having-covid/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been sick the past week or so. At first I was really hopeful that it&#xA;wasn&amp;rsquo;t Covid. Even though my wife and kids had already tested positive.&#xA;I really really hoped that now, at the tail end of this thing, I could feel&#xA;like I had escaped. That I&amp;rsquo;d made it to the other side unscathed. But that was&#xA;not meant to be.&lt;/p&gt;&#xA;&lt;p&gt;I tested positive one week ago today. At first I didn&amp;rsquo;t want to believe it. But&#xA;there it was, a positive test result. It was such a strange sense of relief, mixed&#xA;with fear and frustration. Fear that I would get a lot more sick. Frustration at&#xA;still having to worry about this stupid fucking pandemic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resolutions for 2016</title>
+      <link>//localhost:1313/posts/personal/life/resolutions-2016/</link>
+      <pubDate>Sat, 02 Jan 2016 06:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/resolutions-2016/</guid>
+      <description>&lt;p&gt;It seems like the &amp;ldquo;thing to do&amp;rdquo; at the beginning of each new year is to make&#xA;New Years Resolutions. If you&amp;rsquo;re at all into blogging then you know that you&#xA;then have to publish those resolutions for all the people who don&amp;rsquo;t read your&#xA;blog to see. That&amp;rsquo;s who/what this post is for.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to make my resolutions less about &amp;ldquo;I want to lose weight&amp;rdquo;, and more&#xA;focused on programming, open source, and this blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Christmas of 2015</title>
+      <link>//localhost:1313/posts/personal/life/christmas-2015/</link>
+      <pubDate>Sun, 27 Dec 2015 13:20:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/christmas-2015/</guid>
+      <description>&lt;p&gt;This year&amp;rsquo;s Christmas was one for the books. As a father it was SO much fun to&#xA;watch my two girls have the time of their little lives getting and playing with&#xA;all their new toys. Their excitement and wonderment meant the world to me, even&#xA;if I know they don&amp;rsquo;t fully understand everything.&lt;/p&gt;&#xA;&lt;p&gt;Before we went down, we had the girls get their Christmas Jamies on!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/uploads/2015/12/27/EvelynAndRuby-ChristmasJamies.jpg&#34; alt=&#34;Evelyn and Ruby in Christmas Jamies&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hour of Code</title>
+      <link>//localhost:1313/posts/personal/life/hour-of-code/</link>
+      <pubDate>Thu, 10 Dec 2015 11:35:26 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/hour-of-code/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Yesterday I took part in the &lt;a href=&#34;https://hourofcode.com/us&#34;&gt;Hour of Code&lt;/a&gt; at my&#xA;local high school as a volunteer.In fact, it was at the high school that &lt;strong&gt;I&lt;/strong&gt;&#xA;attended. I had a lot of fun and I was excited to see the stundents gain a&#xA;deeper understanding of code.&lt;/p&gt;&#xA;&lt;p&gt;I was especially impressed with the number of young women in the class that&#xA;seemed to really enjoy it. It&amp;rsquo;s a really common misunderstanding that people hold&#xA;that girls aren&amp;rsquo;t interested in tech. I think in too many cases they are steered&#xA;in other directions, towards things they &lt;em&gt;should&lt;/em&gt; be interested in. I&amp;rsquo;m glad to&#xA;have been able to give &lt;strong&gt;all&lt;/strong&gt; the kids an opportunity to see if programming is&#xA;a career they&amp;rsquo;d be interested in.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

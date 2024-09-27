@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zero on CrowderSoup</title>
+    <link>//localhost:1313/tags/zero/</link>
+    <description>Recent content in Zero on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jan 2016 09:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/zero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi Zero Giveaway: Review</title>
+      <link>//localhost:1313/posts/raspberry-pi/raspberry-pi-zero-giveaway/</link>
+      <pubDate>Wed, 13 Jan 2016 09:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi/raspberry-pi-zero-giveaway/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been watching my local &lt;a href=&#34;1&#34;&gt;Barnes &amp;amp; Nobel&amp;rsquo;s&lt;/a&gt; like a hawk the past few&#xA;weeks. In case you&amp;rsquo;ve been living under a rock, the official Raspberry Pi&#xA;magazine, &lt;a href=&#34;2&#34;&gt;MagPi&lt;/a&gt;, shipped with the new &lt;a href=&#34;3&#34;&gt;Raspberry Pi Zero&lt;/a&gt; attached to&#xA;the cover.&lt;/p&gt;&#xA;&lt;p&gt;The Raspberry Pi Zero, announced in late November of 2015, has been flying off&#xA;shelves as fast as it&amp;rsquo;s stocked. They&amp;rsquo;re HARD to get your hands on. I should&#xA;know, I&amp;rsquo;ve been trying since they were first announced! I knew my best bet would&#xA;be to get a copy of the MagPi when it finally shipped to the States.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

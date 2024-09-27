@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on CrowderSoup</title>
+    <link>//localhost:1313/categories/tools/</link>
+    <description>Recent content in Tools on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2016 09:54:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging PowerShell in VSCode</title>
+      <link>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</link>
+      <pubDate>Tue, 26 Apr 2016 09:54:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/tools/powershell-debugging-in-vscode/</guid>
+      <description>&lt;p&gt;Yesterday I learned a neat trick with &lt;a href=&#34;1&#34;&gt;Visual Studio Code&lt;/a&gt; when working on&#xA;some PowerShell scripts to help orchestrate build and deployment of our projects&#xA;(more on that in a different post). I knew that VSCode had a debugger, but I&#xA;didn&amp;rsquo;t realize that a debugger for PowerShell had been added &lt;a href=&#34;0&#34;&gt;via an extension&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I had installed this extension some time ago to help with writing PowerShell&#xA;scripts in VSCode, but I was running my PowerShell prompt in another window to&#xA;actually test them. I realized that I could debug my PowerShell scripts in&#xA;VSCode so I set it up and tried it immediately. AND IT&amp;rsquo;S AWESOME.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

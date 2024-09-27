@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/programming/css/using-vh-with-calc-in-css/">
+            <h3 class="p-name">Using vh with calc In CSS</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2015-11-17 09:45">
+                Tuesday, November 17, 2015
+            </time> in
+            
+                <a
+                    href="/categories/css"
+                    rel="category"
+                    class="p-category"
+                    title="CSS">
+                    CSS
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>I often have need to build layout&rsquo;s that vary depending on the content put in
+them. I can&rsquo;t always count on that content being the same (<em>cough</em> CMSs <em>cough</em>).
+It&rsquo;s just one of those things you have to do.</p>
+<p>One thing I&rsquo;m having to do a lot though, is making the body of a page take up a
+certain amount of space so that the footer doesn&rsquo;t look weird. In the past I&rsquo;ve
+used JavaScript to make the footer take up the remaining space on the page if the
+content didn&rsquo;t take up enough. I never really liked that solution though, because
+it breaks if the user turns off JavaScript.</p>
+<p>Today I wanted to share with you two CSS things, that when combined solve my
+particular problem, and might just solve yours too.</p>
+<h3 id="vh">vh</h3>
+<blockquote>
+<p>Equal to 1% of the height of the initial containing block.</p>
+</blockquote>
+<p><em>from <a href="http://www.w3.org/TR/css3-values/#viewport-relative-lengths">w3.org</a></em></p>
+<p>This gives us the <strong>height</strong> of the page, which we&rsquo;re going to need to calculate
+how much space the main content area of the page should take up.</p>
+<h3 id="clac">clac</h3>
+<blockquote>
+<p>With <code>calc()</code>, you can perform calculations to determine CSS property values.</p>
+</blockquote>
+<p><em>from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">MDN</a></em></p>
+<p>This allows us to perform mathematical calculations and set a property to the
+result. This, combined with <code>vh</code> gives us a lot of power!</p>
+<h3 id="my-solution">My Solution</h3>
+<p>In order to ensure that the body of a site I&rsquo;m working on is always taking up <em>at
+least</em> enough to completely fill the page. I have a couple of things on the page
+that are fixed height (header and footer). I take the aggregate height of them
+and subtract that from <code>100vh</code> (100% of the viewport height), like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>#body {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">min-height</span>: calc(<span style="color:#ae81ff">100</span><span style="color:#66d9ef">vh</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">405</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now <code>#body</code> is going to be <em>at least</em> the height of <code>100vh - 405px</code>!</p>
+<p>This is just one use-case. I&rsquo;m sure there are tons of others! What are you using
+<code>calc</code> and <code>vh</code> for in your projects?</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/programming"
+                rel="tag"
+                class="p-category"
+                title="programming">
+                #programming
+            </a>
+        
+            <a
+                href="/tags/css"
+                rel="tag"
+                class="p-category"
+                title="css">
+                #css
+            </a>
+        
+            <a
+                href="/tags/front-end"
+                rel="tag"
+                class="p-category"
+                title="front-end">
+                #front-end
+            </a>
+        
+            <a
+                href="/tags/design"
+                rel="tag"
+                class="p-category"
+                title="design">
+                #design
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

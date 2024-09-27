@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Osx on CrowderSoup</title>
+    <link>//localhost:1313/tags/osx/</link>
+    <description>Recent content in Osx on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qutebrowser: Set PATH in config for OSX</title>
+      <link>//localhost:1313/posts/tutorials/qutebrowser/qutebrowser-set-path-config-osx/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/tutorials/qutebrowser/qutebrowser-set-path-config-osx/</guid>
+      <description>&lt;p&gt;I have recently started using &lt;a href=&#34;https://qutebrowser.org&#34;&gt;Qutebrowser&lt;/a&gt; (again,&#xA;lol). I wanted to write / use some simple user scripts to add some&#xA;functionality, but on OSX I was having some issues with things not being in my&#xA;&lt;code&gt;PATH&lt;/code&gt;. I didn&amp;rsquo;t realize why / what was happening so I asked in the issues of&#xA;Qutebrowser on github and quickly got my answer.&lt;/p&gt;&#xA;&lt;p&gt;It turns out that for GUI apps on OSX they don&amp;rsquo;t inheirit the path that you set&#xA;in your shell profile. I decided to fix that by adding the missing things to my&#xA;&lt;code&gt;PATH&lt;/code&gt; when Qutebrowser starts in by editing it in my &lt;code&gt;config.py&lt;/code&gt;. Now it looks&#xA;something like this at the start:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christmas on CrowderSoup</title>
+    <link>//localhost:1313/tags/christmas/</link>
+    <description>Recent content in Christmas on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Dec 2015 13:20:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/christmas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Christmas of 2015</title>
+      <link>//localhost:1313/posts/personal/life/christmas-2015/</link>
+      <pubDate>Sun, 27 Dec 2015 13:20:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/christmas-2015/</guid>
+      <description>&lt;p&gt;This year&amp;rsquo;s Christmas was one for the books. As a father it was SO much fun to&#xA;watch my two girls have the time of their little lives getting and playing with&#xA;all their new toys. Their excitement and wonderment meant the world to me, even&#xA;if I know they don&amp;rsquo;t fully understand everything.&lt;/p&gt;&#xA;&lt;p&gt;Before we went down, we had the girls get their Christmas Jamies on!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/uploads/2015/12/27/EvelynAndRuby-ChristmasJamies.jpg&#34; alt=&#34;Evelyn and Ruby in Christmas Jamies&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

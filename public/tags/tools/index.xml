@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on CrowderSoup</title>
+    <link>//localhost:1313/tags/tools/</link>
+    <description>Recent content in Tools on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 15:20:28 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trying out FrontMatter</title>
+      <link>//localhost:1313/posts/trying-out-frontmatter/</link>
+      <pubDate>Sun, 22 May 2022 05:20:25 +0000</pubDate>
+      <guid>//localhost:1313/posts/trying-out-frontmatter/</guid>
+      <description>&lt;p&gt;I recently found a really cool VSCode extension called FrontMatter. It allows you to manage your static site with a simple, intuitive interface, all within VSCode. This is the first post I&amp;rsquo;m writing with it.&lt;/p&gt;&#xA;&lt;p&gt;It sort of feels like a halfway point between managing plain text / markdown files and having a full-blown CMS. For my use, I don&amp;rsquo;t need something like WordPress&amp;hellip; Markdown files and Hugo is plenty. But having a nice interface to see a list of posts, media, etc. is nice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

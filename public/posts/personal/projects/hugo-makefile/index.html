@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/personal/projects/hugo-makefile/">
+            <h3 class="p-name">Hugo Makefile</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2022-01-15 23:50">
+                Saturday, January 15, 2022
+            </time> in
+            
+                <a
+                    href="/categories/personal"
+                    rel="category"
+                    class="p-category"
+                    title="personal">
+                    personal
+                </a>
+            
+                <a
+                    href="/categories/projects"
+                    rel="category"
+                    class="p-category"
+                    title="projects">
+                    projects
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>In doing research on themes for this blog, I stumbled across one called Neofeed
+that had a <a href="https://github.com/victoriadrake/neofeed-theme/blob/master/Makefile">really interesting
+Makefile</a>.
+I was really intrigued by the idea of being able to run a command to start
+a new post or run the hugo dev server.</p>
+<p>However, my needs where a bit different from the author of Neofeed. I modified
+their Makefile to suit, and I&rsquo;m excited to write this post about the result!</p>
+<h2 id="setup">Setup</h2>
+<p>First things first, we need to do some setup for our targets. We&rsquo;ll use these
+things later on:</p>
+<pre tabindex="0"><code>SHELL := /bin/bash
+DATEOF:=$(shell date +%FT%T)
+SPACE:=$(subst ,, )
+COMMA:=,
+</code></pre><p>We need the <code>SHELL</code> to run some shell commands. <code>DATEOF</code>, <code>SPACE</code>, and <code>COMMA</code>
+are all used in the <code>entry</code> target.</p>
+<ul>
+<li><code>DATEOF</code>: used for the date in the frontmatter.</li>
+<li><code>SPACE</code>: used to string substitute spaces in the <code>TITLE</code> (more on that later)</li>
+<li><code>COMMA</code>: used as part of a string substitution for the categories</li>
+</ul>
+<h2 id="targets">Targets</h2>
+<h3 id="help"><code>help</code></h3>
+<figure><img src="./make-help.png"
+    alt="make help command with output">
+</figure>
+
+<p>This target allows my <code>makefile</code> to be self-documenting. Calling <code>make help</code>
+will output a list of all the targets (including <code>help</code>) along with the comment
+for each one.</p>
+<h3 id="entry"><code>entry</code></h3>
+<pre tabindex="0"><code>entry: ## Create new entry with TITLE= &amp; CATEGORY=(the/category)
+	$(eval POST_PATH:=content/posts/$(CATEGORY)/$(subst $(SPACE),-,$(TITLE)))
+	$(shell mkdir -p $(POST_PATH))
+	@printf &#39;%b\n&#39; &#34;---\ntitle: $(TITLE) \ndate: $(DATEOF) \ncategories: [\&#34;$(subst /,\&#34;$(COMMA)\&#34;,$(CATEGORY))\&#34;] \ntags: \n---\n\n&#34; &gt; $(POST_PATH)/index.md
+</code></pre><p>The <code>entry</code> target creates a new blog entry. It requires two parameters,
+<code>TITLE</code> and <code>CATEGORY</code>.</p>
+<ul>
+<li><code>TITLE</code>: The title of your new entry</li>
+<li><code>CATEGORY</code>: A path for the categories</li>
+</ul>
+<p>The <code>CATEGORY</code> path will be split on the slash into an array of categories. It
+will also be used, in combination with the title, to create a new directory for
+the entry. Once the directory is created a file called <code>index.md</code> is created
+inside of it with frontmatter including the title, date, categories, and tags.</p>
+<h3 id="dev"><code>dev</code></h3>
+<pre tabindex="0"><code>dev: ## Run the local development server
+	hugo server -D --disableFastRender --environment development
+</code></pre><p>The <code>dev</code> target is simple. It starts up the hugo dev server with a few
+arguments. As you can imagine, its a lot easier to type <code>make dev</code> than that
+long command.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/projects"
+                rel="tag"
+                class="p-category"
+                title="projects">
+                #projects
+            </a>
+        
+            <a
+                href="/tags/make"
+                rel="tag"
+                class="p-category"
+                title="make">
+                #make
+            </a>
+        
+            <a
+                href="/tags/site"
+                rel="tag"
+                class="p-category"
+                title="site">
+                #site
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

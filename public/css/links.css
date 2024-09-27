@@ -1,0 +1,23 @@
+.p-note {
+  margin: 1rem 0 1rem 0;
+}
+
+.elsewhere {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  display: block;
+  border: solid 1px var(--accent);
+  border-radius: 0.25rem;
+  margin: 0.5rem 0 0.5rem;
+  padding: 0.25rem;
+}

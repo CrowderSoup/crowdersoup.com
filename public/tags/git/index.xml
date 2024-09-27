@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on CrowderSoup</title>
+    <link>//localhost:1313/tags/git/</link>
+    <description>Recent content in Git on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Aug 2023 11:13:03 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Signing Git Commits</title>
+      <link>//localhost:1313/posts/tutorials/signing-git-commits/</link>
+      <pubDate>Tue, 29 Aug 2023 11:13:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/tutorials/signing-git-commits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./verified-commit-badge.png&#34; alt=&#34;Verified Commit Badge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever noticed the &amp;ldquo;verified&amp;rdquo; badge next to a commit on GitHub?&#xA;A few years ago I did an wondered how I could get that on my own commits.&#xA;After a little googling I realized it was because those commits were&#xA;signed.&lt;/p&gt;&#xA;&lt;p&gt;Signing a commit with a GPG key is something natively supported by Git as&#xA;it turns out. Now this is one of the first things I set up on a new dev&#xA;machine. Setting it up is fairly straight forward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Husky to Build Hugo Site</title>
+      <link>//localhost:1313/posts/site-updates/husky/</link>
+      <pubDate>Sat, 05 May 2018 16:30:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/site-updates/husky/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been making some efforts to streamline the publishing process for this&#xA;site. I&amp;rsquo;ve read about tools like &lt;a href=&#34;https://www.netlifycms.org/&#34;&gt;Netlify&lt;/a&gt; and &lt;a href=&#34;https://www.getlektor.com/&#34;&gt;Lektor&lt;/a&gt;, but I wanted to&#xA;keep things as close to a basic &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site as possible.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I wanted to use git hooks to run hugo whenever I ran &lt;code&gt;git commit&lt;/code&gt;.&#xA;That way to publish a new post I simply had to write it in markdown, save,&#xA;commit and push. No remembering to run hugo. No remembering to add changes to&#xA;the site. A plain and simple git workflow for publishing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anatomy of a Commit Message</title>
+      <link>//localhost:1313/posts/programming/anatomy-of-a-commit-message/</link>
+      <pubDate>Fri, 13 Nov 2015 07:15:33 +0000</pubDate>
+      <guid>//localhost:1313/posts/programming/anatomy-of-a-commit-message/</guid>
+      <description>&lt;h2 id=&#34;1-subject-line&#34;&gt;1. Subject Line&lt;/h2&gt;&#xA;&lt;p&gt;The Subject Line is the first line of your commit message. Often the subject&#xA;alone is enough, but if it&amp;rsquo;s not and you need a body be sure to separate the&#xA;subject and body with a blank line.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First line of a commit message&lt;/li&gt;&#xA;&lt;li&gt;Often the only part you&amp;rsquo;ll need&lt;/li&gt;&#xA;&lt;li&gt;Separated from the body by a blank line&lt;/li&gt;&#xA;&lt;li&gt;Soft limit of 50 characters, hard limit of 69&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github&amp;rsquo;s interface truncates the subject line at 69 characters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Capitalize!&lt;/li&gt;&#xA;&lt;li&gt;Don&amp;rsquo;t end with a period&lt;/li&gt;&#xA;&lt;li&gt;Use the imperative mood&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Git itself uses the imperative mood when it creates a commit on your behalf&lt;/li&gt;&#xA;&lt;li&gt;We usually write in the indicative mood, which is more about reporting facts&lt;/li&gt;&#xA;&lt;li&gt;To help, the subject line should always complete the sentence:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;If applied, this commit will&amp;hellip;&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-body&#34;&gt;2. Body&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wrap the body at 72 characters&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This give git plenty of room to indent text while still keeping things&#xA;under 80 characters.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Use the body to explain what and why vs. how&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The code tells us the &lt;em&gt;how&lt;/em&gt;, the body of your commit message should tell us&#xA;&lt;em&gt;what&lt;/em&gt; and &lt;em&gt;why&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;sample-commit-messages&#34;&gt;Sample Commit Messages&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bad&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

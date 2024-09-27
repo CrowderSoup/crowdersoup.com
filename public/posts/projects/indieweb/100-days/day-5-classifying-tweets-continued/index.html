@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/projects/indieweb/100-days/day-5-classifying-tweets-continued/">
+            <h3 class="p-name">Day 5: Classifying Tweets (continued)</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2023-01-10 20:59">
+                Tuesday, January 10, 2023
+            </time> in
+            
+                <a
+                    href="/categories/projects"
+                    rel="category"
+                    class="p-category"
+                    title="Projects">
+                    Projects
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>Today finds me working on actually parsing the body of each tweet in an attempt
+to classify them. I need to spend a bit more time making sure that I&rsquo;m
+correctly identifying each type of tweet. Quote Tweets especially, since right
+now (as you&rsquo;ll see in my results) that&rsquo;s the one I&rsquo;m least sure about.</p>
+<p>Here&rsquo;s some numbers based on ALL of my tweets (posts, replies, retweets, and
+quote tweets) from 2020 onward.</p>
+<pre tabindex="0"><code>Total Tweets: 6519
+Post Tweets: 1625
+Reply Tweets: 3889
+Retweets: 1005
+Potential Quote Tweets: 613
+</code></pre><p>The last line is the total number of tweets that I <em>think</em> might be quote
+tweets. I need to look more closely at those and make sure I&rsquo;m identifying them
+correctly. If I am the total number of quote tweets would be subtracted from
+the number of post tweets (the body of these look very similar so they are hard
+to differentiate).</p>
+<p>Overall I am happy with the progress I made today. It&rsquo;s not much, but it&rsquo;s
+<strong>something</strong>. And for tonight that is enough.</p>
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/indieweb"
+                rel="tag"
+                class="p-category"
+                title="indieweb">
+                #indieweb
+            </a>
+        
+            <a
+                href="/tags/projects"
+                rel="tag"
+                class="p-category"
+                title="projects">
+                #projects
+            </a>
+        
+            <a
+                href="/tags/100days"
+                rel="tag"
+                class="p-category"
+                title="100days">
+                #100days
+            </a>
+        
+            <a
+                href="/tags/twitter"
+                rel="tag"
+                class="p-category"
+                title="twitter">
+                #twitter
+            </a>
+        
+            <a
+                href="/tags/golang"
+                rel="tag"
+                class="p-category"
+                title="golang">
+                #golang
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

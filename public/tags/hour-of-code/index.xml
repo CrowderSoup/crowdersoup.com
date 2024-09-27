@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hour of Code on CrowderSoup</title>
+    <link>//localhost:1313/tags/hour-of-code/</link>
+    <description>Recent content in Hour of Code on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Dec 2015 11:35:26 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/hour-of-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hour of Code</title>
+      <link>//localhost:1313/posts/personal/life/hour-of-code/</link>
+      <pubDate>Thu, 10 Dec 2015 11:35:26 +0000</pubDate>
+      <guid>//localhost:1313/posts/personal/life/hour-of-code/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Yesterday I took part in the &lt;a href=&#34;https://hourofcode.com/us&#34;&gt;Hour of Code&lt;/a&gt; at my&#xA;local high school as a volunteer.In fact, it was at the high school that &lt;strong&gt;I&lt;/strong&gt;&#xA;attended. I had a lot of fun and I was excited to see the stundents gain a&#xA;deeper understanding of code.&lt;/p&gt;&#xA;&lt;p&gt;I was especially impressed with the number of young women in the class that&#xA;seemed to really enjoy it. It&amp;rsquo;s a really common misunderstanding that people hold&#xA;that girls aren&amp;rsquo;t interested in tech. I think in too many cases they are steered&#xA;in other directions, towards things they &lt;em&gt;should&lt;/em&gt; be interested in. I&amp;rsquo;m glad to&#xA;have been able to give &lt;strong&gt;all&lt;/strong&gt; the kids an opportunity to see if programming is&#xA;a career they&amp;rsquo;d be interested in.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

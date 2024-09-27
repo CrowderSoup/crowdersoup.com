@@ -15,4 +15,4 @@ entry: ## Create new entry with TITLE= & CATEGORY=(the/category)
 
 dev: ## Run the local development server
 	env HUGO_BASEURL="http://localhost:1313" && \
-	hugo server -D --disableFastRender --environment development
+	npx tinacms dev -c "hugo server -D --disableFastRender --environment development"

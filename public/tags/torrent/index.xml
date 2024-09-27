@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Torrent on CrowderSoup</title>
+    <link>//localhost:1313/tags/torrent/</link>
+    <description>Recent content in Torrent on CrowderSoup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jan 2016 13:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/torrent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Torrent Machine and Network Share</title>
+      <link>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</link>
+      <pubDate>Thu, 21 Jan 2016 13:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi/torrent-machine-and-network-share/</guid>
+      <description>&lt;p&gt;When I first got a Raspberry Pi the first thing I wanted to build was a home&#xA;server. I wanted to have a central place at home to store files. I also thought&#xA;it would be nice to have a torrent machine to handle downloading whatever I&#xA;wanted. This past weekend I was finally able to get around to building it with&#xA;a Raspberry Pi 2.&lt;/p&gt;&#xA;&lt;p&gt;I chose to use &lt;a href=&#34;1&#34;&gt;Diet Pi&lt;/a&gt; as my OS. Diet Pi is an OS that comes with only the&#xA;bare essentials installed. On first boot it gives you a list of preconfigured&#xA;software to install. This was perfect for me because I could install Samba for&#xA;my file server and transmission for torrents. It made setting up what I wanted&#xA;&lt;strong&gt;really&lt;/strong&gt; easy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

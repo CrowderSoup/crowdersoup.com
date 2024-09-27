@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/site-updates/simple-css-classless-framework/">
+            <h3 class="p-name">Simple.css: Classless Styles</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2022-05-28 07:44">
+                Saturday, May 28, 2022
+            </time> in
+            
+                <a
+                    href="/categories/site-updates"
+                    rel="category"
+                    class="p-category"
+                    title="Site Updates">
+                    Site Updates
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>In my last post I mentioned that I wanted to keep this site simple. That
+I wanted to build on a solid foundation. I didn&rsquo;t want to muck with that
+foundation to make my site look &ldquo;pretty&rdquo;.</p>
+<p>I shared the un-styled version of this site on my socials when <a href="https://twitter.com/duffy0">@Duffy</a>
+<a href="https://twitter.com/duffy0/status/1529810591405047808">mentioned</a> <a href="https://simplecss.org/">Simple.css</a>. I fell in love with the idea of it right away.
+A classless css framework that applies styling to semantic markup? What&rsquo;s not
+to love??</p>
+<p>Simple.css was made by <a href="https://kevq.uk/">Kev Quirk</a>. He made it as a lightweight alternative
+to other &ldquo;everything but the kitchen sink&rdquo; CSS frameworks. Simple.css weighs in
+at a mere ~4kb. It makes your site look decent right off the bat, and because
+it&rsquo;s just based on semantic markup you can quickly start to customize it to
+suit your needs.</p>
+<p>For this site I wrote a simple stylesheet that is currently 27 lines long. In
+fact, it&rsquo;s so small that I&rsquo;ll share it here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>:<span style="color:#a6e22e">root</span> {
+</span></span><span style="display:flex;"><span>  --accent: <span style="color:#ae81ff">#2EC838</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">a</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span> <span style="color:#f92672">a</span> <span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span>.<span style="color:#a6e22e">h-entry</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">elsewhere-icon</span> {
+</span></span><span style="display:flex;"><span>	fill: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>accent);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span>.<span style="color:#a6e22e">paginator</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nav</span>.<span style="color:#a6e22e">tags</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The <code>:root</code> bit is the only part you&rsquo;ll need to modify the accent color. The
+rest, for me, is just minor tweaks that I felt would make the site look better.
+Or, in the case of the <code>.elsewhere-icon</code> class, to make my social links match
+the accent color (they are SVGs).</p>
+<p>And that&rsquo;s <em>it</em>. Literally.</p>
+<p>I know that when I add my <code>/micro</code> section with all the different post types
+and webmentions that the stylesheet will grow. However, with this solid
+foundation it&rsquo;ll be able to grow in a way that makes sense, free of any
+&ldquo;hacks&rdquo;.</p>
+<!-- raw HTML omitted -->
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/site-updates"
+                rel="tag"
+                class="p-category"
+                title="site-updates">
+                #site-updates
+            </a>
+        
+            <a
+                href="/tags/simple-css"
+                rel="tag"
+                class="p-category"
+                title="simple-css">
+                #simple-css
+            </a>
+        
+            <a
+                href="/tags/css-framework"
+                rel="tag"
+                class="p-category"
+                title="css-framework">
+                #css-framework
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>

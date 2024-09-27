@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <title>CrowderSoup</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+        
+        
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        
+        
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        
+        
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/205">
+        
+    </head>
+
+    <body>
+    
+
+<header>
+  <h1>$&nbsp;❯&nbsp;CrowderSoup</h1>
+  <div class="site-description">A website about programming, technology, and life.</div>
+  <nav class="main-nav">
+    <ul>
+      
+      <a
+				class=""
+				href="/">
+				<span>Home</span>
+			</a>
+      
+      <a
+				class=""
+				href="/about/">
+				<span>About</span>
+			</a>
+      
+      <a
+				class=""
+				href="/now/">
+				<span>Now</span>
+			</a>
+      
+      <a
+				class="active"
+				href="/posts/">
+				<span>Blog</span>
+			</a>
+      
+      <a
+				class=""
+				href="/micro/">
+				<span>Micro</span>
+			</a>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <div>
+        
+<article class="h-entry">
+    <header>
+        <a class="u-url" href="//localhost:1313/posts/programming/python/django/use-ifttt-to-trigger-events/">
+            <h3 class="p-name">Use IFTTT Maker Channel to Trigger Events in a Django App</h3>
+        </a>
+        <p>by
+            <a class="p-author h-card" href="https://crowdersoup.com">
+                Aaron Crowder
+            </a> on
+            <time class="dt-published" datetime="2016-04-08 07:15">
+                Friday, April 8, 2016
+            </time> in
+            
+                <a
+                    href="/categories/programming"
+                    rel="category"
+                    class="p-category"
+                    title="Programming">
+                    Programming
+                </a>
+            
+        </p>
+    </header>
+    <div class="e-content">
+        <p>A couple months ago I decided I needed to be better about telling my wonderful wife how much I loved her on a daily basis. Being the nerd that I am I decided to tackle this using <a href="https://ifttt.com" title="If This Then That">IFTTT</a> and a custom web app. For this project I went with <a href="https://djangoproject.org" title="Django Project">Django</a> to build my app out. I&rsquo;d never used it before so I wanted a chance to play with it.</p>
+<h2 id="the-idea">The idea</h2>
+<p>The idea is pretty simple. IFTTT will, using their <a href="https://ifttt.com/maker" title="IFTTT: Maker Channel">Maker Channel</a>, send a request to any endpoint that you want with a custom payload. I figured I could have that run daily to hit my app, which would then pull a reason that I love my wife from the database and send it to her.</p>
+<p>In my case, I decided to utilize IFTTT to also <strong>send</strong> the love notes as well. The Maker Channel can not only send requests, but it can receive them as well. So I would pull a reason from the database, send that reason <strong>back</strong> to IFTTT which would then email it to my wife for me using my own Gmail account. Believe it or not, this was easier than trying to hook up my Gmail account to send the emails myself.</p>
+<h2 id="execution">Execution</h2>
+<h3 id="django-app">Django App</h3>
+<p>My Django app is <strong>really</strong> simple. I have two routes, my <code>admin</code> route and a single <code>index</code> route. I&rsquo;m using the default Django admin console to add love notes to the database. The index route will handle requests from IFTTT to trigger sending a love note. It also serves up some basic HTML in case anyone accidentally finds this application in the wild. IFTTT passes along a security token so that I know when a request should trigger sending a love note or not.</p>
+<p>Before I dive into explaining the code, you can check out the <a href="https://github.com/CrowderSoup/LoveDB" title="Github Repo for the LoveDb">Github Repo</a> for yourself. Feel free to copy all or parts of it for your own use!</p>
+<h4 id="security">Security</h4>
+<p>You&rsquo;re not going to want just anyone to be able to trigger sending love notes from your app. You&rsquo;ll need some security in place. Thankfully this is pretty simple using <code>Environment Variables</code> in your Django app settings. The relevant part of my <code>settings.py</code> looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>SECRET_KEY <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;SECRET_KEY&#39;</span>) <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;youhavemyheart&#34;</span>
+</span></span><span style="display:flex;"><span>IFTTT_KEY <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;IFTTT_KEY&#39;</span>) <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;youhavemyheart&#34;</span>
+</span></span></code></pre></div><p>I&rsquo;m using <code>os.environ.get</code> to pull the values from my <code>Environment Variables</code>. To learn more about setting this up when you Deploy your app check out this guide check out these two links:</p>
+<ol>
+<li><a href="http://supervisord.org/subprocess.html#subprocess-environment" title="Subprocess Env">Using Supervisord</a></li>
+<li><a href="https://coderwall.com/p/93jakg/multiple-env-vars-with-uwsgi" title="Multiple Env Vars with uwsgi">Using uwsgi</a></li>
+</ol>
+<p>The <code>IFTTT_KEY</code> might be a little confusing, but when you actually connect the <a href="https://ifttt.com/maker" title="IFTTT: Maker Channel">Maker Channel</a> to your IFTTT account you&rsquo;ll see a part that says &ldquo;Your key is:&rdquo;. You just need to use that secrete key in your own <code>Environment Variables</code>. Please be sure not to put this value (or your <code>SECRETE_KEY</code>) in your actual code. Doing so is a huge security risk if you plan to push your code to a remote respository or share it in any way.</p>
+<h4 id="index-route">Index Route</h4>
+<p>Here&rsquo;s what the <code>index</code> route looks like (if not a little simplified):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.http <span style="color:#f92672">import</span> HttpResponse
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .models <span style="color:#f92672">import</span> Reason
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> requests<span style="color:#f92672">,</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> LoveDb.settings <span style="color:#f92672">import</span> SECRET_KEY, IFTTT_KEY
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>(request):
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    	A brief message in case anyone arrives at this page by mistake.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    their_key <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>GET<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;key&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    my_key <span style="color:#f92672">=</span> SECRET_KEY
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(their_key <span style="color:#f92672">==</span> my_key):
+</span></span><span style="display:flex;"><span>        reasons <span style="color:#f92672">=</span> Reason<span style="color:#f92672">.</span>objects<span style="color:#f92672">.</span>filter(been_used<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)<span style="color:#f92672">.</span>order_by(<span style="color:#e6db74">&#39;-created_date&#39;</span>)[:<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(len(reasons) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>            reason <span style="color:#f92672">=</span> reasons[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            love_note <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>            love_note[<span style="color:#e6db74">&#39;value1&#39;</span>] <span style="color:#f92672">=</span> reason<span style="color:#f92672">.</span>reason_text
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Send via If This Then That</span>
+</span></span><span style="display:flex;"><span>            requests<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;https://maker.ifttt.com/trigger/send_love_note/with/key/</span><span style="color:#e6db74">{0}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(IFTTT_KEY), data<span style="color:#f92672">=</span>love_note)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Update reason so that we don&#39;t use the same one twice (wouldn&#39;t that be embarrassing!)</span>
+</span></span><span style="display:flex;"><span>            reason<span style="color:#f92672">.</span>been_used <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            reason<span style="color:#f92672">.</span>save()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> HttpResponse(response)
+</span></span></code></pre></div><h4 id="love-note-or-reason-model">Love note (or <code>Reason</code>) model</h4>
+<p>Of course, I need to actually STORE the love notes somewhere. I created a <code>Reason</code> model to do this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.db <span style="color:#f92672">import</span> models
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Reason</span>(models<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    reason_text <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    been_used <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>BooleanField()
+</span></span><span style="display:flex;"><span>    created_date <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(<span style="color:#e6db74">&#39;date created&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __str__(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>reason_text
+</span></span></code></pre></div><p>I also need to be able to add things to the database using this model, enter Django admin. The Django admin was actually one of the biggest reasons I used Django for this project. I didn&rsquo;t have time to write user auth or CRUD interfaces. I just needed something simple that did the job. And simple it is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.contrib <span style="color:#f92672">import</span> admin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .models <span style="color:#f92672">import</span> Reason
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReasonAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
+</span></span><span style="display:flex;"><span>    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;reason_text&#39;</span>, <span style="color:#e6db74">&#39;created_date&#39;</span>, <span style="color:#e6db74">&#39;been_used&#39;</span>)
+</span></span><span style="display:flex;"><span>    list_filter <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;been_used&#39;</span>, <span style="color:#e6db74">&#39;created_date&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>admin<span style="color:#f92672">.</span>site<span style="color:#f92672">.</span>register(Reason, ReasonAdmin)
+</span></span></code></pre></div><h3 id="ifttt">IFTTT</h3>
+<p>The maker channel is pretty easy to use. If you&rsquo;re not familiar with IFTTT, then you should know that IFTTT has two types of things it can do / handle:</p>
+<ol>
+<li>Triggers: things that do things based on certain events or at certain times</li>
+<li>Actions: Things that are triggered by other events.</li>
+</ol>
+<p>So, for my purposes I&rsquo;m going to use the <a href="https://ifttt.com/date_and_time" title="IFTTT: Date &amp; Time Channel">Date &amp; Time</a> Channel to <em>trigger</em> an <em>action</em> on the Maker Channel. The action on the Maker Channel will make a request to my Django app to trigger sending a love note.</p>
+<p>Sending of the love note will <em>also</em> be done by IFTTT. Once my app gets a love note and is ready to send it I&rsquo;ll pass it back to IFTTT, again using the Maker Channel to consume a request (this is a <em>trigger</em>).</p>
+<h4 id="trigger-sending-of-a-love-note">Trigger Sending of a Love Note</h4>
+<p>This recipe is really simple. Just pick a time and enter the URL of your Django app that you&rsquo;re using to recieve the trigger. Don&rsquo;t forget to enter the secret key you set up for your app in a <code>GET</code> parameter on the URL. Your URL should look something like this:</p>
+<p><code>http://yourawesomelovedb.com/?key=YOUR_SECRET_KEY_HERE</code></p>
+<p>And here&rsquo;s the recipe for you to use right here!</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h4 id="send-the-actual-love-note">Send the actual Love Note</h4>
+<p>Sending the actual love note is really simple. You just hook the Maker Channel up to gmail and away you go! I&rsquo;m using the <code>Value1</code> part of the Maker Channel trigger for the body of the love note, which you saw in the <code>index</code> route of the app. As long as you copy that index route this recipe should be as simple as entering the name of the Love Note event (I named mine <code>send_love_note</code> which you saw in the <code>index</code> route) and the Email address of the person you&rsquo;re sending the love note to.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now, I&rsquo;m sure that this guide is missing steps, and is probably wrong in some places. But I hope that it&rsquo;s valuable as a jumping off point for anyone who wants to do something similar. Let me know in the comments what you think, or what you used this guide to make!</p>
+<!-- raw HTML omitted -->
+
+    </div>
+    <nav class="tags">
+        <strong>Tags:</strong>
+        
+            <a
+                href="/tags/django"
+                rel="tag"
+                class="p-category"
+                title="django">
+                #django
+            </a>
+        
+            <a
+                href="/tags/python"
+                rel="tag"
+                class="p-category"
+                title="python">
+                #python
+            </a>
+        
+            <a
+                href="/tags/ifttt"
+                rel="tag"
+                class="p-category"
+                title="ifttt">
+                #ifttt
+            </a>
+        
+            <a
+                href="/tags/maker"
+                rel="tag"
+                class="p-category"
+                title="maker">
+                #maker
+            </a>
+        
+    </nav>
+</article>
+
+    </div>
+
+    <footer>
+  &copy; 2024
+  <a href="/pubkey.txt" rel="pgpkey authn">
+    Aaron Crowder
+  </a>.
+</footer>
+
+    </body>
+</html>
